@@ -1,4 +1,4 @@
-Connectez votre système Solarwatt vision à Homey via votre réseau local (Modbus TCP). Aucun compte cloud n'est nécessaire.
+Connectez vos appareils SOLARWATT vision à Homey via votre réseau local (Modbus TCP). Aucun compte cloud n'est nécessaire.
 
 Appareils pris en charge :
 - Inverter vision : puissance et production solaires, puissance de l'onduleur, consommation de la maison, valeurs réseau et alarmes. Vous pouvez limiter la puissance de sortie et l'injection sur le réseau.

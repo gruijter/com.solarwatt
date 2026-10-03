@@ -1,4 +1,4 @@
-로컬 네트워크(Modbus TCP)를 통해 Solarwatt vision 시스템을 Homey에 연결하세요. 클라우드 계정이 필요 없습니다.
+로컬 네트워크(Modbus TCP)를 통해 SOLARWATT vision 장치를 Homey에 연결하세요. 클라우드 계정이 필요 없습니다.
 
 지원 장치:
 - Inverter vision: 태양광 전력과 발전량, 인버터 출력, 가정 소비, 계통 값과 알람. 출력 전력과 계통 송전을 제한할 수 있습니다.

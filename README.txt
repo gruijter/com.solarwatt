@@ -1,4 +1,4 @@
-Connect your Solarwatt vision system to Homey over your local network (Modbus TCP). No cloud account is needed.
+Connect your SOLARWATT vision devices to Homey over your local network (Modbus TCP). No cloud account is needed.
 
 Supported devices:
 - Inverter vision: solar power and yield, inverter output, house consumption, grid values and alarms. You can limit the output power and the feed-in to the grid.

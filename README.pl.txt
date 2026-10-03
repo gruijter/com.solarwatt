@@ -1,4 +1,4 @@
-Połącz swój system Solarwatt vision z Homey przez sieć lokalną (Modbus TCP). Konto w chmurze nie jest potrzebne.
+Połącz swoje urządzenia SOLARWATT vision z Homey przez sieć lokalną (Modbus TCP). Konto w chmurze nie jest potrzebne.
 
 Obsługiwane urządzenia:
 - Inverter vision: moc i uzysk z fotowoltaiki, moc falownika, zużycie domu, parametry sieci i alarmy. Możesz ograniczyć moc wyjściową i oddawanie energii do sieci.

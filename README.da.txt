@@ -1,4 +1,4 @@
-Forbind dit Solarwatt vision-system med Homey via dit lokale netværk (Modbus TCP). Der kræves ingen cloudkonto.
+Forbind dine SOLARWATT vision-enheder med Homey via dit lokale netværk (Modbus TCP). Der kræves ingen cloudkonto.
 
 Understøttede enheder:
 - Inverter vision: soleffekt og -produktion, invertereffekt, husforbrug, netværdier og alarmer. Du kan begrænse udgangseffekten og leveringen til nettet.

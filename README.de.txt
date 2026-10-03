@@ -1,4 +1,4 @@
-Verbinde dein Solarwatt-vision-System über dein lokales Netzwerk (Modbus TCP) mit Homey. Ein Cloud-Konto ist nicht nötig.
+Verbinde deine SOLARWATT vision-Geräte über dein lokales Netzwerk (Modbus TCP) mit Homey. Ein Cloud-Konto ist nicht nötig.
 
 Unterstützte Geräte:
 - Inverter vision: Solarleistung und -ertrag, Wechselrichterleistung, Hausverbrauch, Netzwerte und Störungen. Du kannst die Ausgangsleistung und die Netzeinspeisung begrenzen.
