@@ -1,0 +1,454 @@
+{
+  "$extends": [
+    "modbus"
+  ],
+  "name": {
+    "en": "Battery",
+    "nl": "Batterij",
+    "de": "Batterie",
+    "fr": "Batterie",
+    "it": "Batteria",
+    "es": "Batería",
+    "pl": "Akumulator",
+    "sv": "Batteri",
+    "no": "Batteri",
+    "da": "Batteri",
+    "ru": "Батарея",
+    "ko": "배터리",
+    "ar": "بطارية"
+  },
+  "class": "battery",
+  "capabilities": [
+    "measure_power",
+    "measure_power.target",
+    "target_power",
+    "target_power_mode",
+    "measure_battery",
+    "inverter_limit_active",
+    "battery_charging_state",
+    "battery_min_soc",
+    "battery_min_soc_ongrid",
+    "battery_max_soc",
+    "measure_voltage",
+    "measure_current",
+    "measure_temperature.min",
+    "measure_temperature.max",
+    "measure_voltage.cell_min",
+    "measure_voltage.cell_max",
+    "measure_power.charge_limit",
+    "measure_power.discharge_limit",
+    "meter_power.charged",
+    "meter_power.discharged",
+    "measure_temperature",
+    "measure_soh",
+    "measure_residual_energy",
+    "measure_battery_cycles",
+    "meter_power.throughput",
+    "alarm_problem",
+    "alarm_battery",
+    "alarm_connectivity",
+    "alarm_generic.control"
+  ],
+  "capabilitiesOptions": {
+    "meter_power.charged": {
+      "title": {
+        "en": "Charged Energy",
+        "de": "Geladene Energie",
+        "fr": "Énergie chargée",
+        "it": "Energia caricata",
+        "es": "Energía cargada",
+        "pl": "Naładowana energia",
+        "sv": "Laddad energi",
+        "no": "Ladet energi",
+        "da": "Opladet energi",
+        "ru": "Заряженная энергия",
+        "ko": "충전된 에너지",
+        "ar": "الطاقة المشحونة",
+        "nl": "Geladen energie"
+      }
+    },
+    "meter_power.discharged": {
+      "title": {
+        "en": "Discharged Energy",
+        "de": "Entladene Energie",
+        "fr": "Énergie déchargée",
+        "it": "Energia scaricata",
+        "es": "Energía descargada",
+        "pl": "Rozładowana energia",
+        "sv": "Urladdad energi",
+        "no": "Utladet energi",
+        "da": "Afladet energi",
+        "ru": "Разряженная энергия",
+        "ko": "방전된 에너지",
+        "ar": "الطاقة المفرغة",
+        "nl": "Ontladen energie"
+      }
+    },
+    "target_power": {
+      "min": -8000,
+      "max": 8000,
+      "step": 100
+    },
+    "measure_temperature.max": {
+      "title": {
+        "en": "Highest battery temperature",
+        "nl": "Hoogste batterijtemperatuur",
+        "de": "Höchste Batterietemperatur",
+        "fr": "Température batterie la plus haute",
+        "es": "Temperatura de batería más alta",
+        "it": "Temperatura batteria più alta",
+        "da": "Højeste batteritemperatur",
+        "sv": "Högsta batteritemperatur",
+        "no": "Høyeste batteritemperatur",
+        "pl": "Najwyższa temperatura akumulatora",
+        "ru": "Наибольшая температура батареи",
+        "ar": "أعلى درجة حرارة للبطارية",
+        "ko": "최고 배터리 온도"
+      }
+    },
+    "measure_temperature.min": {
+      "title": {
+        "en": "Lowest battery temperature",
+        "nl": "Laagste batterijtemperatuur",
+        "de": "Niedrigste Batterietemperatur",
+        "fr": "Température batterie la plus basse",
+        "es": "Temperatura de batería más baja",
+        "it": "Temperatura batteria più bassa",
+        "da": "Laveste batteritemperatur",
+        "sv": "Lägsta batteritemperatur",
+        "no": "Laveste batteritemperatur",
+        "pl": "Najniższa temperatura akumulatora",
+        "ru": "Наименьшая температура батареи",
+        "ar": "أدنى درجة حرارة للبطارية",
+        "ko": "최저 배터리 온도"
+      }
+    },
+    "measure_voltage.cell_max": {
+      "title": {
+        "en": "Highest cell voltage",
+        "nl": "Hoogste celspanning",
+        "de": "Höchste Zellspannung",
+        "fr": "Tension de cellule max",
+        "es": "Tensión de celda máx.",
+        "it": "Tensione cella max",
+        "da": "Højeste cellespænding",
+        "sv": "Högsta cellspänning",
+        "no": "Høyeste cellespenning",
+        "pl": "Najwyższe napięcie ogniwa",
+        "ru": "Макс. напряжение ячейки",
+        "ar": "أعلى جهد للخلية",
+        "ko": "최고 셀 전압"
+      },
+      "decimals": 3
+    },
+    "measure_voltage.cell_min": {
+      "title": {
+        "en": "Lowest cell voltage",
+        "nl": "Laagste celspanning",
+        "de": "Niedrigste Zellspannung",
+        "fr": "Tension de cellule min",
+        "es": "Tensión de celda mín.",
+        "it": "Tensione cella min",
+        "da": "Laveste cellespænding",
+        "sv": "Lägsta cellspänning",
+        "no": "Laveste cellespenning",
+        "pl": "Najniższe napięcie ogniwa",
+        "ru": "Мин. напряжение ячейки",
+        "ar": "أدنى جهد للخلية",
+        "ko": "최저 셀 전압"
+      },
+      "decimals": 3
+    },
+    "measure_power.charge_limit": {
+      "title": {
+        "en": "Max charge power",
+        "nl": "Max laadvermogen",
+        "de": "Max. Ladeleistung",
+        "fr": "Puissance de charge max",
+        "es": "Potencia de carga máx.",
+        "it": "Potenza di carica max",
+        "da": "Maks. ladeeffekt",
+        "sv": "Max laddeffekt",
+        "no": "Maks ladeeffekt",
+        "pl": "Maks. moc ładowania",
+        "ru": "Макс. мощность заряда",
+        "ar": "أقصى قدرة شحن",
+        "ko": "최대 충전 전력"
+      },
+      "decimals": 0
+    },
+    "measure_power.discharge_limit": {
+      "title": {
+        "en": "Max discharge power",
+        "nl": "Max ontlaadvermogen",
+        "de": "Max. Entladeleistung",
+        "fr": "Puissance de décharge max",
+        "es": "Potencia de descarga máx.",
+        "it": "Potenza di scarica max",
+        "da": "Maks. afladeeffekt",
+        "sv": "Max urladdningseffekt",
+        "no": "Maks utladingseffekt",
+        "pl": "Maks. moc rozładowania",
+        "ru": "Макс. мощность разряда",
+        "ar": "أقصى قدرة تفريغ",
+        "ko": "최대 방전 전력"
+      },
+      "decimals": 0
+    },
+    "target_power_mode": {
+      "title": {
+        "en": "Mode",
+        "nl": "Modus",
+        "de": "Modus",
+        "fr": "Mode",
+        "es": "Modo",
+        "it": "Modalità",
+        "da": "Tilstand",
+        "sv": "Läge",
+        "no": "Modus",
+        "pl": "Tryb",
+        "ru": "Режим",
+        "ar": "الوضع",
+        "ko": "모드"
+      },
+      "values": [
+        {
+          "id": "homey",
+          "title": {
+            "en": "Homey",
+            "nl": "Homey",
+            "de": "Homey",
+            "fr": "Homey",
+            "it": "Homey",
+            "es": "Homey",
+            "pl": "Homey",
+            "sv": "Homey",
+            "no": "Homey",
+            "da": "Homey",
+            "ru": "Homey",
+            "ko": "Homey",
+            "ar": "Homey"
+          }
+        },
+        {
+          "id": "self_use",
+          "title": {
+            "en": "Self-use",
+            "nl": "Eigen verbruik",
+            "de": "Eigenverbrauch",
+            "fr": "Autoconsommation",
+            "it": "Autoconsumo",
+            "es": "Autoconsumo",
+            "pl": "Autokonsumpcja",
+            "sv": "Egenanvändning",
+            "no": "Egetforbruk",
+            "da": "Eget forbrug",
+            "ru": "Собственное потребление",
+            "ko": "자가 소비",
+            "ar": "الاستهلاك الذاتي"
+          }
+        },
+        {
+          "id": "feed_in",
+          "title": {
+            "en": "Feed-in priority",
+            "nl": "Teruglevering eerst",
+            "de": "Einspeisung zuerst",
+            "fr": "Priorité injection",
+            "it": "Priorità immissione",
+            "es": "Prioridad de inyección",
+            "pl": "Priorytet oddawania do sieci",
+            "sv": "Inmatning först",
+            "no": "Innmating først",
+            "da": "Levering til nettet først",
+            "ru": "Приоритет отдачи в сеть",
+            "ko": "계통 송전 우선",
+            "ar": "أولوية التغذية للشبكة"
+          }
+        },
+        {
+          "id": "backup",
+          "title": {
+            "en": "Backup",
+            "nl": "Back-up",
+            "de": "Notstromreserve",
+            "fr": "Secours",
+            "it": "Backup",
+            "es": "Respaldo",
+            "pl": "Rezerwa",
+            "sv": "Reserv",
+            "no": "Reserve",
+            "da": "Backup",
+            "ru": "Резерв",
+            "ko": "백업",
+            "ar": "احتياطي"
+          }
+        },
+        {
+          "id": "peak_shaving",
+          "title": {
+            "en": "Peak shaving",
+            "nl": "Piekafvlakking",
+            "de": "Spitzenlastkappung",
+            "fr": "Écrêtement des pointes",
+            "it": "Riduzione dei picchi",
+            "es": "Recorte de picos",
+            "pl": "Ścinanie szczytów",
+            "sv": "Toppkapning",
+            "no": "Toppkutting",
+            "da": "Spidsbelastningsudjævning",
+            "ru": "Сглаживание пиков",
+            "ko": "피크 저감",
+            "ar": "خفض الذروة"
+          }
+        },
+        {
+          "id": "force_charge",
+          "title": {
+            "en": "Force charge",
+            "nl": "Geforceerd laden",
+            "de": "Zwangsladung",
+            "fr": "Charge forcée",
+            "es": "Carga forzada",
+            "it": "Carica forzata",
+            "da": "Tvungen opladning",
+            "sv": "Tvingad laddning",
+            "no": "Tvungen lading",
+            "pl": "Wymuszone ładowanie",
+            "ru": "Принудительный заряд",
+            "ar": "شحن إجباري",
+            "ko": "강제 충전"
+          }
+        },
+        {
+          "id": "force_discharge",
+          "title": {
+            "en": "Force discharge",
+            "nl": "Geforceerd ontladen",
+            "de": "Zwangsentladung",
+            "fr": "Décharge forcée",
+            "es": "Descarga forzada",
+            "it": "Scarica forzata",
+            "da": "Tvungen afladning",
+            "sv": "Tvingad urladdning",
+            "no": "Tvungen utlading",
+            "pl": "Wymuszone rozładowanie",
+            "ru": "Принудительный разряд",
+            "ar": "تفريغ إجباري",
+            "ko": "강제 방전"
+          }
+        }
+      ]
+    },
+    "measure_power.target": {
+      "title": {
+        "en": "Target power",
+        "nl": "Doelvermogen",
+        "de": "Zielleistung",
+        "fr": "Puissance cible",
+        "es": "Potencia objetivo",
+        "it": "Potenza obiettivo",
+        "da": "Måleffekt",
+        "sv": "Måleffekt",
+        "no": "Måleffekt",
+        "pl": "Moc docelowa",
+        "ru": "Целевая мощность",
+        "ar": "القدرة المستهدفة",
+        "ko": "목표 전력"
+      },
+      "decimals": 0
+    },
+    "measure_temperature": {
+      "title": {
+        "en": "Ambient temperature",
+        "nl": "Omgevingstemperatuur",
+        "de": "Umgebungstemperatur",
+        "fr": "Température ambiante",
+        "es": "Temperatura ambiente",
+        "it": "Temperatura ambiente",
+        "da": "Omgivelsestemperatur",
+        "sv": "Omgivningstemperatur",
+        "no": "Omgivelsestemperatur",
+        "pl": "Temperatura otoczenia",
+        "ru": "Температура окружающей среды",
+        "ar": "درجة الحرارة المحيطة",
+        "ko": "주변 온도"
+      }
+    },
+    "alarm_generic.control": {
+      "title": {
+        "en": "Control overridden",
+        "nl": "Sturing overschreven",
+        "de": "Steuerung überschrieben",
+        "fr": "Pilotage écrasé",
+        "es": "Control anulado",
+        "it": "Controllo sovrascritto",
+        "da": "Styring overskrevet",
+        "sv": "Styrning överskriven",
+        "no": "Styring overstyrt",
+        "pl": "Sterowanie nadpisane",
+        "ru": "Управление перехвачено",
+        "ar": "تم تجاوز التحكم",
+        "ko": "제어 덮어씀"
+      }
+    },
+    "meter_power.throughput": {
+      "title": {
+        "en": "Energy throughput",
+        "nl": "Energiedoorvoer",
+        "de": "Energiedurchsatz",
+        "fr": "Énergie échangée",
+        "es": "Energía procesada",
+        "it": "Energia scambiata",
+        "da": "Energigennemstrømning",
+        "sv": "Energigenomströmning",
+        "no": "Energigjennomstrømning",
+        "pl": "Przepływ energii",
+        "ru": "Пропущенная энергия",
+        "ar": "إجمالي الطاقة المتداولة",
+        "ko": "에너지 처리량"
+      },
+      "decimals": 1
+    },
+    "measure_voltage": {
+      "title": {
+        "en": "Battery voltage",
+        "nl": "Batterijspanning",
+        "de": "Batteriespannung",
+        "fr": "Tension batterie",
+        "es": "Voltaje de batería",
+        "it": "Tensione batteria",
+        "da": "Batterispænding",
+        "sv": "Batterispänning",
+        "no": "Batterispenning",
+        "pl": "Napięcie akumulatora",
+        "ru": "Напряжение батареи",
+        "ar": "جهد البطارية",
+        "ko": "배터리 전압"
+      }
+    },
+    "measure_current": {
+      "title": {
+        "en": "Battery current",
+        "nl": "Batterijstroom",
+        "de": "Batteriestrom",
+        "fr": "Courant batterie",
+        "es": "Corriente de batería",
+        "it": "Corrente batteria",
+        "da": "Batteristrøm",
+        "sv": "Batteriström",
+        "no": "Batteristrøm",
+        "pl": "Prąd akumulatora",
+        "ru": "Ток батареи",
+        "ar": "تيار البطارية",
+        "ko": "배터리 전류"
+      }
+    }
+  },
+  "energy": {
+    "homeBattery": true,
+    "meterPowerImportedCapability": "meter_power.charged",
+    "meterPowerExportedCapability": "meter_power.discharged"
+  },
+  "discovery": "vision"
+}

@@ -1,0 +1,201 @@
+{
+  "id": "com.solarwatt",
+  "version": "1.0.0",
+  "compatibility": ">=12.13.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Solarwatt",
+    "nl": "Solarwatt",
+    "de": "Solarwatt",
+    "fr": "Solarwatt",
+    "es": "Solarwatt",
+    "it": "Solarwatt",
+    "da": "Solarwatt",
+    "sv": "Solarwatt",
+    "no": "Solarwatt",
+    "pl": "Solarwatt",
+    "ru": "Solarwatt",
+    "ar": "Solarwatt",
+    "ko": "Solarwatt"
+  },
+  "description": {
+    "en": "Powering a better tomorrow.",
+    "nl": "Powering a better tomorrow.",
+    "de": "Powering a better tomorrow.",
+    "fr": "Powering a better tomorrow.",
+    "es": "Powering a better tomorrow.",
+    "it": "Powering a better tomorrow.",
+    "da": "Powering a better tomorrow.",
+    "sv": "Powering a better tomorrow.",
+    "no": "Powering a better tomorrow.",
+    "pl": "Powering a better tomorrow.",
+    "ru": "Powering a better tomorrow.",
+    "ar": "Powering a better tomorrow.",
+    "ko": "Powering a better tomorrow."
+  },
+  "brandColor": "#064348",
+  "tags": {
+    "en": [
+      "solarwatt",
+      "vision",
+      "modbus",
+      "inverter",
+      "solar",
+      "battery",
+      "EV charger",
+      "energy meter",
+      "local"
+    ],
+    "nl": [
+      "solarwatt",
+      "vision",
+      "modbus",
+      "omvormer",
+      "zonnepanelen",
+      "batterij",
+      "laadpaal",
+      "energiemeter",
+      "lokaal"
+    ],
+    "de": [
+      "solarwatt",
+      "vision",
+      "modbus",
+      "Wechselrichter",
+      "Solar",
+      "Batterie",
+      "Wallbox",
+      "Energiezähler",
+      "lokal"
+    ],
+    "fr": [
+      "solarwatt",
+      "vision",
+      "modbus",
+      "onduleur",
+      "solaire",
+      "batterie",
+      "borne de recharge",
+      "compteur",
+      "local"
+    ],
+    "es": [
+      "solarwatt",
+      "vision",
+      "modbus",
+      "inversor",
+      "solar",
+      "batería",
+      "cargador VE",
+      "medidor",
+      "local"
+    ],
+    "it": [
+      "solarwatt",
+      "vision",
+      "modbus",
+      "inverter",
+      "solare",
+      "batteria",
+      "wallbox",
+      "contatore",
+      "locale"
+    ],
+    "da": [
+      "solarwatt",
+      "vision",
+      "modbus",
+      "inverter",
+      "solceller",
+      "batteri",
+      "elbillader",
+      "elmåler",
+      "lokal"
+    ],
+    "sv": [
+      "solarwatt",
+      "vision",
+      "modbus",
+      "växelriktare",
+      "solceller",
+      "batteri",
+      "elbilsladdare",
+      "elmätare",
+      "lokal"
+    ],
+    "no": [
+      "solarwatt",
+      "vision",
+      "modbus",
+      "vekselretter",
+      "solceller",
+      "batteri",
+      "elbillader",
+      "strømmåler",
+      "lokal"
+    ],
+    "pl": [
+      "solarwatt",
+      "vision",
+      "modbus",
+      "falownik",
+      "fotowoltaika",
+      "akumulator",
+      "ładowarka EV",
+      "licznik energii",
+      "lokalnie"
+    ],
+    "ru": [
+      "solarwatt",
+      "vision",
+      "modbus",
+      "инвертор",
+      "солнечная энергия",
+      "батарея",
+      "зарядная станция",
+      "счетчик",
+      "локально"
+    ],
+    "ar": [
+      "solarwatt",
+      "vision",
+      "modbus",
+      "عاكس",
+      "طاقة شمسية",
+      "بطارية",
+      "شاحن سيارة",
+      "عداد طاقة",
+      "محلي"
+    ],
+    "ko": [
+      "solarwatt",
+      "vision",
+      "modbus",
+      "인버터",
+      "태양광",
+      "배터리",
+      "EV 충전기",
+      "전력량계",
+      "로컬"
+    ]
+  },
+  "category": [
+    "energy"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.jpg",
+    "large": "/assets/images/large.jpg",
+    "xlarge": "/assets/images/xlarge.jpg"
+  },
+  "author": {
+    "name": "R.M. de Gruijter"
+  },
+  "copyright": "R.M. de Gruijter (rmdegruijter@gmail.com)",
+  "license": "GPL-3.0-or-later",
+  "homeyCommunityTopicId": 157511,
+  "support": "https://github.com/gruijter/com.solarwatt/issues"
+}

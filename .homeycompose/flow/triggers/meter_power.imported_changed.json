@@ -1,0 +1,47 @@
+{
+  "title": {
+    "en": "Imported energy changed",
+    "nl": "Energie import is veranderd",
+    "de": "Importierte Energie geändert",
+    "fr": "Énergie importée modifiée",
+    "it": "Energia importata modificata",
+    "es": "Energía importada cambiada",
+    "pl": "Importowana energia uległa zmianie",
+    "sv": "Importerad energi ändrad",
+    "no": "Importert energi endret",
+    "da": "Importeret energi ændret",
+    "ru": "Импортированная энергия изменена",
+    "ko": "가져온 에너지가 변경됨",
+    "ar": "تغيرت الطاقة المستوردة"
+  },
+  "highlight": true,
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=meter"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "meter_power.imported",
+      "type": "number",
+      "title": {
+        "en": "Imported energy",
+        "nl": "Energie import",
+        "de": "Importierte Energie",
+        "fr": "Énergie importée",
+        "it": "Energia importata",
+        "es": "Energía importada",
+        "pl": "Energia importowana",
+        "sv": "Importerad energi",
+        "no": "Importert energi",
+        "da": "Importeret energi",
+        "ru": "Импортированная энергия",
+        "ko": "가져온 에너지",
+        "ar": "الطاقة المستوردة"
+      },
+      "example": 1500
+    }
+  ]
+}

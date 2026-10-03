@@ -1,0 +1,58 @@
+{
+  "errors": {
+    "hostMissing": "Keine IP-Adresse eingestellt.",
+    "hostRequired": "Gib eine IP-Adresse ein.",
+    "noData": "Keine Daten empfangen.",
+    "unreachable": "Gerät nicht erreichbar:",
+    "probeFailed": "Unter dieser Adresse hat kein kompatibles Gerät geantwortet.",
+    "notPairable": {
+      "battery": "Der Wechselrichter hat geantwortet, aber es ist keine Batterie angeschlossen.",
+      "meter": "Der Wechselrichter hat geantwortet, aber es ist kein Zähler angeschlossen."
+    },
+    "noCarConnected": "Kein Auto angeschlossen.",
+    "unplugFirst": "Zuerst das Kabel abziehen: Die Ladestation ändert dies nur ohne eingestecktes Kabel.",
+    "socRange": "SoC-Grenzen müssen 10–100 % sein, mit Minimum ≤ Minimum am Netz ≤ Maximum.",
+    "writeFailed": "Befehl konnte nicht gesendet werden:"
+  },
+  "pair": {
+    "deviceName": {
+      "battery": "Batterie",
+      "charger": "Ladestation",
+      "inverter": "Wechselrichter",
+      "meter": "Zähler"
+    },
+    "manual": {
+      "connect": "Verbinden",
+      "intro": "Vergib im Router zuerst eine feste IP-Adresse, damit es nach einem Neustart weiter funktioniert.",
+      "title": "IP-Adresse eingeben",
+      "legend": "Verbindung"
+    },
+    "manualEntry": "Manuell"
+  },
+  "repair": {
+    "manual": {
+      "intro": "Gib die Adresse ein, die das Gerät jetzt verwendet.",
+      "title": "IP-Adresse ändern"
+    },
+    "current": "aktuell"
+  },
+  "settings": {
+    "host": "IP-Adresse",
+    "port": "Port",
+    "unitId": "Unit-ID",
+    "meterConnection": {
+      "0": "Aus",
+      "1": "1-Phasen-Zähler",
+      "2": "Stromwandler (CT)",
+      "3": "3-Phasen-Zähler"
+    },
+    "energyManagerNone": "Nicht gefunden"
+  },
+  "status": {
+    "migrating": "Fähigkeiten werden aktualisiert…"
+  },
+  "notifications": {
+    "controlOverriddenBy": "**__name__**: Ein externer Energiemanager (__manager__) überschreibt die Steuerung durch Homey. Homey und der Energiemanager versuchen beide, dieses Gerät zu steuern.",
+    "controlOverridden": "**__name__**: Ein externer Energiemanager überschreibt die Steuerung durch Homey. Homey und der Energiemanager versuchen beide, dieses Gerät zu steuern."
+  }
+}

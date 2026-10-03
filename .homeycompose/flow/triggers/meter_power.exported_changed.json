@@ -1,0 +1,47 @@
+{
+  "title": {
+    "en": "Exported energy changed",
+    "nl": "Energie export is veranderd",
+    "de": "Exportierte Energie geändert",
+    "fr": "Énergie exportée modifiée",
+    "it": "Energia esportata modificata",
+    "es": "Energía exportada cambiada",
+    "pl": "Eksportowana energia uległa zmianie",
+    "sv": "Exporterad energi ändrad",
+    "no": "Eksportert energi endret",
+    "da": "Eksporteret energi ændret",
+    "ru": "Экспортированная энергия изменена",
+    "ko": "내보낸 에너지가 변경됨",
+    "ar": "تغيرت الطاقة المصدرة"
+  },
+  "highlight": true,
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=meter"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "meter_power.exported",
+      "type": "number",
+      "title": {
+        "en": "Exported energy",
+        "nl": "Energie export",
+        "de": "Exportierte Energie",
+        "fr": "Énergie exportée",
+        "it": "Energia esportata",
+        "es": "Energía exportada",
+        "pl": "Energia eksportowana",
+        "sv": "Exporterad energi",
+        "no": "Eksportert energi",
+        "da": "Eksporteret energi",
+        "ru": "Экспортированная энергия",
+        "ko": "내보낸 에너지",
+        "ar": "الطاقة المصدرة"
+      },
+      "example": 1500
+    }
+  ]
+}

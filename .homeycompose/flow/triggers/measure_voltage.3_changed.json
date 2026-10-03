@@ -1,0 +1,47 @@
+{
+  "title": {
+    "en": "Voltage phase 3 changed",
+    "nl": "Voltage fase 3 is veranderd",
+    "de": "Spannung Phase 3 geändert",
+    "fr": "Tension phase 3 modifiée",
+    "it": "Tensione fase 3 modificata",
+    "es": "Voltaje fase 3 cambiado",
+    "pl": "Napięcie fazy 3 uległo zmianie",
+    "sv": "Spänning fas 3 ändrad",
+    "no": "Spenning fase 3 endret",
+    "da": "Spænding fase 3 ændret",
+    "ru": "Напряжение фазы 3 изменено",
+    "ko": "전압 위상 3 변경됨",
+    "ar": "تغير جهد المرحلة 3"
+  },
+  "highlight": true,
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=meter|inverter|charger"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "measure_voltage.3",
+      "type": "number",
+      "title": {
+        "en": "Voltage phase 3",
+        "nl": "Voltage fase 3",
+        "de": "Spannung Phase 3",
+        "fr": "Tension phase 3",
+        "it": "Tensione fase 3",
+        "es": "Voltaje fase 3",
+        "pl": "Napięcie fazy 3",
+        "sv": "Spänning fas 3",
+        "no": "Spenning fase 3",
+        "da": "Spænding fase 3",
+        "ru": "Напряжение фазы 3",
+        "ko": "전압 위상 3",
+        "ar": "جهد المرحلة 3"
+      },
+      "example": 230
+    }
+  ]
+}

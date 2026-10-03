@@ -1,0 +1,58 @@
+{
+  "errors": {
+    "hostMissing": "Aucune adresse IP définie.",
+    "hostRequired": "Saisissez une adresse IP.",
+    "noData": "Aucune donnée reçue.",
+    "unreachable": "Appareil injoignable :",
+    "probeFailed": "Aucun appareil compatible n'a répondu à cette adresse.",
+    "notPairable": {
+      "battery": "L'onduleur a répondu, mais aucune batterie n'y est raccordée.",
+      "meter": "L'onduleur a répondu, mais aucun compteur n'y est raccordé."
+    },
+    "noCarConnected": "Aucune voiture branchée.",
+    "unplugFirst": "Débranchez d'abord le câble : la borne ne modifie ce réglage que sans câble branché.",
+    "socRange": "Les limites de SoC doivent être de 10 à 100 %, avec minimum ≤ minimum sur réseau ≤ maximum.",
+    "writeFailed": "Impossible d'envoyer la commande :"
+  },
+  "pair": {
+    "deviceName": {
+      "battery": "Batterie",
+      "charger": "Borne de recharge",
+      "inverter": "Onduleur",
+      "meter": "Compteur"
+    },
+    "manual": {
+      "connect": "Connecter",
+      "intro": "Attribuez d'abord une adresse IP fixe dans votre routeur, pour que cela continue de fonctionner après un redémarrage.",
+      "title": "Saisir l'adresse IP",
+      "legend": "Connexion"
+    },
+    "manualEntry": "Manuel"
+  },
+  "repair": {
+    "manual": {
+      "intro": "Saisissez l'adresse utilisée actuellement par l'appareil.",
+      "title": "Modifier l'adresse IP"
+    },
+    "current": "actuel"
+  },
+  "settings": {
+    "host": "Adresse IP",
+    "port": "Port",
+    "unitId": "ID d'unité",
+    "meterConnection": {
+      "0": "Désactivé",
+      "1": "Compteur monophasé",
+      "2": "Transformateur de courant (CT)",
+      "3": "Compteur triphasé"
+    },
+    "energyManagerNone": "Aucun trouvé"
+  },
+  "status": {
+    "migrating": "Mise à jour des capacités…"
+  },
+  "notifications": {
+    "controlOverriddenBy": "**__name__** : un gestionnaire d'énergie externe (__manager__) écrase le pilotage par Homey. Homey et le gestionnaire d'énergie essaient tous deux de piloter cet appareil.",
+    "controlOverridden": "**__name__** : un gestionnaire d'énergie externe écrase le pilotage par Homey. Homey et le gestionnaire d'énergie essaient tous deux de piloter cet appareil."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "meterVersion",
+  "type": "label",
+  "value": "",
+  "label": {
+    "en": "Meter version",
+    "nl": "Meterversie",
+    "de": "Zählerversion",
+    "fr": "Version du compteur",
+    "es": "Versión del medidor",
+    "it": "Versione contatore",
+    "da": "Målerversion",
+    "sv": "Mätarversion",
+    "no": "Målerversjon",
+    "pl": "Wersja licznika",
+    "ru": "Версия счетчика",
+    "ar": "إصدار العداد",
+    "ko": "계량기 버전"
+  }
+}

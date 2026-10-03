@@ -1,0 +1,35 @@
+{
+  "id": "mdnsName",
+  "type": "label",
+  "value": "",
+  "label": {
+    "en": "mDNS name",
+    "nl": "mDNS-naam",
+    "de": "mDNS-Name",
+    "fr": "Nom mDNS",
+    "es": "Nombre mDNS",
+    "it": "Nome mDNS",
+    "da": "mDNS-navn",
+    "sv": "mDNS-namn",
+    "no": "mDNS-navn",
+    "pl": "Nazwa mDNS",
+    "ru": "Имя mDNS",
+    "ar": "اسم mDNS",
+    "ko": "mDNS 이름"
+  },
+  "hint": {
+    "en": "When set, the IP address follows the device automatically.",
+    "nl": "Indien ingevuld volgt het IP-adres het apparaat automatisch.",
+    "de": "Wenn gesetzt, folgt die IP-Adresse dem Gerät automatisch.",
+    "fr": "Si renseigné, l'adresse IP suit l'appareil automatiquement.",
+    "es": "Si está definido, la dirección IP sigue al dispositivo automáticamente.",
+    "it": "Se impostato, l'indirizzo IP segue automaticamente il dispositivo.",
+    "da": "Hvis udfyldt, følger IP-adressen enheden automatisk.",
+    "sv": "Om ifyllt följer IP-adressen enheten automatiskt.",
+    "no": "Hvis utfylt, følger IP-adressen enheten automatisk.",
+    "pl": "Jeśli ustawione, adres IP automatycznie podąża za urządzeniem.",
+    "ru": "Если задано, IP-адрес автоматически следует за устройством.",
+    "ar": "عند تعيينه، يتبع عنوان IP الجهاز تلقائيًا.",
+    "ko": "설정된 경우 IP 주소가 장치를 자동으로 따라갑니다."
+  }
+}

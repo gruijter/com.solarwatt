@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 960" width="960" height="960">
+  <g fill="none" stroke="#000" stroke-width="44" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Inverter vision: front with a small display bottom centre, side panel with cable glands on the right -->
+    <rect x="70" y="110" width="660" height="740" rx="60"/>
+    <path d="M730 170l130 50v520l-130 50"/>
+    <circle cx="800" cy="350" r="42"/>
+    <circle cx="800" cy="480" r="42"/>
+    <circle cx="800" cy="610" r="42"/>
+    <rect x="330" y="580" width="140" height="160" rx="22"/>
+    <path d="M360 525h80"/>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+{
+  "name": "com.solarwatt",
+  "version": "1.0.0",
+  "main": "app.js",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "lint": "eslint --ext .js,.ts --ignore-path .gitignore .",
+    "test": "node test/check-manifests.js && node test/modbus-client.js && node test/device-migrator.js"
+  },
+  "devDependencies": {
+    "@types/homey": "npm:homey-apps-sdk-v3-types@beta",
+    "eslint": "^8.57.1",
+    "eslint-config-athom": "^4.0.2"
+  }
+}

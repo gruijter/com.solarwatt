@@ -1,0 +1,243 @@
+{
+  "$extends": [
+    "modbus"
+  ],
+  "name": {
+    "en": "Meter",
+    "nl": "Meter",
+    "de": "Zähler",
+    "fr": "Compteur",
+    "it": "Contatore",
+    "es": "Medidor",
+    "pl": "Licznik",
+    "sv": "Mätare",
+    "no": "Måler",
+    "da": "Måler",
+    "ru": "Счетчик",
+    "ko": "계량기",
+    "ar": "عداد"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "measure_power",
+    "measure_power.1",
+    "measure_power.2",
+    "measure_power.3",
+    "measure_current.1",
+    "measure_current.2",
+    "measure_current.3",
+    "measure_voltage.1",
+    "measure_voltage.2",
+    "measure_voltage.3",
+    "measure_frequency",
+    "measure_power_factor",
+    "measure_reactive_power",
+    "measure_apparent_power",
+    "meter_power.imported",
+    "meter_power.exported",
+    "alarm_connectivity"
+  ],
+  "capabilitiesOptions": {
+    "measure_voltage.1": {
+      "title": {
+        "en": "Voltage phase 1",
+        "nl": "Voltage fase 1",
+        "de": "Spannung Phase 1",
+        "fr": "Tension phase 1",
+        "it": "Tensione fase 1",
+        "es": "Voltaje fase 1",
+        "pl": "Napięcie fazy 1",
+        "sv": "Spänning fas 1",
+        "no": "Spenning fase 1",
+        "da": "Spænding fase 1",
+        "ru": "Напряжение фазы 1",
+        "ko": "전압 위상 1",
+        "ar": "جهد المرحلة 1"
+      }
+    },
+    "measure_voltage.2": {
+      "title": {
+        "en": "Voltage phase 2",
+        "nl": "Voltage fase 2",
+        "de": "Spannung Phase 2",
+        "fr": "Tension phase 2",
+        "it": "Tensione fase 2",
+        "es": "Voltaje fase 2",
+        "pl": "Napięcie fazy 2",
+        "sv": "Spänning fas 2",
+        "no": "Spenning fase 2",
+        "da": "Spænding fase 2",
+        "ru": "Напряжение фазы 2",
+        "ko": "전압 위상 2",
+        "ar": "جهد المرحلة 2"
+      }
+    },
+    "measure_voltage.3": {
+      "title": {
+        "en": "Voltage phase 3",
+        "nl": "Voltage fase 3",
+        "de": "Spannung Phase 3",
+        "fr": "Tension phase 3",
+        "it": "Tensione fase 3",
+        "es": "Voltaje fase 3",
+        "pl": "Napięcie fazy 3",
+        "sv": "Spänning fas 3",
+        "no": "Spenning fase 3",
+        "da": "Spænding fase 3",
+        "ru": "Напряжение фазы 3",
+        "ko": "전압 위상 3",
+        "ar": "جهد المرحلة 3"
+      }
+    },
+    "meter_power.imported": {
+      "title": {
+        "en": "Imported energy",
+        "nl": "Energie import",
+        "de": "Importierte Energie",
+        "fr": "Énergie importée",
+        "it": "Energia importata",
+        "es": "Energía importada",
+        "pl": "Energia importowana",
+        "sv": "Importerad energi",
+        "no": "Importert energi",
+        "da": "Importeret energi",
+        "ru": "Импортированная энергия",
+        "ko": "가져온 에너지",
+        "ar": "الطاقة المستوردة"
+      },
+      "decimals": 2
+    },
+    "meter_power.exported": {
+      "title": {
+        "en": "Exported energy",
+        "nl": "Energie export",
+        "de": "Exportierte Energie",
+        "fr": "Énergie exportée",
+        "it": "Energia esportata",
+        "es": "Energía exportada",
+        "pl": "Energia eksportowana",
+        "sv": "Exporterad energi",
+        "no": "Eksportert energi",
+        "da": "Eksporteret energi",
+        "ru": "Экспортированная энергия",
+        "ko": "내보낸 에너지",
+        "ar": "الطاقة المصدرة"
+      },
+      "decimals": 2
+    },
+    "measure_power.1": {
+      "title": {
+        "en": "Power phase 1",
+        "nl": "Vermogen fase 1",
+        "de": "Leistung Phase 1",
+        "fr": "Puissance phase 1",
+        "es": "Potencia fase 1",
+        "it": "Potenza fase 1",
+        "da": "Effekt fase 1",
+        "sv": "Effekt fas 1",
+        "no": "Effekt fase 1",
+        "pl": "Moc fazy 1",
+        "ru": "Мощность фазы 1",
+        "ar": "قدرة المرحلة 1",
+        "ko": "전력 위상 1"
+      },
+      "decimals": 0
+    },
+    "measure_current.1": {
+      "title": {
+        "en": "Current phase 1",
+        "nl": "Stroom fase 1",
+        "de": "Strom Phase 1",
+        "fr": "Courant phase 1",
+        "es": "Corriente fase 1",
+        "it": "Corrente fase 1",
+        "da": "Strøm fase 1",
+        "sv": "Ström fas 1",
+        "no": "Strøm fase 1",
+        "pl": "Prąd fazy 1",
+        "ru": "Ток фазы 1",
+        "ar": "تيار المرحلة 1",
+        "ko": "전류 위상 1"
+      },
+      "decimals": 2
+    },
+    "measure_power.2": {
+      "title": {
+        "en": "Power phase 2",
+        "nl": "Vermogen fase 2",
+        "de": "Leistung Phase 2",
+        "fr": "Puissance phase 2",
+        "es": "Potencia fase 2",
+        "it": "Potenza fase 2",
+        "da": "Effekt fase 2",
+        "sv": "Effekt fas 2",
+        "no": "Effekt fase 2",
+        "pl": "Moc fazy 2",
+        "ru": "Мощность фазы 2",
+        "ar": "قدرة المرحلة 2",
+        "ko": "전력 위상 2"
+      },
+      "decimals": 0
+    },
+    "measure_current.2": {
+      "title": {
+        "en": "Current phase 2",
+        "nl": "Stroom fase 2",
+        "de": "Strom Phase 2",
+        "fr": "Courant phase 2",
+        "es": "Corriente fase 2",
+        "it": "Corrente fase 2",
+        "da": "Strøm fase 2",
+        "sv": "Ström fas 2",
+        "no": "Strøm fase 2",
+        "pl": "Prąd fazy 2",
+        "ru": "Ток фазы 2",
+        "ar": "تيار المرحلة 2",
+        "ko": "전류 위상 2"
+      },
+      "decimals": 2
+    },
+    "measure_power.3": {
+      "title": {
+        "en": "Power phase 3",
+        "nl": "Vermogen fase 3",
+        "de": "Leistung Phase 3",
+        "fr": "Puissance phase 3",
+        "es": "Potencia fase 3",
+        "it": "Potenza fase 3",
+        "da": "Effekt fase 3",
+        "sv": "Effekt fas 3",
+        "no": "Effekt fase 3",
+        "pl": "Moc fazy 3",
+        "ru": "Мощность фазы 3",
+        "ar": "قدرة المرحلة 3",
+        "ko": "전력 위상 3"
+      },
+      "decimals": 0
+    },
+    "measure_current.3": {
+      "title": {
+        "en": "Current phase 3",
+        "nl": "Stroom fase 3",
+        "de": "Strom Phase 3",
+        "fr": "Courant phase 3",
+        "es": "Corriente fase 3",
+        "it": "Corrente fase 3",
+        "da": "Strøm fase 3",
+        "sv": "Ström fas 3",
+        "no": "Strøm fase 3",
+        "pl": "Prąd fazy 3",
+        "ru": "Ток фазы 3",
+        "ar": "تيار المرحلة 3",
+        "ko": "전류 위상 3"
+      },
+      "decimals": 2
+    }
+  },
+  "energy": {
+    "cumulative": true,
+    "cumulativeImportedCapability": "meter_power.imported",
+    "cumulativeExportedCapability": "meter_power.exported"
+  },
+  "discovery": "vision"
+}

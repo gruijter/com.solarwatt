@@ -1,0 +1,58 @@
+{
+  "errors": {
+    "hostMissing": "Geen IP-adres ingesteld.",
+    "hostRequired": "Voer een IP-adres in.",
+    "noData": "Geen data ontvangen.",
+    "unreachable": "Apparaat niet bereikbaar:",
+    "probeFailed": "Geen compatibel apparaat reageerde op dit adres.",
+    "notPairable": {
+      "battery": "De omvormer reageerde, maar er is geen batterij op aangesloten.",
+      "meter": "De omvormer reageerde, maar er is geen meter op aangesloten."
+    },
+    "noCarConnected": "Geen auto aangesloten.",
+    "unplugFirst": "Haal eerst de kabel eruit: de laadpaal wijzigt dit alleen zonder kabel.",
+    "socRange": "SoC-grenzen moeten 10–100% zijn, met minimum ≤ minimum op net ≤ maximum.",
+    "writeFailed": "Kon de opdracht niet versturen:"
+  },
+  "pair": {
+    "deviceName": {
+      "battery": "Batterij",
+      "charger": "Lader",
+      "inverter": "Omvormer",
+      "meter": "Meter"
+    },
+    "manual": {
+      "connect": "Verbinden",
+      "intro": "Geef het apparaat eerst een vast IP-adres in je router, zodat het na een herstart blijft werken.",
+      "title": "IP-adres invoeren",
+      "legend": "Verbinding"
+    },
+    "manualEntry": "Handmatig"
+  },
+  "repair": {
+    "manual": {
+      "intro": "Voer het adres in dat het apparaat nu gebruikt.",
+      "title": "IP-adres wijzigen"
+    },
+    "current": "huidig"
+  },
+  "settings": {
+    "host": "IP-adres",
+    "port": "Poort",
+    "unitId": "Unit-ID",
+    "meterConnection": {
+      "0": "Uit",
+      "1": "1-fase meter",
+      "2": "Stroomtransformator (CT)",
+      "3": "3-fase meter"
+    },
+    "energyManagerNone": "Niet gevonden"
+  },
+  "status": {
+    "migrating": "Capabilities bijwerken…"
+  },
+  "notifications": {
+    "controlOverriddenBy": "**__name__**: een externe energiebeheerder (__manager__) overschrijft de sturing vanuit Homey. Homey en de energiebeheerder proberen dit apparaat allebei aan te sturen.",
+    "controlOverridden": "**__name__**: een externe energiebeheerder overschrijft de sturing vanuit Homey. Homey en de energiebeheerder proberen dit apparaat allebei aan te sturen."
+  }
+}

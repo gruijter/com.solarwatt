@@ -1,0 +1,207 @@
+[
+  {
+    "type": "group",
+    "label": {
+      "en": "Connection",
+      "nl": "Verbinding",
+      "de": "Verbindung",
+      "fr": "Connexion",
+      "es": "Conexión",
+      "it": "Connessione",
+      "da": "Forbindelse",
+      "sv": "Anslutning",
+      "no": "Tilkobling",
+      "pl": "Połączenie",
+      "ru": "Подключение",
+      "ar": "الاتصال",
+      "ko": "연결"
+    },
+    "children": [
+      {
+        "$extends": "host"
+      },
+      {
+        "$extends": "port"
+      },
+      {
+        "$extends": "mdnsName"
+      },
+      {
+        "$extends": "pollInterval"
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Device information",
+      "nl": "Apparaatinformatie",
+      "de": "Geräteinformationen",
+      "fr": "Informations de l'appareil",
+      "es": "Información del dispositivo",
+      "it": "Informazioni dispositivo",
+      "da": "Enhedsinformation",
+      "sv": "Enhetsinformation",
+      "no": "Enhetsinformasjon",
+      "pl": "Informacje o urządzeniu",
+      "ru": "Информация об устройстве",
+      "ar": "معلومات الجهاز",
+      "ko": "장치 정보"
+    },
+    "children": [
+      {
+        "$extends": "connectedTo"
+      },
+      {
+        "$extends": "energyManager"
+      },
+      {
+        "$extends": "deviceModel"
+      },
+      {
+        "$extends": "deviceSn"
+      },
+      {
+        "$extends": "manufacturer"
+      },
+      {
+        "$extends": "firmware"
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Battery",
+      "nl": "Batterij",
+      "de": "Batterie",
+      "fr": "Batterie",
+      "es": "Batería",
+      "it": "Batteria",
+      "da": "Batteri",
+      "sv": "Batteri",
+      "no": "Batteri",
+      "pl": "Akumulator",
+      "ru": "Батарея",
+      "ar": "البطارية",
+      "ko": "배터리"
+    },
+    "children": [
+      {
+        "id": "batteryModules",
+        "type": "label",
+        "value": "",
+        "label": {
+          "en": "Number of modules",
+          "nl": "Aantal modules",
+          "de": "Anzahl Module",
+          "fr": "Nombre de modules",
+          "es": "Número de módulos",
+          "it": "Numero di moduli",
+          "da": "Antal moduler",
+          "sv": "Antal moduler",
+          "no": "Antall moduler",
+          "pl": "Liczba modułów",
+          "ru": "Количество модулей",
+          "ar": "عدد الوحدات",
+          "ko": "모듈 수"
+        }
+      },
+      {
+        "id": "batteryModuleList",
+        "type": "label",
+        "value": "",
+        "label": {
+          "en": "Modules",
+          "nl": "Modules",
+          "de": "Module",
+          "fr": "Modules",
+          "es": "Módulos",
+          "it": "Moduli",
+          "da": "Moduler",
+          "sv": "Moduler",
+          "no": "Moduler",
+          "pl": "Moduły",
+          "ru": "Модули",
+          "ar": "الوحدات",
+          "ko": "모듈"
+        },
+        "hint": {
+          "en": "Serial number and firmware version of each module.",
+          "nl": "Serienummer en firmwareversie van elke module.",
+          "de": "Seriennummer und Firmware-Version jedes Moduls.",
+          "fr": "Numéro de série et version du firmware de chaque module.",
+          "es": "Número de serie y versión de firmware de cada módulo.",
+          "it": "Numero di serie e versione firmware di ogni modulo.",
+          "da": "Serienummer og firmwareversion for hvert modul.",
+          "sv": "Serienummer och firmwareversion för varje modul.",
+          "no": "Serienummer og fastvareversjon for hver modul.",
+          "pl": "Numer seryjny i wersja oprogramowania każdego modułu.",
+          "ru": "Серийный номер и версия прошивки каждого модуля.",
+          "ar": "الرقم التسلسلي وإصدار البرنامج الثابت لكل وحدة.",
+          "ko": "각 모듈의 일련 번호와 펌웨어 버전입니다."
+        }
+      },
+      {
+        "id": "batteryDesignEnergy",
+        "type": "label",
+        "value": "",
+        "label": {
+          "en": "Design capacity",
+          "nl": "Ontwerpcapaciteit",
+          "de": "Nennkapazität",
+          "fr": "Capacité nominale",
+          "es": "Capacidad nominal",
+          "it": "Capacità nominale",
+          "da": "Nominel kapacitet",
+          "sv": "Nominell kapacitet",
+          "no": "Nominell kapasitet",
+          "pl": "Pojemność nominalna",
+          "ru": "Номинальная емкость",
+          "ar": "السعة الاسمية",
+          "ko": "설계 용량"
+        }
+      },
+      {
+        "id": "batteryRemainingCapacity",
+        "type": "label",
+        "value": "",
+        "label": {
+          "en": "Remaining capacity",
+          "nl": "Resterende capaciteit",
+          "de": "Restkapazität",
+          "fr": "Capacité restante",
+          "es": "Capacidad restante",
+          "it": "Capacità residua",
+          "da": "Resterende kapacitet",
+          "sv": "Återstående kapacitet",
+          "no": "Gjenværende kapasitet",
+          "pl": "Pozostała pojemność",
+          "ru": "Остаточная емкость",
+          "ar": "السعة المتبقية",
+          "ko": "잔여 용량"
+        }
+      },
+      {
+        "id": "batteryFcc",
+        "type": "label",
+        "value": "",
+        "label": {
+          "en": "Full-charge capacity",
+          "nl": "Volle-laadcapaciteit",
+          "de": "Vollladekapazität",
+          "fr": "Capacité à pleine charge",
+          "es": "Capacidad a plena carga",
+          "it": "Capacità a piena carica",
+          "da": "Fuld-opladningskapacitet",
+          "sv": "Fulladdningskapacitet",
+          "no": "Fulladingskapasitet",
+          "pl": "Pojemność pełnego naładowania",
+          "ru": "Емкость полного заряда",
+          "ar": "سعة الشحن الكامل",
+          "ko": "완충 용량"
+        }
+      }
+    ]
+  }
+]

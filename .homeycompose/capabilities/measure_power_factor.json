@@ -1,0 +1,26 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Power factor",
+    "nl": "Arbeidsfactor",
+    "de": "Leistungsfaktor",
+    "fr": "Facteur de puissance",
+    "es": "Factor de potencia",
+    "it": "Fattore di potenza",
+    "da": "Effektfaktor",
+    "sv": "Effektfaktor",
+    "no": "Effektfaktor",
+    "pl": "Współczynnik mocy",
+    "ru": "Коэффициент мощности",
+    "ar": "معامل القدرة",
+    "ko": "역률"
+  },
+  "decimals": 3,
+  "min": -1,
+  "max": 1,
+  "getable": true,
+  "setable": false,
+  "insights": true,
+  "uiComponent": "sensor",
+  "icon": "./assets/measure_power_factor.svg"
+}

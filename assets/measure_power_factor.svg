@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <g fill="none" stroke="#000000" stroke-width="36" stroke-linecap="round" stroke-linejoin="round">
+    <!-- two phase-shifted sine waves: voltage and current -->
+    <path d="M40 256c40-140 100-140 140 0s100 140 140 0 100-140 140 0"/>
+    <path d="M40 330c40-140 100-140 140 0s100 140 140 0 100-140 140 0" stroke-width="24" opacity="0.6"/>
+  </g>
+</svg>

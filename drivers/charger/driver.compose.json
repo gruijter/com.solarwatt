@@ -1,0 +1,284 @@
+{
+  "$extends": [
+    "modbus"
+  ],
+  "name": {
+    "en": "Car charger",
+    "nl": "Autolader",
+    "de": "Autoladestation",
+    "fr": "Borne de recharge",
+    "it": "Stazione di ricarica",
+    "es": "Cargador de coche",
+    "pl": "Ładowarka samochodowa",
+    "sv": "Elbilsladdare",
+    "no": "Elbillader",
+    "da": "Elbillader",
+    "ru": "Зарядное устройство",
+    "ko": "EV 충전기",
+    "ar": "شاحن السيارة"
+  },
+  "class": "evcharger",
+  "capabilities": [
+    "measure_power",
+    "measure_power.target",
+    "evcharger_charging",
+    "evcharger_charging_state",
+    "meter_power.session",
+    "target_power",
+    "target_power_mode",
+    "measure_current.1",
+    "measure_current.2",
+    "measure_current.3",
+    "measure_voltage.1",
+    "measure_voltage.2",
+    "measure_voltage.3",
+    "measure_temperature",
+    "locked",
+    "locked.charger",
+    "meter_power",
+    "alarm_problem",
+    "alarm_heat"
+  ],
+  "capabilitiesOptions": {
+    "target_power": {
+      "title": {
+        "en": "Charging power limit",
+        "nl": "Max laadvermogen",
+        "de": "Ladeleistungsgrenze",
+        "fr": "Limite de puissance de charge",
+        "es": "Límite de potencia de carga",
+        "it": "Limite potenza di ricarica",
+        "da": "Ladeeffektgrænse",
+        "sv": "Laddeffektgräns",
+        "no": "Ladeeffektgrense",
+        "pl": "Limit mocy ładowania",
+        "ru": "Предел мощности зарядки",
+        "ar": "حد قدرة الشحن",
+        "ko": "충전 전력 제한"
+      },
+      "min": 0,
+      "max": 11000,
+      "step": 100,
+      "excludeMin": 0,
+      "excludeMax": 1400
+    },
+    "meter_power": {
+      "title": {
+        "en": "Meter reading",
+        "nl": "Meterstand",
+        "de": "Zählerstand",
+        "fr": "Relevé du compteur",
+        "es": "Lectura del contador",
+        "it": "Lettura contatore",
+        "da": "Målerstand",
+        "sv": "Mätarställning",
+        "no": "Målerstand",
+        "pl": "Stan licznika",
+        "ru": "Показания счетчика",
+        "ar": "قراءة العداد",
+        "ko": "계량기 값"
+      },
+      "decimals": 1
+    },
+    "meter_power.session": {
+      "title": {
+        "en": "Energy this session",
+        "nl": "Energie deze sessie",
+        "de": "Energie dieser Sitzung",
+        "fr": "Énergie de cette session",
+        "es": "Energía de esta sesión",
+        "it": "Energia di questa sessione",
+        "da": "Energi denne session",
+        "sv": "Energi denna session",
+        "no": "Energi denne økten",
+        "pl": "Energia tej sesji",
+        "ru": "Энергия за сеанс",
+        "ar": "طاقة هذه الجلسة",
+        "ko": "이번 세션 에너지"
+      },
+      "decimals": 1
+    },
+    "measure_current.1": {
+      "title": {
+        "en": "Current phase 1",
+        "nl": "Stroom fase 1",
+        "de": "Strom Phase 1",
+        "fr": "Courant phase 1",
+        "es": "Corriente fase 1",
+        "it": "Corrente fase 1",
+        "da": "Strøm fase 1",
+        "sv": "Ström fas 1",
+        "no": "Strøm fase 1",
+        "pl": "Prąd fazy 1",
+        "ru": "Ток фазы 1",
+        "ar": "تيار المرحلة 1",
+        "ko": "전류 위상 1"
+      },
+      "decimals": 1
+    },
+    "measure_voltage.1": {
+      "title": {
+        "en": "Voltage phase 1",
+        "nl": "Voltage fase 1",
+        "de": "Spannung Phase 1",
+        "fr": "Tension phase 1",
+        "es": "Voltaje fase 1",
+        "it": "Tensione fase 1",
+        "da": "Spænding fase 1",
+        "sv": "Spänning fas 1",
+        "no": "Spenning fase 1",
+        "pl": "Napięcie fazy 1",
+        "ru": "Напряжение фазы 1",
+        "ar": "جهد المرحلة 1",
+        "ko": "전압 위상 1"
+      },
+      "decimals": 1
+    },
+    "measure_current.2": {
+      "title": {
+        "en": "Current phase 2",
+        "nl": "Stroom fase 2",
+        "de": "Strom Phase 2",
+        "fr": "Courant phase 2",
+        "es": "Corriente fase 2",
+        "it": "Corrente fase 2",
+        "da": "Strøm fase 2",
+        "sv": "Ström fas 2",
+        "no": "Strøm fase 2",
+        "pl": "Prąd fazy 2",
+        "ru": "Ток фазы 2",
+        "ar": "تيار المرحلة 2",
+        "ko": "전류 위상 2"
+      },
+      "decimals": 1
+    },
+    "measure_voltage.2": {
+      "title": {
+        "en": "Voltage phase 2",
+        "nl": "Voltage fase 2",
+        "de": "Spannung Phase 2",
+        "fr": "Tension phase 2",
+        "es": "Voltaje fase 2",
+        "it": "Tensione fase 2",
+        "da": "Spænding fase 2",
+        "sv": "Spänning fas 2",
+        "no": "Spenning fase 2",
+        "pl": "Napięcie fazy 2",
+        "ru": "Напряжение фазы 2",
+        "ar": "جهد المرحلة 2",
+        "ko": "전압 위상 2"
+      },
+      "decimals": 1
+    },
+    "measure_current.3": {
+      "title": {
+        "en": "Current phase 3",
+        "nl": "Stroom fase 3",
+        "de": "Strom Phase 3",
+        "fr": "Courant phase 3",
+        "es": "Corriente fase 3",
+        "it": "Corrente fase 3",
+        "da": "Strøm fase 3",
+        "sv": "Ström fas 3",
+        "no": "Strøm fase 3",
+        "pl": "Prąd fazy 3",
+        "ru": "Ток фазы 3",
+        "ar": "تيار المرحلة 3",
+        "ko": "전류 위상 3"
+      },
+      "decimals": 1
+    },
+    "measure_voltage.3": {
+      "title": {
+        "en": "Voltage phase 3",
+        "nl": "Voltage fase 3",
+        "de": "Spannung Phase 3",
+        "fr": "Tension phase 3",
+        "es": "Voltaje fase 3",
+        "it": "Tensione fase 3",
+        "da": "Spænding fase 3",
+        "sv": "Spänning fas 3",
+        "no": "Spenning fase 3",
+        "pl": "Napięcie fazy 3",
+        "ru": "Напряжение фазы 3",
+        "ar": "جهد المرحلة 3",
+        "ko": "전압 위상 3"
+      },
+      "decimals": 1
+    },
+    "measure_temperature": {
+      "title": {
+        "en": "Internal temperature",
+        "nl": "Interne temperatuur",
+        "de": "Innentemperatur",
+        "fr": "Température interne",
+        "es": "Temperatura interna",
+        "it": "Temperatura interna",
+        "da": "Intern temperatur",
+        "sv": "Intern temperatur",
+        "no": "Intern temperatur",
+        "pl": "Temperatura wewnętrzna",
+        "ru": "Внутренняя температура",
+        "ar": "درجة الحرارة الداخلية",
+        "ko": "내부 온도"
+      }
+    },
+    "locked": {
+      "title": {
+        "en": "Cable lock",
+        "nl": "Kabelvergrendeling",
+        "de": "Kabelverriegelung",
+        "fr": "Verrouillage du câble",
+        "es": "Bloqueo del cable",
+        "it": "Blocco cavo",
+        "da": "Kabellås",
+        "sv": "Kabellås",
+        "no": "Kabellås",
+        "pl": "Blokada kabla",
+        "ru": "Блокировка кабеля",
+        "ar": "قفل الكابل",
+        "ko": "케이블 잠금"
+      }
+    },
+    "measure_power.target": {
+      "title": {
+        "en": "Target power",
+        "nl": "Doelvermogen",
+        "de": "Zielleistung",
+        "fr": "Puissance cible",
+        "es": "Potencia objetivo",
+        "it": "Potenza obiettivo",
+        "da": "Måleffekt",
+        "sv": "Måleffekt",
+        "no": "Måleffekt",
+        "pl": "Moc docelowa",
+        "ru": "Целевая мощность",
+        "ar": "القدرة المستهدفة",
+        "ko": "목표 전력"
+      },
+      "decimals": 0
+    },
+    "locked.charger": {
+      "title": {
+        "en": "Charger lock",
+        "nl": "Laadpaalvergrendeling",
+        "de": "Ladestationssperre",
+        "fr": "Verrouillage de la borne",
+        "es": "Bloqueo del cargador",
+        "it": "Blocco stazione di ricarica",
+        "da": "Laderlås",
+        "sv": "Laddarlås",
+        "no": "Laderlås",
+        "pl": "Blokada ładowarki",
+        "ru": "Блокировка зарядного устройства",
+        "ar": "قفل الشاحن",
+        "ko": "충전기 잠금"
+      }
+    }
+  },
+  "energy": {
+    "evCharger": true,
+    "meterPowerImportedCapability": "meter_power"
+  },
+  "discovery": "evcharger"
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 960" width="960" height="960">
+  <g fill="none" stroke="#000" stroke-width="44" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Battery vision: top pack with its side box, two packs below, side panel, on adjustable feet -->
+    <rect x="60" y="210" width="700" height="580" rx="44"/>
+    <path d="M760 250l110 40v440l-110 40"/>
+    <path d="M60 390h700M60 590h700"/>
+    <path d="M560 210v-56a24 24 0 0 1 24-24h202a24 24 0 0 1 24 24v56"/>
+    <path d="M150 790v60M390 790v60M640 790v60M110 860h80M350 860h80M600 860h80"/>
+  </g>
+</svg>

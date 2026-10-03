@@ -1,0 +1,20 @@
+{
+  "id": "meterConnection",
+  "type": "label",
+  "value": "",
+  "label": {
+    "en": "Connection type",
+    "nl": "Aansluiting",
+    "de": "Anschlussart",
+    "fr": "Type de raccordement",
+    "es": "Tipo de conexión",
+    "it": "Tipo di collegamento",
+    "da": "Tilslutningstype",
+    "sv": "Anslutningstyp",
+    "no": "Tilkoblingstype",
+    "pl": "Typ podłączenia",
+    "ru": "Тип подключения",
+    "ar": "نوع التوصيل",
+    "ko": "연결 방식"
+  }
+}

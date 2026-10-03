@@ -1,0 +1,95 @@
+[
+  {
+    "type": "group",
+    "label": {
+      "en": "Connection",
+      "nl": "Verbinding",
+      "de": "Verbindung",
+      "fr": "Connexion",
+      "es": "Conexión",
+      "it": "Connessione",
+      "da": "Forbindelse",
+      "sv": "Anslutning",
+      "no": "Tilkobling",
+      "pl": "Połączenie",
+      "ru": "Подключение",
+      "ar": "الاتصال",
+      "ko": "연결"
+    },
+    "children": [
+      {
+        "$extends": "host"
+      },
+      {
+        "$extends": "port"
+      },
+      {
+        "$extends": "mdnsName"
+      },
+      {
+        "$extends": "unitId"
+      },
+      {
+        "$extends": "pollInterval"
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Charging",
+      "nl": "Laden",
+      "de": "Laden",
+      "fr": "Recharge",
+      "es": "Carga",
+      "it": "Ricarica",
+      "da": "Opladning",
+      "sv": "Laddning",
+      "no": "Lading",
+      "pl": "Ładowanie",
+      "ru": "Зарядка",
+      "ar": "الشحن",
+      "ko": "충전"
+    },
+    "children": [
+      {
+        "$extends": "phaseSwitching"
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Device information",
+      "nl": "Apparaatinformatie",
+      "de": "Geräteinformationen",
+      "fr": "Informations de l'appareil",
+      "es": "Información del dispositivo",
+      "it": "Informazioni dispositivo",
+      "da": "Enhedsinformation",
+      "sv": "Enhetsinformation",
+      "no": "Enhetsinformasjon",
+      "pl": "Informacje o urządzeniu",
+      "ru": "Информация об устройстве",
+      "ar": "معلومات الجهاز",
+      "ko": "장치 정보"
+    },
+    "children": [
+      {
+        "$extends": "deviceModel"
+      },
+      {
+        "$extends": "deviceSn"
+      },
+      {
+        "$extends": "manufacturer"
+      },
+      {
+        "$extends": "firmware"
+      },
+      {
+        "$extends": "chargerRange"
+      }
+    ]
+  }
+]

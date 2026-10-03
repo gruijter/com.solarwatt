@@ -1,0 +1,58 @@
+{
+  "errors": {
+    "hostMissing": "Nie ustawiono adresu IP.",
+    "hostRequired": "Wpisz adres IP.",
+    "noData": "Nie otrzymano danych.",
+    "unreachable": "Urządzenie nieosiągalne:",
+    "probeFailed": "Pod tym adresem nie odpowiedziało żadne zgodne urządzenie.",
+    "notPairable": {
+      "battery": "Falownik odpowiedział, ale nie jest do niego podłączony akumulator.",
+      "meter": "Falownik odpowiedział, ale nie jest do niego podłączony licznik."
+    },
+    "noCarConnected": "Brak podłączonego samochodu.",
+    "unplugFirst": "Najpierw odłącz kabel: ładowarka zmienia to tylko bez podłączonego kabla.",
+    "socRange": "Limity SoC muszą wynosić 10–100%, przy czym minimum ≤ minimum przy sieci ≤ maksimum.",
+    "writeFailed": "Nie udało się wysłać polecenia:"
+  },
+  "pair": {
+    "deviceName": {
+      "battery": "Akumulator",
+      "charger": "Ładowarka",
+      "inverter": "Inwerter",
+      "meter": "Licznik"
+    },
+    "manual": {
+      "connect": "Połącz",
+      "intro": "Najpierw przypisz urządzeniu stały adres IP w routerze, aby działało po restarcie.",
+      "title": "Wpisz adres IP",
+      "legend": "Połączenie"
+    },
+    "manualEntry": "Ręcznie"
+  },
+  "repair": {
+    "manual": {
+      "intro": "Wpisz adres, którego urządzenie używa teraz.",
+      "title": "Zmień adres IP"
+    },
+    "current": "bieżące"
+  },
+  "settings": {
+    "host": "Adres IP",
+    "port": "Port",
+    "unitId": "ID jednostki",
+    "meterConnection": {
+      "0": "Wyłączony",
+      "1": "Licznik 1-fazowy",
+      "2": "Przekładnik prądowy (CT)",
+      "3": "Licznik 3-fazowy"
+    },
+    "energyManagerNone": "Nie znaleziono"
+  },
+  "status": {
+    "migrating": "Aktualizowanie funkcji…"
+  },
+  "notifications": {
+    "controlOverriddenBy": "**__name__**: zewnętrzny menedżer energii (__manager__) nadpisuje sterowanie z Homey. Homey i menedżer energii próbują jednocześnie sterować tym urządzeniem.",
+    "controlOverridden": "**__name__**: zewnętrzny menedżer energii nadpisuje sterowanie z Homey. Homey i menedżer energii próbują jednocześnie sterować tym urządzeniem."
+  }
+}

@@ -1,0 +1,36 @@
+/*
+Copyright 2025 - 2026, Robin de Gruijter (rmdegruijter@gmail.com)
+
+This file is part of com.solarwatt.
+
+com.solarwatt is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+com.solarwatt is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with com.solarwatt.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+'use strict';
+
+const CommonDriver = require('../../lib/common_driver');
+
+module.exports = class SolarwattInverterDriver extends CommonDriver {
+
+  async onInit() {
+    await super.onInit();
+
+    this.homey.flow.getActionCard('set_export_limit')
+      .registerRunListener(({ device, watts }) => device.setControl({ export_limit: watts }));
+
+    this.homey.flow.getConditionCard('running_state_is')
+      .registerRunListener(async ({ device, status }) => device.getCapabilityValue('running_state') === status);
+  }
+
+};

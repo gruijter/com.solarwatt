@@ -1,0 +1,58 @@
+{
+  "errors": {
+    "hostMissing": "IP 주소가 설정되지 않았습니다.",
+    "hostRequired": "IP 주소를 입력하세요.",
+    "noData": "데이터를 받지 못했습니다.",
+    "unreachable": "장치에 연결할 수 없습니다:",
+    "probeFailed": "이 주소에서 호환되는 장치가 응답하지 않았습니다.",
+    "notPairable": {
+      "battery": "인버터가 응답했지만 연결된 배터리가 없습니다.",
+      "meter": "인버터가 응답했지만 연결된 계량기가 없습니다."
+    },
+    "noCarConnected": "연결된 차량이 없습니다.",
+    "unplugFirst": "먼저 케이블을 분리하세요: 충전기는 케이블이 꽂혀 있지 않을 때만 이를 변경합니다.",
+    "socRange": "SoC 한도는 10–100%이며 최소 ≤ 계통 연결 시 최소 ≤ 최대여야 합니다.",
+    "writeFailed": "명령을 보낼 수 없습니다:"
+  },
+  "pair": {
+    "deviceName": {
+      "battery": "배터리",
+      "charger": "충전기",
+      "inverter": "인버터",
+      "meter": "계량기"
+    },
+    "manual": {
+      "connect": "연결",
+      "intro": "재시작 후에도 작동하도록 라우터에서 장치에 고정 IP 주소를 먼저 지정하세요.",
+      "title": "IP 주소 입력",
+      "legend": "연결"
+    },
+    "manualEntry": "직접 입력"
+  },
+  "repair": {
+    "manual": {
+      "intro": "장치가 현재 사용하는 주소를 입력하세요.",
+      "title": "IP 주소 변경"
+    },
+    "current": "현재"
+  },
+  "settings": {
+    "host": "IP 주소",
+    "port": "포트",
+    "unitId": "유닛 ID",
+    "meterConnection": {
+      "0": "끔",
+      "1": "단상 계량기",
+      "2": "변류기 (CT)",
+      "3": "3상 계량기"
+    },
+    "energyManagerNone": "찾을 수 없음"
+  },
+  "status": {
+    "migrating": "기능 업데이트 중…"
+  },
+  "notifications": {
+    "controlOverriddenBy": "**__name__**: 외부 에너지 관리자(__manager__)가 Homey의 제어를 덮어씁니다. Homey와 에너지 관리자가 모두 이 장치를 제어하려고 합니다.",
+    "controlOverridden": "**__name__**: 외부 에너지 관리자(__manager__)가 Homey의 제어를 덮어씁니다. Homey와 에너지 관리자가 모두 이 장치를 제어하려고 합니다."
+  }
+}

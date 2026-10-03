@@ -1,0 +1,47 @@
+{
+  "title": {
+    "en": "Energy today changed",
+    "nl": "Energie vandaag is veranderd",
+    "de": "Heutige Energie geändert",
+    "fr": "Énergie du jour modifiée",
+    "it": "Energia di oggi modificata",
+    "es": "Energía de hoy cambiada",
+    "pl": "Dzisiejsza energia uległa zmianie",
+    "sv": "Energi idag ändrad",
+    "no": "Energi i dag endret",
+    "da": "Energi i dag ændret",
+    "ru": "Энергия за сегодня изменена",
+    "ko": "오늘의 에너지가 변경됨",
+    "ar": "تغيرت طاقة اليوم"
+  },
+  "highlight": true,
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=inverter"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "meter_power.today",
+      "type": "number",
+      "title": {
+        "en": "Energy today",
+        "nl": "Energie vandaag",
+        "de": "Energie heute",
+        "fr": "Énergie du jour",
+        "it": "Energia di oggi",
+        "es": "Energía de hoy",
+        "pl": "Dzisiejsza energia",
+        "sv": "Energi idag",
+        "no": "Energi i dag",
+        "da": "Energi i dag",
+        "ru": "Энергия за сегодня",
+        "ko": "오늘의 에너지",
+        "ar": "طاقة اليوم"
+      },
+      "example": 1500
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Apparent power",
+    "nl": "Schijnbaar vermogen",
+    "de": "Scheinleistung",
+    "fr": "Puissance apparente",
+    "es": "Potencia aparente",
+    "it": "Potenza apparente",
+    "da": "Tilsyneladende effekt",
+    "sv": "Skenbar effekt",
+    "no": "Tilsynelatende effekt",
+    "pl": "Moc pozorna",
+    "ru": "Полная мощность",
+    "ar": "القدرة الظاهرية",
+    "ko": "피상 전력"
+  },
+  "units": {
+    "en": "VA",
+    "nl": "VA",
+    "de": "VA",
+    "fr": "VA",
+    "es": "VA",
+    "it": "VA",
+    "da": "VA",
+    "sv": "VA",
+    "no": "VA",
+    "pl": "VA",
+    "ru": "ВА",
+    "ar": "فولت أمبير",
+    "ko": "VA"
+  },
+  "decimals": 0,
+  "getable": true,
+  "setable": false,
+  "insights": true,
+  "uiComponent": "sensor",
+  "icon": "./assets/measure_power_factor.svg"
+}

@@ -1,0 +1,47 @@
+{
+  "title": {
+    "en": "Voltage phase 2 changed",
+    "nl": "Voltage fase 2 is veranderd",
+    "de": "Spannung Phase 2 geändert",
+    "fr": "Tension phase 2 modifiée",
+    "it": "Tensione fase 2 modificata",
+    "es": "Voltaje fase 2 cambiado",
+    "pl": "Napięcie fazy 2 uległo zmianie",
+    "sv": "Spänning fas 2 ändrad",
+    "no": "Spenning fase 2 endret",
+    "da": "Spænding fase 2 ændret",
+    "ru": "Напряжение фазы 2 изменено",
+    "ko": "전압 위상 2 변경됨",
+    "ar": "تغير جهد المرحلة 2"
+  },
+  "highlight": true,
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=meter|inverter|charger"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "measure_voltage.2",
+      "type": "number",
+      "title": {
+        "en": "Voltage phase 2",
+        "nl": "Voltage fase 2",
+        "de": "Spannung Phase 2",
+        "fr": "Tension phase 2",
+        "it": "Tensione fase 2",
+        "es": "Voltaje fase 2",
+        "pl": "Napięcie fazy 2",
+        "sv": "Spänning fas 2",
+        "no": "Spenning fase 2",
+        "da": "Spænding fase 2",
+        "ru": "Напряжение фазы 2",
+        "ko": "전압 위상 2",
+        "ar": "جهد المرحلة 2"
+      },
+      "example": 230
+    }
+  ]
+}

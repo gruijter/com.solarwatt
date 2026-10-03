@@ -1,0 +1,58 @@
+{
+  "errors": {
+    "hostMissing": "No hay dirección IP configurada.",
+    "hostRequired": "Introduce una dirección IP.",
+    "noData": "No se recibieron datos.",
+    "unreachable": "Dispositivo no accesible:",
+    "probeFailed": "Ningún dispositivo compatible respondió en esta dirección.",
+    "notPairable": {
+      "battery": "El inversor respondió, pero no tiene ninguna batería conectada.",
+      "meter": "El inversor respondió, pero no tiene ningún medidor conectado."
+    },
+    "noCarConnected": "No hay ningún coche conectado.",
+    "unplugFirst": "Desconecte primero el cable: el cargador solo cambia esto sin cable conectado.",
+    "socRange": "Los límites de SoC deben ser 10–100 %, con mínimo ≤ mínimo en red ≤ máximo.",
+    "writeFailed": "No se pudo enviar el comando:"
+  },
+  "pair": {
+    "deviceName": {
+      "battery": "Batería",
+      "charger": "Cargador",
+      "inverter": "Inversor",
+      "meter": "Medidor"
+    },
+    "manual": {
+      "connect": "Conectar",
+      "intro": "Asigna primero una dirección IP fija en tu router, para que siga funcionando tras un reinicio.",
+      "title": "Introducir dirección IP",
+      "legend": "Conexión"
+    },
+    "manualEntry": "Manual"
+  },
+  "repair": {
+    "manual": {
+      "intro": "Introduce la dirección que usa ahora el dispositivo.",
+      "title": "Cambiar dirección IP"
+    },
+    "current": "actual"
+  },
+  "settings": {
+    "host": "Dirección IP",
+    "port": "Puerto",
+    "unitId": "ID de unidad",
+    "meterConnection": {
+      "0": "Desactivado",
+      "1": "Medidor monofásico",
+      "2": "Transformador de corriente (CT)",
+      "3": "Medidor trifásico"
+    },
+    "energyManagerNone": "No encontrado"
+  },
+  "status": {
+    "migrating": "Actualizando capacidades…"
+  },
+  "notifications": {
+    "controlOverriddenBy": "**__name__**: un gestor de energía externo (__manager__) anula el control de Homey. Homey y el gestor de energía intentan controlar este dispositivo a la vez.",
+    "controlOverridden": "**__name__**: un gestor de energía externo anula el control de Homey. Homey y el gestor de energía intentan controlar este dispositivo a la vez."
+  }
+}

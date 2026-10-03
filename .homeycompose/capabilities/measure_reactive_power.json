@@ -1,0 +1,39 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Reactive power",
+    "nl": "Blindvermogen",
+    "de": "Blindleistung",
+    "fr": "Puissance réactive",
+    "es": "Potencia reactiva",
+    "it": "Potenza reattiva",
+    "da": "Reaktiv effekt",
+    "sv": "Reaktiv effekt",
+    "no": "Reaktiv effekt",
+    "pl": "Moc bierna",
+    "ru": "Реактивная мощность",
+    "ar": "القدرة غير الفعالة",
+    "ko": "무효 전력"
+  },
+  "units": {
+    "en": "var",
+    "nl": "var",
+    "de": "var",
+    "fr": "var",
+    "es": "var",
+    "it": "var",
+    "da": "var",
+    "sv": "var",
+    "no": "var",
+    "pl": "var",
+    "ru": "вар",
+    "ar": "فار",
+    "ko": "var"
+  },
+  "decimals": 0,
+  "getable": true,
+  "setable": false,
+  "insights": true,
+  "uiComponent": "sensor",
+  "icon": "./assets/measure_power_factor.svg"
+}

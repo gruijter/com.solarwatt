@@ -1,0 +1,58 @@
+{
+  "errors": {
+    "hostMissing": "Ingen IP-adresse angivet.",
+    "hostRequired": "Indtast en IP-adresse.",
+    "noData": "Ingen data modtaget.",
+    "unreachable": "Enheden kan ikke nås:",
+    "probeFailed": "Ingen kompatibel enhed svarede på denne adresse.",
+    "notPairable": {
+      "battery": "Inverteren svarede, men der er intet batteri tilsluttet.",
+      "meter": "Inverteren svarede, men der er ingen måler tilsluttet."
+    },
+    "noCarConnected": "Ingen bil tilsluttet.",
+    "unplugFirst": "Tag først kablet ud: laderen ændrer kun dette uden kabel i.",
+    "socRange": "SoC-grænser skal være 10–100 %, med minimum ≤ minimum på nettet ≤ maksimum.",
+    "writeFailed": "Kunne ikke sende kommandoen:"
+  },
+  "pair": {
+    "deviceName": {
+      "battery": "Batteri",
+      "charger": "Lader",
+      "inverter": "Inverter",
+      "meter": "Måler"
+    },
+    "manual": {
+      "connect": "Forbind",
+      "intro": "Giv først enheden en fast IP-adresse i routeren, så den bliver ved med at virke efter en genstart.",
+      "title": "Indtast IP-adresse",
+      "legend": "Forbindelse"
+    },
+    "manualEntry": "Manuelt"
+  },
+  "repair": {
+    "manual": {
+      "intro": "Indtast den adresse, enheden bruger nu.",
+      "title": "Skift IP-adresse"
+    },
+    "current": "nuværende"
+  },
+  "settings": {
+    "host": "IP-adresse",
+    "port": "Port",
+    "unitId": "Enheds-ID",
+    "meterConnection": {
+      "0": "Fra",
+      "1": "1-faset måler",
+      "2": "Strømtransformer (CT)",
+      "3": "3-faset måler"
+    },
+    "energyManagerNone": "Ikke fundet"
+  },
+  "status": {
+    "migrating": "Opdaterer funktioner…"
+  },
+  "notifications": {
+    "controlOverriddenBy": "**__name__**: en ekstern energistyring (__manager__) overskriver styringen fra Homey. Homey og energistyringen forsøger begge at styre denne enhed.",
+    "controlOverridden": "**__name__**: en ekstern energistyring overskriver styringen fra Homey. Homey og energistyringen forsøger begge at styre denne enhed."
+  }
+}

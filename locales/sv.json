@@ -1,0 +1,58 @@
+{
+  "errors": {
+    "hostMissing": "Ingen IP-adress angiven.",
+    "hostRequired": "Ange en IP-adress.",
+    "noData": "Ingen data mottagen.",
+    "unreachable": "Enheten kan inte nås:",
+    "probeFailed": "Ingen kompatibel enhet svarade på den här adressen.",
+    "notPairable": {
+      "battery": "Växelriktaren svarade, men inget batteri är anslutet.",
+      "meter": "Växelriktaren svarade, men ingen mätare är ansluten."
+    },
+    "noCarConnected": "Ingen bil ansluten.",
+    "unplugFirst": "Dra först ur kabeln: laddaren ändrar bara detta utan kabel i.",
+    "socRange": "SoC-gränser måste vara 10–100 %, med minimum ≤ minimum mot nätet ≤ maximum.",
+    "writeFailed": "Kunde inte skicka kommandot:"
+  },
+  "pair": {
+    "deviceName": {
+      "battery": "Batteri",
+      "charger": "Laddare",
+      "inverter": "Växelriktare",
+      "meter": "Mätare"
+    },
+    "manual": {
+      "connect": "Anslut",
+      "intro": "Ge enheten en fast IP-adress i routern först, så att den fortsätter fungera efter en omstart.",
+      "title": "Ange IP-adress",
+      "legend": "Anslutning"
+    },
+    "manualEntry": "Manuellt"
+  },
+  "repair": {
+    "manual": {
+      "intro": "Ange adressen som enheten använder nu.",
+      "title": "Ändra IP-adress"
+    },
+    "current": "nuvarande"
+  },
+  "settings": {
+    "host": "IP-adress",
+    "port": "Port",
+    "unitId": "Enhets-ID",
+    "meterConnection": {
+      "0": "Av",
+      "1": "1-fasmätare",
+      "2": "Strömtransformator (CT)",
+      "3": "3-fasmätare"
+    },
+    "energyManagerNone": "Hittades inte"
+  },
+  "status": {
+    "migrating": "Uppdaterar funktioner…"
+  },
+  "notifications": {
+    "controlOverriddenBy": "**__name__**: en extern energihanterare (__manager__) skriver över styrningen från Homey. Homey och energihanteraren försöker båda styra den här enheten.",
+    "controlOverridden": "**__name__**: en extern energihanterare skriver över styrningen från Homey. Homey och energihanteraren försöker båda styra den här enheten."
+  }
+}

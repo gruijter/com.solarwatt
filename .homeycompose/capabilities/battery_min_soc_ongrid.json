@@ -1,0 +1,42 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Minimum SoC on grid",
+    "nl": "Minimale SoC op net",
+    "de": "Minimaler SoC am Netz",
+    "fr": "SoC minimal sur réseau",
+    "es": "SoC mínimo en red",
+    "it": "SoC minimo in rete",
+    "da": "Minimum SoC på nettet",
+    "sv": "Lägsta SoC mot nätet",
+    "no": "Minimum SoC på nettet",
+    "pl": "Minimalny SoC przy sieci",
+    "ru": "Минимальный SoC от сети",
+    "ar": "الحد الأدنى للشحن مع الشبكة",
+    "ko": "계통 연결 시 최소 SoC"
+  },
+  "units": {
+    "en": "%",
+    "nl": "%",
+    "de": "%",
+    "fr": "%",
+    "es": "%",
+    "it": "%",
+    "da": "%",
+    "sv": "%",
+    "no": "%",
+    "pl": "%",
+    "ru": "%",
+    "ar": "%",
+    "ko": "%"
+  },
+  "decimals": 0,
+  "min": 10,
+  "max": 100,
+  "step": 1,
+  "getable": true,
+  "setable": true,
+  "insights": false,
+  "uiComponent": "slider",
+  "icon": "./assets/battery_soc.svg"
+}

@@ -1,0 +1,58 @@
+{
+  "errors": {
+    "hostMissing": "Nessun indirizzo IP impostato.",
+    "hostRequired": "Inserisci un indirizzo IP.",
+    "noData": "Nessun dato ricevuto.",
+    "unreachable": "Dispositivo non raggiungibile:",
+    "probeFailed": "Nessun dispositivo compatibile ha risposto a questo indirizzo.",
+    "notPairable": {
+      "battery": "L'inverter ha risposto, ma non è collegata alcuna batteria.",
+      "meter": "L'inverter ha risposto, ma non è collegato alcun contatore."
+    },
+    "noCarConnected": "Nessuna auto collegata.",
+    "unplugFirst": "Scollega prima il cavo: la stazione modifica questa impostazione solo senza cavo inserito.",
+    "socRange": "I limiti di SoC devono essere 10–100%, con minimo ≤ minimo in rete ≤ massimo.",
+    "writeFailed": "Impossibile inviare il comando:"
+  },
+  "pair": {
+    "deviceName": {
+      "battery": "Batteria",
+      "charger": "Caricatore",
+      "inverter": "Inverter",
+      "meter": "Contatore"
+    },
+    "manual": {
+      "connect": "Connetti",
+      "intro": "Assegna prima un indirizzo IP fisso nel router, così continua a funzionare dopo un riavvio.",
+      "title": "Inserisci indirizzo IP",
+      "legend": "Connessione"
+    },
+    "manualEntry": "Manuale"
+  },
+  "repair": {
+    "manual": {
+      "intro": "Inserisci l'indirizzo che il dispositivo usa ora.",
+      "title": "Cambia indirizzo IP"
+    },
+    "current": "attuale"
+  },
+  "settings": {
+    "host": "Indirizzo IP",
+    "port": "Porta",
+    "unitId": "ID unità",
+    "meterConnection": {
+      "0": "Disattivato",
+      "1": "Contatore monofase",
+      "2": "Trasformatore di corrente (CT)",
+      "3": "Contatore trifase"
+    },
+    "energyManagerNone": "Non trovato"
+  },
+  "status": {
+    "migrating": "Aggiornamento delle funzionalità…"
+  },
+  "notifications": {
+    "controlOverriddenBy": "**__name__**: un gestore energetico esterno (__manager__) sovrascrive il controllo di Homey. Homey e il gestore energetico cercano entrambi di controllare questo dispositivo.",
+    "controlOverridden": "**__name__**: un gestore energetico esterno sovrascrive il controllo di Homey. Homey e il gestore energetico cercano entrambi di controllare questo dispositivo."
+  }
+}

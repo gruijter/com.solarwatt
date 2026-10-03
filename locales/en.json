@@ -1,0 +1,58 @@
+{
+  "errors": {
+    "hostMissing": "No IP address set.",
+    "hostRequired": "Enter an IP address.",
+    "noData": "No data received.",
+    "unreachable": "Device not reachable:",
+    "probeFailed": "No compatible device answered at this address.",
+    "notPairable": {
+      "battery": "The inverter answered, but no battery is connected to it.",
+      "meter": "The inverter answered, but no meter is connected to it."
+    },
+    "noCarConnected": "No car connected.",
+    "unplugFirst": "Unplug the cable first: the charger only changes this without a cable in it.",
+    "socRange": "SoC limits must be 10–100%, with minimum ≤ minimum on grid ≤ maximum.",
+    "writeFailed": "Could not send the command:"
+  },
+  "pair": {
+    "deviceName": {
+      "battery": "Battery",
+      "charger": "Charger",
+      "inverter": "Inverter",
+      "meter": "Meter"
+    },
+    "manual": {
+      "connect": "Connect",
+      "intro": "Give the device a fixed IP address in your router first, so it keeps working after a restart.",
+      "title": "Enter IP address",
+      "legend": "Connection"
+    },
+    "manualEntry": "Manual entry"
+  },
+  "repair": {
+    "manual": {
+      "intro": "Enter the address the device uses now.",
+      "title": "Change IP address"
+    },
+    "current": "current"
+  },
+  "settings": {
+    "host": "IP address",
+    "port": "Port",
+    "unitId": "Unit ID",
+    "meterConnection": {
+      "0": "Off",
+      "1": "1-phase meter",
+      "2": "Current transformer (CT)",
+      "3": "3-phase meter"
+    },
+    "energyManagerNone": "None found"
+  },
+  "status": {
+    "migrating": "Updating capabilities…"
+  },
+  "notifications": {
+    "controlOverriddenBy": "**__name__**: an external energy manager (__manager__) overrides control from Homey. Homey and the energy manager are both trying to control this device.",
+    "controlOverridden": "**__name__**: an external energy manager overrides control from Homey. Homey and the energy manager are both trying to control this device."
+  }
+}

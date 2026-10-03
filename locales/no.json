@@ -1,0 +1,58 @@
+{
+  "errors": {
+    "hostMissing": "Ingen IP-adresse angitt.",
+    "hostRequired": "Skriv inn en IP-adresse.",
+    "noData": "Ingen data mottatt.",
+    "unreachable": "Enheten kan ikke nås:",
+    "probeFailed": "Ingen kompatibel enhet svarte på denne adressen.",
+    "notPairable": {
+      "battery": "Vekselretteren svarte, men ingen batteri er tilkoblet.",
+      "meter": "Vekselretteren svarte, men ingen måler er tilkoblet."
+    },
+    "noCarConnected": "Ingen bil tilkoblet.",
+    "unplugFirst": "Trekk ut kabelen først: laderen endrer dette bare uten kabel i.",
+    "socRange": "SoC-grenser må være 10–100 %, med minimum ≤ minimum på nettet ≤ maksimum.",
+    "writeFailed": "Kunne ikke sende kommandoen:"
+  },
+  "pair": {
+    "deviceName": {
+      "battery": "Batteri",
+      "charger": "Lader",
+      "inverter": "Vekselretter",
+      "meter": "Måler"
+    },
+    "manual": {
+      "connect": "Koble til",
+      "intro": "Gi enheten en fast IP-adresse i ruteren først, slik at den fortsetter å virke etter omstart.",
+      "title": "Skriv inn IP-adresse",
+      "legend": "Tilkobling"
+    },
+    "manualEntry": "Manuelt"
+  },
+  "repair": {
+    "manual": {
+      "intro": "Skriv inn adressen enheten bruker nå.",
+      "title": "Endre IP-adresse"
+    },
+    "current": "nåværende"
+  },
+  "settings": {
+    "host": "IP-adresse",
+    "port": "Port",
+    "unitId": "Enhets-ID",
+    "meterConnection": {
+      "0": "Av",
+      "1": "1-fase måler",
+      "2": "Strømtransformator (CT)",
+      "3": "3-fase måler"
+    },
+    "energyManagerNone": "Ikke funnet"
+  },
+  "status": {
+    "migrating": "Oppdaterer funksjoner…"
+  },
+  "notifications": {
+    "controlOverriddenBy": "**__name__**: en ekstern energistyring (__manager__) overstyrer styringen fra Homey. Homey og energistyringen prøver begge å styre denne enheten.",
+    "controlOverridden": "**__name__**: en ekstern energistyring overstyrer styringen fra Homey. Homey og energistyringen prøver begge å styre denne enheten."
+  }
+}

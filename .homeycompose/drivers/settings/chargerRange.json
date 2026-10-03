@@ -1,0 +1,20 @@
+{
+  "id": "chargerRange",
+  "type": "label",
+  "value": "",
+  "label": {
+    "en": "Power and current range",
+    "nl": "Vermogens- en strombereik",
+    "de": "Leistungs- und Strombereich",
+    "fr": "Plage de puissance et de courant",
+    "es": "Rango de potencia y corriente",
+    "it": "Intervallo di potenza e corrente",
+    "da": "Effekt- og strømområde",
+    "sv": "Effekt- och strömområde",
+    "no": "Effekt- og strømområde",
+    "pl": "Zakres mocy i prądu",
+    "ru": "Диапазон мощности и тока",
+    "ar": "نطاق القدرة والتيار",
+    "ko": "전력 및 전류 범위"
+  }
+}

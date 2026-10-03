@@ -1,0 +1,24 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Charge cycles",
+    "nl": "Laadcycli",
+    "de": "Ladezyklen",
+    "fr": "Cycles de charge",
+    "es": "Ciclos de carga",
+    "it": "Cicli di carica",
+    "da": "Ladecyklusser",
+    "sv": "Laddcykler",
+    "no": "Ladesykluser",
+    "pl": "Cykle ładowania",
+    "ru": "Циклы заряда",
+    "ar": "دورات الشحن",
+    "ko": "충전 사이클"
+  },
+  "decimals": 0,
+  "getable": true,
+  "setable": false,
+  "insights": true,
+  "uiComponent": "sensor",
+  "icon": "./assets/measure_battery_cycles.svg"
+}
