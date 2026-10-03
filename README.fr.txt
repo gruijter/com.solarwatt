@@ -8,4 +8,4 @@ Appareils pris en charge :
 
 Prérequis : Modbus TCP doit être activé sur les appareils (demandez à votre installateur) et Homey doit être sur le même réseau. Donnez aux appareils une adresse IP fixe dans votre routeur. Ils sont trouvés automatiquement ; sinon, saisissez vous-même l'adresse IP.
 
-SOLARWATT Manager : s'il est installé, il peut reprendre à Homey le pilotage de la batterie et des limites de puissance. Homey affiche alors « Pilotage écrasé » et laisse le pilotage au Manager jusqu'à ce que vous modifiiez à nouveau un réglage.
+SOLARWATT Manager : s'il est installé, il peut reprendre à Homey le pilotage de la batterie et des limites de puissance. Homey affiche alors « Pilotage écrasé » et laisse le pilotage au Manager jusqu'à ce que vous modifiiez à nouveau un réglage. Pour piloter la batterie depuis Homey, assurez-vous que le Manager ne la pilote pas (demandez à votre installateur).

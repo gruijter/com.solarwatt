@@ -8,4 +8,4 @@ Unterstützte Geräte:
 
 Voraussetzungen: Modbus TCP muss an den Geräten aktiviert sein (frag deinen Installateur), und Homey muss im selben Netzwerk sein. Gib den Geräten eine feste IP-Adresse in deinem Router. Sie werden automatisch gefunden; sonst gib die IP-Adresse selbst ein.
 
-SOLARWATT Manager: Ist einer installiert, kann er Homey die Steuerung der Batterie und der Leistungsgrenzen wieder abnehmen. Homey zeigt dann 'Steuerung überschrieben' und überlässt dem Manager die Steuerung, bis du selbst wieder etwas einstellst.
+SOLARWATT Manager: Ist einer installiert, kann er Homey die Steuerung der Batterie und der Leistungsgrenzen wieder abnehmen. Homey zeigt dann 'Steuerung überschrieben' und überlässt dem Manager die Steuerung, bis du selbst wieder etwas einstellst. Wenn du die Batterie über Homey steuern willst, darf der Manager sie nicht steuern (frag deinen Installateur).

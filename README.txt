@@ -8,4 +8,4 @@ Supported devices:
 
 Requirements: Modbus TCP must be enabled on the devices (ask your installer), and Homey must be on the same network. Give the devices a fixed IP address in your router. They are found automatically; otherwise enter the IP address yourself.
 
-SOLARWATT Manager: if one is installed, it can take control of the battery and the power limits back from Homey. Homey then shows 'Control overridden' and leaves control to the Manager until you change a setting again.
+SOLARWATT Manager: if one is installed, it can take control of the battery and the power limits back from Homey. Homey then shows 'Control overridden' and leaves control to the Manager until you change a setting again. To control the battery from Homey, make sure the Manager does not control it (ask your installer).

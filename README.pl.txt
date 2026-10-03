@@ -8,4 +8,4 @@ Obsługiwane urządzenia:
 
 Wymagania: Modbus TCP musi być włączony na urządzeniach (zapytaj instalatora), a Homey musi być w tej samej sieci. Nadaj urządzeniom stały adres IP w routerze. Są wykrywane automatycznie; w przeciwnym razie wpisz adres IP samodzielnie.
 
-SOLARWATT Manager: jeśli jest zainstalowany, może przejąć od Homey sterowanie akumulatorem i limitami mocy. Homey pokazuje wtedy „Sterowanie nadpisane” i pozostawia sterowanie Managerowi, dopóki sam ponownie czegoś nie ustawisz.
+SOLARWATT Manager: jeśli jest zainstalowany, może przejąć od Homey sterowanie akumulatorem i limitami mocy. Homey pokazuje wtedy „Sterowanie nadpisane” i pozostawia sterowanie Managerowi, dopóki sam ponownie czegoś nie ustawisz. Aby sterować akumulatorem z Homey, upewnij się, że Manager nim nie steruje (zapytaj instalatora).

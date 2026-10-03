@@ -8,4 +8,4 @@ Ondersteunde apparaten:
 
 Vereisten: Modbus TCP moet aan staan op de apparaten (vraag je installateur), en Homey moet in hetzelfde netwerk zitten. Geef de apparaten een vast IP-adres in je router. Ze worden automatisch gevonden; anders vul je het IP-adres zelf in.
 
-SOLARWATT Manager: als die aanwezig is, kan hij de sturing van de batterij en de vermogensgrenzen van Homey overnemen. Homey toont dan 'Sturing overschreven' en laat de sturing aan de Manager tot je zelf weer iets instelt.
+SOLARWATT Manager: als die aanwezig is, kan hij de sturing van de batterij en de vermogensgrenzen van Homey overnemen. Homey toont dan 'Sturing overschreven' en laat de sturing aan de Manager tot je zelf weer iets instelt. Wil je de batterij vanuit Homey sturen, zorg dan dat de Manager hem niet stuurt (vraag je installateur).

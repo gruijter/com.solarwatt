@@ -8,4 +8,4 @@ Støttede enheter:
 
 Krav: Modbus TCP må være slått på på enhetene (spør installatøren din), og Homey må være på samme nettverk. Gi enhetene en fast IP-adresse i ruteren. De blir funnet automatisk; ellers skriver du inn IP-adressen selv.
 
-SOLARWATT Manager: Hvis en er installert, kan den ta tilbake styringen av batteriet og effektgrensene fra Homey. Homey viser da 'Styring overstyrt' og overlater styringen til Manageren til du selv endrer en innstilling igjen.
+SOLARWATT Manager: Hvis en er installert, kan den ta tilbake styringen av batteriet og effektgrensene fra Homey. Homey viser da 'Styring overstyrt' og overlater styringen til Manageren til du selv endrer en innstilling igjen. Vil du styre batteriet fra Homey, må du sørge for at Manageren ikke styrer det (spør installatøren din).

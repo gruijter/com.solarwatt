@@ -8,4 +8,4 @@ Dispositivos compatibles:
 
 Requisitos: Modbus TCP debe estar activado en los dispositivos (pregunta a tu instalador) y Homey debe estar en la misma red. Asigna a los dispositivos una IP fija en tu router. Se encuentran automáticamente; si no, introduce tú mismo la dirección IP.
 
-SOLARWATT Manager: si hay uno instalado, puede retomar de Homey el control de la batería y de los límites de potencia. Homey muestra entonces «Control anulado» y deja el control al Manager hasta que vuelvas a cambiar un ajuste.
+SOLARWATT Manager: si hay uno instalado, puede retomar de Homey el control de la batería y de los límites de potencia. Homey muestra entonces «Control anulado» y deja el control al Manager hasta que vuelvas a cambiar un ajuste. Para controlar la batería desde Homey, asegúrate de que el Manager no la controle (pregunta a tu instalador).
