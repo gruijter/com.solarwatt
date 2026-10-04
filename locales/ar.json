@@ -48,9 +48,7 @@
     },
     "energyManagerNone": "لم يُعثر عليه"
   },
-  "status": {
-    "migrating": "جارٍ تحديث الإمكانيات…"
-  },
+  "migrating": "جارٍ تحديث الإمكانيات…",
   "notifications": {
     "controlOverriddenBy": "**__name__**: يتجاوز مدير طاقة خارجي (__manager__) التحكم من Homey. يحاول Homey ومدير الطاقة كلاهما التحكم في هذا الجهاز.",
     "controlOverridden": "**__name__**: يتجاوز مدير طاقة خارجي التحكم من Homey. يحاول Homey ومدير الطاقة كلاهما التحكم في هذا الجهاز."

@@ -1,5 +1,20 @@
 {
   "1.0.0": {
     "en": "Initial release"
+  },
+  "1.0.1": {
+    "en": "Flows on 'changed' cards no longer run twice. Slider ranges are restored reliably after an update.",
+    "nl": "Flows op 'gewijzigd'-kaarten lopen niet langer dubbel. Schuifbereiken worden na een update betrouwbaar hersteld.",
+    "de": "Flows mit „geändert“-Karten laufen nicht mehr doppelt. Schiebereglerbereiche werden nach einem Update zuverlässig wiederhergestellt.",
+    "fr": "Les Flows sur les cartes « modifié » ne s'exécutent plus deux fois. Les plages des curseurs sont rétablies de manière fiable après une mise à jour.",
+    "es": "Los Flows con tarjetas «cambiado» ya no se ejecutan dos veces. Los rangos de los controles deslizantes se restauran de forma fiable tras una actualización.",
+    "it": "I Flow con schede «modificato» non vengono più eseguiti due volte. Gli intervalli dei cursori vengono ripristinati in modo affidabile dopo un aggiornamento.",
+    "da": "Flows på 'ændret'-kort kører ikke længere to gange. Skyderområder gendannes pålideligt efter en opdatering.",
+    "sv": "Flows med 'ändrad'-kort körs inte längre två gånger. Skjutreglagens intervall återställs pålitligt efter en uppdatering.",
+    "no": "Flows med 'endret'-kort kjører ikke lenger to ganger. Glidebryterområder gjenopprettes pålitelig etter en oppdatering.",
+    "pl": "Flow z kartami „zmieniono” nie uruchamiają się już dwukrotnie. Zakresy suwaków są niezawodnie przywracane po aktualizacji.",
+    "ru": "Flow с карточками «изменено» больше не запускаются дважды. Диапазоны ползунков надежно восстанавливаются после обновления.",
+    "ar": "لم تعد التدفقات على بطاقات «تم التغيير» تعمل مرتين. تتم استعادة نطاقات أشرطة التمرير بشكل موثوق بعد التحديث.",
+    "ko": "'변경됨' 카드의 Flow가 더 이상 두 번 실행되지 않습니다. 업데이트 후 슬라이더 범위가 안정적으로 복원됩니다."
   }
 }

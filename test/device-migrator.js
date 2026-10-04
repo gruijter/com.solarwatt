@@ -102,6 +102,14 @@ const tests = {
     await DeviceMigrator.migrateCapabilities(device, ['a', 'b']);
     assert.strictEqual(device.state.available, false);
   },
+  'runs two migrations at once one after the other': async () => {
+    const device = fakeDevice({ caps: ['a'] });
+    await Promise.all([
+      DeviceMigrator.migrateCapabilities(device, ['a', 'b']),
+      DeviceMigrator.migrateCapabilities(device, ['a', 'b', 'c']),
+    ]);
+    assert.deepStrictEqual(device.state.caps, ['a', 'b', 'c']);
+  },
   'merges options onto the manifest and skips a no-op': async () => {
     const device = fakeDevice({ caps: ['target_power'], manifestOptions: { target_power: { title: { en: 'Power limit' }, max: 8000 } } });
     await DeviceMigrator.syncCapabilityOptions(device, { target_power: { min: 0, max: 10000, step: 100 } });
@@ -115,6 +123,9 @@ const tests = {
     };
     await DeviceMigrator.syncCapabilityOptions(device, { target_power: { min: 0, max: 10000, step: 100 } });
     assert.strictEqual(writes, 0);
+    // after a rebuild the read is not trusted: force writes anyway
+    await DeviceMigrator.syncCapabilityOptions(device, { target_power: { min: 0, max: 10000, step: 100 } }, { force: true });
+    assert.strictEqual(writes, 1);
   },
 };
 

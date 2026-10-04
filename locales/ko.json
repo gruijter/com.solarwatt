@@ -48,9 +48,7 @@
     },
     "energyManagerNone": "찾을 수 없음"
   },
-  "status": {
-    "migrating": "기능 업데이트 중…"
-  },
+  "migrating": "기능 업데이트 중…",
   "notifications": {
     "controlOverriddenBy": "**__name__**: 외부 에너지 관리자(__manager__)가 Homey의 제어를 덮어씁니다. Homey와 에너지 관리자가 모두 이 장치를 제어하려고 합니다.",
     "controlOverridden": "**__name__**: 외부 에너지 관리자(__manager__)가 Homey의 제어를 덮어씁니다. Homey와 에너지 관리자가 모두 이 장치를 제어하려고 합니다."

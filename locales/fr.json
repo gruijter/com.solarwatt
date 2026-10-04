@@ -48,9 +48,7 @@
     },
     "energyManagerNone": "Aucun trouvé"
   },
-  "status": {
-    "migrating": "Mise à jour des capacités…"
-  },
+  "migrating": "Mise à jour des capacités…",
   "notifications": {
     "controlOverriddenBy": "**__name__** : un gestionnaire d'énergie externe (__manager__) écrase le pilotage par Homey. Homey et le gestionnaire d'énergie essaient tous deux de piloter cet appareil.",
     "controlOverridden": "**__name__** : un gestionnaire d'énergie externe écrase le pilotage par Homey. Homey et le gestionnaire d'énergie essaient tous deux de piloter cet appareil."

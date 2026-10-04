@@ -48,9 +48,7 @@
     },
     "energyManagerNone": "Nie znaleziono"
   },
-  "status": {
-    "migrating": "Aktualizowanie funkcji…"
-  },
+  "migrating": "Aktualizowanie funkcji…",
   "notifications": {
     "controlOverriddenBy": "**__name__**: zewnętrzny menedżer energii (__manager__) nadpisuje sterowanie z Homey. Homey i menedżer energii próbują jednocześnie sterować tym urządzeniem.",
     "controlOverridden": "**__name__**: zewnętrzny menedżer energii nadpisuje sterowanie z Homey. Homey i menedżer energii próbują jednocześnie sterować tym urządzeniem."

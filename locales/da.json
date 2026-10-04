@@ -48,9 +48,7 @@
     },
     "energyManagerNone": "Ikke fundet"
   },
-  "status": {
-    "migrating": "Opdaterer funktioner…"
-  },
+  "migrating": "Opdaterer funktioner…",
   "notifications": {
     "controlOverriddenBy": "**__name__**: en ekstern energistyring (__manager__) overskriver styringen fra Homey. Homey og energistyringen forsøger begge at styre denne enhed.",
     "controlOverridden": "**__name__**: en ekstern energistyring overskriver styringen fra Homey. Homey og energistyringen forsøger begge at styre denne enhed."

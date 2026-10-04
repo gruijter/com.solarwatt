@@ -48,9 +48,7 @@
     },
     "energyManagerNone": "No encontrado"
   },
-  "status": {
-    "migrating": "Actualizando capacidades…"
-  },
+  "migrating": "Actualizando capacidades…",
   "notifications": {
     "controlOverriddenBy": "**__name__**: un gestor de energía externo (__manager__) anula el control de Homey. Homey y el gestor de energía intentan controlar este dispositivo a la vez.",
     "controlOverridden": "**__name__**: un gestor de energía externo anula el control de Homey. Homey y el gestor de energía intentan controlar este dispositivo a la vez."

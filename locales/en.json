@@ -48,9 +48,7 @@
     },
     "energyManagerNone": "None found"
   },
-  "status": {
-    "migrating": "Updating capabilities…"
-  },
+  "migrating": "Updating capabilities…",
   "notifications": {
     "controlOverriddenBy": "**__name__**: an external energy manager (__manager__) overrides control from Homey. Homey and the energy manager are both trying to control this device.",
     "controlOverridden": "**__name__**: an external energy manager overrides control from Homey. Homey and the energy manager are both trying to control this device."

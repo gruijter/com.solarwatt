@@ -48,9 +48,7 @@
     },
     "energyManagerNone": "Nicht gefunden"
   },
-  "status": {
-    "migrating": "Fähigkeiten werden aktualisiert…"
-  },
+  "migrating": "Fähigkeiten werden aktualisiert…",
   "notifications": {
     "controlOverriddenBy": "**__name__**: Ein externer Energiemanager (__manager__) überschreibt die Steuerung durch Homey. Homey und der Energiemanager versuchen beide, dieses Gerät zu steuern.",
     "controlOverridden": "**__name__**: Ein externer Energiemanager überschreibt die Steuerung durch Homey. Homey und der Energiemanager versuchen beide, dieses Gerät zu steuern."
