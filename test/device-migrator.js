@@ -127,6 +127,23 @@ const tests = {
     await DeviceMigrator.syncCapabilityOptions(device, { target_power: { min: 0, max: 10000, step: 100 } }, { force: true });
     assert.strictEqual(writes, 1);
   },
+  'an equal title object is no change, a different one is': async () => {
+    const device = fakeDevice({ caps: ['meter_power'] });
+    let writes = 0;
+    const set = device.setCapabilityOptions;
+    device.setCapabilityOptions = async (...args) => {
+      writes += 1; return set(...args);
+    };
+    await DeviceMigrator.syncCapabilityOptions(device, { meter_power: { title: { en: 'Solar energy (DC)', nl: 'Zonopbrengst (DC)' } } });
+    assert.strictEqual(writes, 1);
+    // a fresh but equal object, keys in another order: === called it different on every start
+    await DeviceMigrator.syncCapabilityOptions(device, { meter_power: { title: { nl: 'Zonopbrengst (DC)', en: 'Solar energy (DC)' } } });
+    assert.strictEqual(writes, 1);
+    await DeviceMigrator.syncCapabilityOptions(device, { meter_power: { title: { en: 'Solar energy (AC)', nl: 'Zonopbrengst (AC)' } } });
+    assert.strictEqual(writes, 2);
+    await DeviceMigrator.syncCapabilityOptions(device, { meter_power: { title: { en: 'Solar energy (AC)' } } });
+    assert.strictEqual(writes, 3, 'a title that lost a language is a change too');
+  },
 };
 
 const main = async () => {
