@@ -112,6 +112,21 @@ const tests = {
     assert.deepStrictEqual(device.state.values, { a: 1, b: 2, c: 3 });
     assert.deepStrictEqual(touched, ['-old']);
   },
+  'drops near the top and appends in one migration without rebuilding the rest': async () => {
+    const device = fakeDevice({ caps: ['a', 'old', 'b', 'c'], values: { a: 1, b: 2, c: 3 } });
+    const touched = [];
+    const { addCapability, removeCapability } = device;
+    device.addCapability = async (cap) => {
+      touched.push(`+${cap}`); return addCapability(cap);
+    };
+    device.removeCapability = async (cap) => {
+      touched.push(`-${cap}`); return removeCapability(cap);
+    };
+    assert.strictEqual(await DeviceMigrator.migrateCapabilities(device, ['a', 'b', 'c', 'new']), true);
+    assert.deepStrictEqual(device.state.caps, ['a', 'b', 'c', 'new']);
+    assert.deepStrictEqual(device.state.values, { a: 1, b: 2, c: 3 });
+    assert.deepStrictEqual(touched, ['-old', '+new']);
+  },
   'does not mark an unavailable device available': async () => {
     const device = fakeDevice({ caps: ['a'], available: false });
     await DeviceMigrator.migrateCapabilities(device, ['a', 'b']);
