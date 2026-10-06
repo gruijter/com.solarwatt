@@ -199,6 +199,16 @@ const tests = {
     assert.strictEqual(device.getCapabilityValue('pick'), null, 'a removed choice is not restored');
     assert.strictEqual(device.getCapabilityValue('other'), 'x', 'without a known definition the value is restored');
   },
+  'does not restore a choice removed from the driver options of a system capability': async () => {
+    const device = fakeDevice({
+      caps: ['a', 'target_power_mode'],
+      values: { a: 1, target_power_mode: 'removed' },
+      manifestOptions: { target_power_mode: { values: [{ id: 'homey' }, { id: 'self_use' }] } },
+    });
+    device.homey.app = { manifest: { capabilities: {} } };
+    await DeviceMigrator.migrateCapabilities(device, ['a', 'mode', 'target_power_mode']);
+    assert.strictEqual(device.getCapabilityValue('target_power_mode'), null);
+  },
 };
 
 const main = async () => {
