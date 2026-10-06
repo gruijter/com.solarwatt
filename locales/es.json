@@ -53,5 +53,25 @@
   "notifications": {
     "controlOverriddenBy": "**__name__**: un gestor de energía externo (__manager__) anula el control de Homey. Homey y el gestor de energía intentan controlar este dispositivo a la vez.",
     "controlOverridden": "**__name__**: un gestor de energía externo anula el control de Homey. Homey y el gestor de energía intentan controlar este dispositivo a la vez."
+  },
+  "chargerFaults": {
+    "emergency_stop": "Parada de emergencia",
+    "overvoltage": "Sobretensión",
+    "undervoltage": "Subtensión",
+    "overcurrent": "Sobrecorriente",
+    "port_temperature": "Temperatura del puerto de carga",
+    "pe_grounding": "Puesta a tierra (PE)",
+    "leakage_current": "Corriente de fuga",
+    "frequency": "Frecuencia",
+    "cp": "CP",
+    "connector": "Conector",
+    "ac_contactor": "Contactor AC",
+    "electronic_lock": "Bloqueo electrónico",
+    "breaker": "Disyuntor",
+    "cc": "CC",
+    "external_meter": "Comunicación del contador externo",
+    "metering_chip": "Chip de medición",
+    "ambient_temperature": "Temperatura ambiente",
+    "access_control": "Control de acceso"
   }
 }

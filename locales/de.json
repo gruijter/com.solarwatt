@@ -53,5 +53,25 @@
   "notifications": {
     "controlOverriddenBy": "**__name__**: Ein externer Energiemanager (__manager__) überschreibt die Steuerung durch Homey. Homey und der Energiemanager versuchen beide, dieses Gerät zu steuern.",
     "controlOverridden": "**__name__**: Ein externer Energiemanager überschreibt die Steuerung durch Homey. Homey und der Energiemanager versuchen beide, dieses Gerät zu steuern."
+  },
+  "chargerFaults": {
+    "emergency_stop": "Not-Aus",
+    "overvoltage": "Überspannung",
+    "undervoltage": "Unterspannung",
+    "overcurrent": "Überstrom",
+    "port_temperature": "Temperatur Ladeanschluss",
+    "pe_grounding": "Schutzleiter (PE)",
+    "leakage_current": "Fehlerstrom",
+    "frequency": "Frequenz",
+    "cp": "CP",
+    "connector": "Stecker",
+    "ac_contactor": "AC-Schütz",
+    "electronic_lock": "Elektronische Verriegelung",
+    "breaker": "Leitungsschutzschalter",
+    "cc": "CC",
+    "external_meter": "Kommunikation externer Zähler",
+    "metering_chip": "Messchip",
+    "ambient_temperature": "Umgebungstemperatur",
+    "access_control": "Zugangskontrolle"
   }
 }

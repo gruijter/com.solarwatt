@@ -53,5 +53,25 @@
   "notifications": {
     "controlOverriddenBy": "**__name__**: an external energy manager (__manager__) overrides control from Homey. Homey and the energy manager are both trying to control this device.",
     "controlOverridden": "**__name__**: an external energy manager overrides control from Homey. Homey and the energy manager are both trying to control this device."
+  },
+  "chargerFaults": {
+    "emergency_stop": "Emergency stop",
+    "overvoltage": "Overvoltage",
+    "undervoltage": "Undervoltage",
+    "overcurrent": "Overcurrent",
+    "port_temperature": "Charging port temperature",
+    "pe_grounding": "Earthing (PE)",
+    "leakage_current": "Leakage current",
+    "frequency": "Frequency",
+    "cp": "CP",
+    "connector": "Connector",
+    "ac_contactor": "AC contactor",
+    "electronic_lock": "Electronic lock",
+    "breaker": "Circuit breaker",
+    "cc": "CC",
+    "external_meter": "External meter communication",
+    "metering_chip": "Metering chip",
+    "ambient_temperature": "Ambient temperature",
+    "access_control": "Access control"
   }
 }

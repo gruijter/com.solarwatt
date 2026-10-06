@@ -53,5 +53,25 @@
   "notifications": {
     "controlOverriddenBy": "**__name__**: zewnętrzny menedżer energii (__manager__) nadpisuje sterowanie z Homey. Homey i menedżer energii próbują jednocześnie sterować tym urządzeniem.",
     "controlOverridden": "**__name__**: zewnętrzny menedżer energii nadpisuje sterowanie z Homey. Homey i menedżer energii próbują jednocześnie sterować tym urządzeniem."
+  },
+  "chargerFaults": {
+    "emergency_stop": "Wyłącznik awaryjny",
+    "overvoltage": "Przepięcie",
+    "undervoltage": "Zbyt niskie napięcie",
+    "overcurrent": "Przetężenie",
+    "port_temperature": "Temperatura gniazda ładowania",
+    "pe_grounding": "Uziemienie (PE)",
+    "leakage_current": "Prąd upływu",
+    "frequency": "Częstotliwość",
+    "cp": "CP",
+    "connector": "Złącze",
+    "ac_contactor": "Stycznik AC",
+    "electronic_lock": "Blokada elektroniczna",
+    "breaker": "Wyłącznik",
+    "cc": "CC",
+    "external_meter": "Komunikacja licznika zewnętrznego",
+    "metering_chip": "Układ pomiarowy",
+    "ambient_temperature": "Temperatura otoczenia",
+    "access_control": "Kontrola dostępu"
   }
 }

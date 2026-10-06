@@ -53,5 +53,25 @@
   "notifications": {
     "controlOverriddenBy": "**__name__**: un gestore energetico esterno (__manager__) sovrascrive il controllo di Homey. Homey e il gestore energetico cercano entrambi di controllare questo dispositivo.",
     "controlOverridden": "**__name__**: un gestore energetico esterno sovrascrive il controllo di Homey. Homey e il gestore energetico cercano entrambi di controllare questo dispositivo."
+  },
+  "chargerFaults": {
+    "emergency_stop": "Arresto di emergenza",
+    "overvoltage": "Sovratensione",
+    "undervoltage": "Sottotensione",
+    "overcurrent": "Sovracorrente",
+    "port_temperature": "Temperatura della presa di ricarica",
+    "pe_grounding": "Messa a terra (PE)",
+    "leakage_current": "Corrente di dispersione",
+    "frequency": "Frequenza",
+    "cp": "CP",
+    "connector": "Connettore",
+    "ac_contactor": "Contattore AC",
+    "electronic_lock": "Blocco elettronico",
+    "breaker": "Interruttore",
+    "cc": "CC",
+    "external_meter": "Comunicazione del contatore esterno",
+    "metering_chip": "Chip di misura",
+    "ambient_temperature": "Temperatura ambiente",
+    "access_control": "Controllo d'accesso"
   }
 }

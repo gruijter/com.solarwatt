@@ -53,5 +53,25 @@
   "notifications": {
     "controlOverriddenBy": "**__name__**: внешний менеджер энергии (__manager__) перехватывает управление у Homey. Homey и менеджер энергии одновременно пытаются управлять этим устройством.",
     "controlOverridden": "**__name__**: внешний менеджер энергии перехватывает управление у Homey. Homey и менеджер энергии одновременно пытаются управлять этим устройством."
+  },
+  "chargerFaults": {
+    "emergency_stop": "Аварийная остановка",
+    "overvoltage": "Перенапряжение",
+    "undervoltage": "Пониженное напряжение",
+    "overcurrent": "Перегрузка по току",
+    "port_temperature": "Температура разъёма зарядки",
+    "pe_grounding": "Заземление (PE)",
+    "leakage_current": "Ток утечки",
+    "frequency": "Частота",
+    "cp": "CP",
+    "connector": "Разъём",
+    "ac_contactor": "Контактор AC",
+    "electronic_lock": "Электронный замок",
+    "breaker": "Автоматический выключатель",
+    "cc": "CC",
+    "external_meter": "Связь с внешним счётчиком",
+    "metering_chip": "Измерительный чип",
+    "ambient_temperature": "Температура окружающей среды",
+    "access_control": "Контроль доступа"
   }
 }

@@ -53,5 +53,25 @@
   "notifications": {
     "controlOverriddenBy": "**__name__**: en extern energihanterare (__manager__) skriver över styrningen från Homey. Homey och energihanteraren försöker båda styra den här enheten.",
     "controlOverridden": "**__name__**: en extern energihanterare skriver över styrningen från Homey. Homey och energihanteraren försöker båda styra den här enheten."
+  },
+  "chargerFaults": {
+    "emergency_stop": "Nödstopp",
+    "overvoltage": "Överspänning",
+    "undervoltage": "Underspänning",
+    "overcurrent": "Överström",
+    "port_temperature": "Laddportstemperatur",
+    "pe_grounding": "Jordning (PE)",
+    "leakage_current": "Läckström",
+    "frequency": "Frekvens",
+    "cp": "CP",
+    "connector": "Kontakt",
+    "ac_contactor": "AC-kontaktor",
+    "electronic_lock": "Elektroniskt lås",
+    "breaker": "Brytare",
+    "cc": "CC",
+    "external_meter": "Kommunikation med extern mätare",
+    "metering_chip": "Mätchip",
+    "ambient_temperature": "Omgivningstemperatur",
+    "access_control": "Åtkomstkontroll"
   }
 }

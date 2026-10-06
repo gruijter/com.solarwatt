@@ -40,7 +40,9 @@
     "alarm_problem",
     "alarm_heat",
     "alarm_generic.control",
-    "session_energy_limit"
+    "session_energy_limit",
+    "charger_stop_reason",
+    "charger_faults"
   ],
   "capabilitiesOptions": {
     "target_power": {

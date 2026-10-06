@@ -53,5 +53,25 @@
   "notifications": {
     "controlOverriddenBy": "**__name__** : un gestionnaire d'énergie externe (__manager__) écrase le pilotage par Homey. Homey et le gestionnaire d'énergie essaient tous deux de piloter cet appareil.",
     "controlOverridden": "**__name__** : un gestionnaire d'énergie externe écrase le pilotage par Homey. Homey et le gestionnaire d'énergie essaient tous deux de piloter cet appareil."
+  },
+  "chargerFaults": {
+    "emergency_stop": "Arrêt d'urgence",
+    "overvoltage": "Surtension",
+    "undervoltage": "Sous-tension",
+    "overcurrent": "Surintensité",
+    "port_temperature": "Température du port de charge",
+    "pe_grounding": "Mise à la terre (PE)",
+    "leakage_current": "Courant de fuite",
+    "frequency": "Fréquence",
+    "cp": "CP",
+    "connector": "Connecteur",
+    "ac_contactor": "Contacteur AC",
+    "electronic_lock": "Verrou électronique",
+    "breaker": "Disjoncteur",
+    "cc": "CC",
+    "external_meter": "Communication du compteur externe",
+    "metering_chip": "Puce de mesure",
+    "ambient_temperature": "Température ambiante",
+    "access_control": "Contrôle d'accès"
   }
 }

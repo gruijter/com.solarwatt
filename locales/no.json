@@ -53,5 +53,25 @@
   "notifications": {
     "controlOverriddenBy": "**__name__**: en ekstern energistyring (__manager__) overstyrer styringen fra Homey. Homey og energistyringen prøver begge å styre denne enheten.",
     "controlOverridden": "**__name__**: en ekstern energistyring overstyrer styringen fra Homey. Homey og energistyringen prøver begge å styre denne enheten."
+  },
+  "chargerFaults": {
+    "emergency_stop": "Nødstopp",
+    "overvoltage": "Overspenning",
+    "undervoltage": "Underspenning",
+    "overcurrent": "Overstrøm",
+    "port_temperature": "Ladeporttemperatur",
+    "pe_grounding": "Jording (PE)",
+    "leakage_current": "Lekkasjestrøm",
+    "frequency": "Frekvens",
+    "cp": "CP",
+    "connector": "Kontakt",
+    "ac_contactor": "AC-kontaktor",
+    "electronic_lock": "Elektronisk lås",
+    "breaker": "Bryter",
+    "cc": "CC",
+    "external_meter": "Kommunikasjon med ekstern måler",
+    "metering_chip": "Målebrikke",
+    "ambient_temperature": "Omgivelsestemperatur",
+    "access_control": "Tilgangskontroll"
   }
 }

@@ -53,5 +53,25 @@
   "notifications": {
     "controlOverriddenBy": "**__name__**: يتجاوز مدير طاقة خارجي (__manager__) التحكم من Homey. يحاول Homey ومدير الطاقة كلاهما التحكم في هذا الجهاز.",
     "controlOverridden": "**__name__**: يتجاوز مدير طاقة خارجي التحكم من Homey. يحاول Homey ومدير الطاقة كلاهما التحكم في هذا الجهاز."
+  },
+  "chargerFaults": {
+    "emergency_stop": "إيقاف طارئ",
+    "overvoltage": "جهد زائد",
+    "undervoltage": "جهد منخفض",
+    "overcurrent": "تيار زائد",
+    "port_temperature": "حرارة منفذ الشحن",
+    "pe_grounding": "التأريض (PE)",
+    "leakage_current": "تيار تسرب",
+    "frequency": "التردد",
+    "cp": "CP",
+    "connector": "الموصل",
+    "ac_contactor": "موصِّل التيار المتردد",
+    "electronic_lock": "القفل الإلكتروني",
+    "breaker": "قاطع الدائرة",
+    "cc": "CC",
+    "external_meter": "اتصال العداد الخارجي",
+    "metering_chip": "شريحة القياس",
+    "ambient_temperature": "حرارة المحيط",
+    "access_control": "التحكم في الوصول"
   }
 }

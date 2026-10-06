@@ -53,5 +53,25 @@
   "notifications": {
     "controlOverriddenBy": "**__name__**: 외부 에너지 관리자(__manager__)가 Homey의 제어를 덮어씁니다. Homey와 에너지 관리자가 모두 이 장치를 제어하려고 합니다.",
     "controlOverridden": "**__name__**: 외부 에너지 관리자(__manager__)가 Homey의 제어를 덮어씁니다. Homey와 에너지 관리자가 모두 이 장치를 제어하려고 합니다."
+  },
+  "chargerFaults": {
+    "emergency_stop": "비상 정지",
+    "overvoltage": "과전압",
+    "undervoltage": "저전압",
+    "overcurrent": "과전류",
+    "port_temperature": "충전 포트 온도",
+    "pe_grounding": "접지 (PE)",
+    "leakage_current": "누설 전류",
+    "frequency": "주파수",
+    "cp": "CP",
+    "connector": "커넥터",
+    "ac_contactor": "AC 접촉기",
+    "electronic_lock": "전자 잠금",
+    "breaker": "차단기",
+    "cc": "CC",
+    "external_meter": "외부 계량기 통신",
+    "metering_chip": "계량 칩",
+    "ambient_temperature": "주변 온도",
+    "access_control": "접근 제어"
   }
 }

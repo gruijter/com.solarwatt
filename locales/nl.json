@@ -53,5 +53,25 @@
   "notifications": {
     "controlOverriddenBy": "**__name__**: een externe energiebeheerder (__manager__) overschrijft de sturing vanuit Homey. Homey en de energiebeheerder proberen dit apparaat allebei aan te sturen.",
     "controlOverridden": "**__name__**: een externe energiebeheerder overschrijft de sturing vanuit Homey. Homey en de energiebeheerder proberen dit apparaat allebei aan te sturen."
+  },
+  "chargerFaults": {
+    "emergency_stop": "Noodstop",
+    "overvoltage": "Overspanning",
+    "undervoltage": "Onderspanning",
+    "overcurrent": "Overstroom",
+    "port_temperature": "Temperatuur laadpoort",
+    "pe_grounding": "Aarding (PE)",
+    "leakage_current": "Lekstroom",
+    "frequency": "Frequentie",
+    "cp": "CP",
+    "connector": "Stekker",
+    "ac_contactor": "AC-relais",
+    "electronic_lock": "Elektronisch slot",
+    "breaker": "Installatieautomaat",
+    "cc": "CC",
+    "external_meter": "Communicatie externe meter",
+    "metering_chip": "Meetchip",
+    "ambient_temperature": "Omgevingstemperatuur",
+    "access_control": "Toegangscontrole"
   }
 }

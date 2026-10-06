@@ -2581,7 +2581,9 @@
         "alarm_problem",
         "alarm_heat",
         "alarm_generic.control",
-        "session_energy_limit"
+        "session_energy_limit",
+        "charger_stop_reason",
+        "charger_faults"
       ],
       "capabilitiesOptions": {
         "target_power": {
@@ -5107,6 +5109,556 @@
       "insights": false,
       "uiComponent": "slider",
       "icon": "./assets/battery_soc.svg"
+    },
+    "charger_faults": {
+      "type": "string",
+      "title": {
+        "en": "Active faults",
+        "nl": "Actieve storingen",
+        "de": "Aktive Störungen",
+        "fr": "Défauts actifs",
+        "es": "Fallos activos",
+        "it": "Guasti attivi",
+        "da": "Aktive fejl",
+        "sv": "Aktiva fel",
+        "no": "Aktive feil",
+        "pl": "Aktywne usterki",
+        "ru": "Активные неисправности",
+        "ar": "الأعطال النشطة",
+        "ko": "활성 고장"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "insights": false
+    },
+    "charger_stop_reason": {
+      "type": "enum",
+      "title": {
+        "en": "Last stop reason",
+        "nl": "Laatste stopreden",
+        "de": "Letzter Stoppgrund",
+        "fr": "Dernier motif d'arrêt",
+        "es": "Último motivo de parada",
+        "it": "Ultimo motivo di arresto",
+        "da": "Seneste stopårsag",
+        "sv": "Senaste stopporsak",
+        "no": "Siste stoppårsak",
+        "pl": "Ostatnia przyczyna zatrzymania",
+        "ru": "Последняя причина остановки",
+        "ar": "آخر سبب للإيقاف",
+        "ko": "마지막 중지 사유"
+      },
+      "values": [
+        {
+          "id": "stopped_on_command",
+          "title": {
+            "en": "Stopped on command",
+            "nl": "Gestopt op commando",
+            "de": "Per Befehl gestoppt",
+            "fr": "Arrêté sur commande",
+            "es": "Detenido por comando",
+            "it": "Arrestato su comando",
+            "da": "Stoppet via kommando",
+            "sv": "Stoppad via kommando",
+            "no": "Stoppet via kommando",
+            "pl": "Zatrzymano poleceniem",
+            "ru": "Остановлено командой",
+            "ar": "أُوقف بأمر",
+            "ko": "명령으로 중지됨"
+          }
+        },
+        {
+          "id": "time_limit_reached",
+          "title": {
+            "en": "Time limit reached",
+            "nl": "Tijdlimiet bereikt",
+            "de": "Zeitlimit erreicht",
+            "fr": "Limite de temps atteinte",
+            "es": "Límite de tiempo alcanzado",
+            "it": "Limite di tempo raggiunto",
+            "da": "Tidsgrænse nået",
+            "sv": "Tidsgräns nådd",
+            "no": "Tidsgrense nådd",
+            "pl": "Osiągnięto limit czasu",
+            "ru": "Достигнут лимит времени",
+            "ar": "تم بلوغ الحد الزمني",
+            "ko": "시간 제한 도달"
+          }
+        },
+        {
+          "id": "s2_timeout",
+          "title": {
+            "en": "S2 timeout",
+            "nl": "S2-time-out",
+            "de": "S2-Zeitüberschreitung",
+            "fr": "Délai S2 dépassé",
+            "es": "Tiempo de espera S2",
+            "it": "Timeout S2",
+            "da": "S2-timeout",
+            "sv": "S2-timeout",
+            "no": "S2-tidsavbrudd",
+            "pl": "Przekroczenie czasu S2",
+            "ru": "Тайм-аут S2",
+            "ar": "انتهاء مهلة S2",
+            "ko": "S2 시간 초과"
+          }
+        },
+        {
+          "id": "pause_timeout",
+          "title": {
+            "en": "Pause timeout",
+            "nl": "Pauze-time-out",
+            "de": "Pausen-Zeitüberschreitung",
+            "fr": "Délai de pause dépassé",
+            "es": "Tiempo de pausa agotado",
+            "it": "Timeout della pausa",
+            "da": "Pause-timeout",
+            "sv": "Paus-timeout",
+            "no": "Pause-tidsavbrudd",
+            "pl": "Przekroczenie czasu pauzy",
+            "ru": "Тайм-аут паузы",
+            "ar": "انتهاء مهلة الإيقاف المؤقت",
+            "ko": "일시 중지 시간 초과"
+          }
+        },
+        {
+          "id": "emergency_stop",
+          "title": {
+            "en": "Emergency stop pressed",
+            "nl": "Noodstop ingedrukt",
+            "de": "Not-Aus gedrückt",
+            "fr": "Arrêt d'urgence enclenché",
+            "es": "Parada de emergencia pulsada",
+            "it": "Arresto di emergenza premuto",
+            "da": "Nødstop aktiveret",
+            "sv": "Nödstopp aktiverat",
+            "no": "Nødstopp aktivert",
+            "pl": "Naciśnięto wyłącznik awaryjny",
+            "ru": "Нажата аварийная остановка",
+            "ar": "تم الضغط على زر الإيقاف الطارئ",
+            "ko": "비상 정지 버튼 눌림"
+          }
+        },
+        {
+          "id": "cp_voltage",
+          "title": {
+            "en": "CP voltage fault",
+            "nl": "CP-spanningsfout",
+            "de": "CP-Spannungsfehler",
+            "fr": "Défaut de tension CP",
+            "es": "Fallo de tensión CP",
+            "it": "Guasto tensione CP",
+            "da": "CP-spændingsfejl",
+            "sv": "CP-spänningsfel",
+            "no": "CP-spenningsfeil",
+            "pl": "Błąd napięcia CP",
+            "ru": "Ошибка напряжения CP",
+            "ar": "خطأ في جهد CP",
+            "ko": "CP 전압 오류"
+          }
+        },
+        {
+          "id": "connector_fault",
+          "title": {
+            "en": "Connector fault",
+            "nl": "Stekkerfout",
+            "de": "Steckerfehler",
+            "fr": "Défaut du connecteur",
+            "es": "Fallo del conector",
+            "it": "Guasto del connettore",
+            "da": "Stikfejl",
+            "sv": "Kontaktfel",
+            "no": "Kontaktfeil",
+            "pl": "Błąd złącza",
+            "ru": "Ошибка разъёма",
+            "ar": "خطأ في الموصل",
+            "ko": "커넥터 오류"
+          }
+        },
+        {
+          "id": "ac_contactor",
+          "title": {
+            "en": "AC contactor fault",
+            "nl": "AC-relaisfout",
+            "de": "AC-Schützfehler",
+            "fr": "Défaut du contacteur AC",
+            "es": "Fallo del contactor AC",
+            "it": "Guasto del contattore AC",
+            "da": "AC-kontaktorfejl",
+            "sv": "AC-kontaktorfel",
+            "no": "AC-kontaktorfeil",
+            "pl": "Błąd stycznika AC",
+            "ru": "Ошибка контактора AC",
+            "ar": "خطأ في موصِّل التيار المتردد",
+            "ko": "AC 접촉기 오류"
+          }
+        },
+        {
+          "id": "electronic_lock",
+          "title": {
+            "en": "Electronic lock fault",
+            "nl": "Fout elektronisch slot",
+            "de": "Fehler elektronische Verriegelung",
+            "fr": "Défaut du verrou électronique",
+            "es": "Fallo del bloqueo electrónico",
+            "it": "Guasto del blocco elettronico",
+            "da": "Fejl i elektronisk lås",
+            "sv": "Fel i elektroniskt lås",
+            "no": "Feil i elektronisk lås",
+            "pl": "Błąd blokady elektronicznej",
+            "ru": "Ошибка электронного замка",
+            "ar": "خطأ في القفل الإلكتروني",
+            "ko": "전자 잠금 오류"
+          }
+        },
+        {
+          "id": "card_reader",
+          "title": {
+            "en": "Card reader fault",
+            "nl": "Kaartlezerfout",
+            "de": "Kartenleserfehler",
+            "fr": "Défaut du lecteur de carte",
+            "es": "Fallo del lector de tarjetas",
+            "it": "Guasto del lettore di schede",
+            "da": "Kortlæserfejl",
+            "sv": "Kortläsarfel",
+            "no": "Kortleserfeil",
+            "pl": "Błąd czytnika kart",
+            "ru": "Ошибка считывателя карт",
+            "ar": "خطأ في قارئ البطاقات",
+            "ko": "카드 리더 오류"
+          }
+        },
+        {
+          "id": "overcurrent",
+          "title": {
+            "en": "Overcurrent",
+            "nl": "Overstroom",
+            "de": "Überstrom",
+            "fr": "Surintensité",
+            "es": "Sobrecorriente",
+            "it": "Sovracorrente",
+            "da": "Overstrøm",
+            "sv": "Överström",
+            "no": "Overstrøm",
+            "pl": "Przetężenie",
+            "ru": "Перегрузка по току",
+            "ar": "تيار زائد",
+            "ko": "과전류"
+          }
+        },
+        {
+          "id": "overvoltage",
+          "title": {
+            "en": "Overvoltage",
+            "nl": "Overspanning",
+            "de": "Überspannung",
+            "fr": "Surtension",
+            "es": "Sobretensión",
+            "it": "Sovratensione",
+            "da": "Overspænding",
+            "sv": "Överspänning",
+            "no": "Overspenning",
+            "pl": "Przepięcie",
+            "ru": "Перенапряжение",
+            "ar": "جهد زائد",
+            "ko": "과전압"
+          }
+        },
+        {
+          "id": "undervoltage",
+          "title": {
+            "en": "Undervoltage",
+            "nl": "Onderspanning",
+            "de": "Unterspannung",
+            "fr": "Sous-tension",
+            "es": "Subtensión",
+            "it": "Sottotensione",
+            "da": "Underspænding",
+            "sv": "Underspänning",
+            "no": "Underspenning",
+            "pl": "Zbyt niskie napięcie",
+            "ru": "Пониженное напряжение",
+            "ar": "جهد منخفض",
+            "ko": "저전압"
+          }
+        },
+        {
+          "id": "port_overtemperature",
+          "title": {
+            "en": "Charging port overtemperature",
+            "nl": "Laadpoort te warm",
+            "de": "Ladeanschluss überhitzt",
+            "fr": "Surchauffe du port de charge",
+            "es": "Sobretemperatura del puerto de carga",
+            "it": "Sovratemperatura della presa di ricarica",
+            "da": "Ladeport overophedet",
+            "sv": "Laddport överhettad",
+            "no": "Ladeport overopphetet",
+            "pl": "Przegrzanie gniazda ładowania",
+            "ru": "Перегрев разъёма зарядки",
+            "ar": "ارتفاع حرارة منفذ الشحن",
+            "ko": "충전 포트 과열"
+          }
+        },
+        {
+          "id": "leakage_current",
+          "title": {
+            "en": "Leakage current",
+            "nl": "Lekstroom",
+            "de": "Fehlerstrom",
+            "fr": "Courant de fuite",
+            "es": "Corriente de fuga",
+            "it": "Corrente di dispersione",
+            "da": "Lækstrøm",
+            "sv": "Läckström",
+            "no": "Lekkasjestrøm",
+            "pl": "Prąd upływu",
+            "ru": "Ток утечки",
+            "ar": "تيار تسرب",
+            "ko": "누설 전류"
+          }
+        },
+        {
+          "id": "n_line_reversed",
+          "title": {
+            "en": "N line reversed",
+            "nl": "N-draad verwisseld",
+            "de": "N-Leiter vertauscht",
+            "fr": "Neutre inversé",
+            "es": "Neutro invertido",
+            "it": "Neutro invertito",
+            "da": "N-leder byttet om",
+            "sv": "N-ledare omkastad",
+            "no": "N-leder byttet om",
+            "pl": "Odwrócony przewód N",
+            "ru": "Перепутана нейтраль",
+            "ar": "عكس توصيل خط N",
+            "ko": "N선 역결선"
+          }
+        },
+        {
+          "id": "frequency",
+          "title": {
+            "en": "Frequency fault",
+            "nl": "Frequentiefout",
+            "de": "Frequenzfehler",
+            "fr": "Défaut de fréquence",
+            "es": "Fallo de frecuencia",
+            "it": "Guasto di frequenza",
+            "da": "Frekvensfejl",
+            "sv": "Frekvensfel",
+            "no": "Frekvensfeil",
+            "pl": "Błąd częstotliwości",
+            "ru": "Ошибка частоты",
+            "ar": "خطأ في التردد",
+            "ko": "주파수 오류"
+          }
+        },
+        {
+          "id": "stop_button",
+          "title": {
+            "en": "Stop button pressed",
+            "nl": "Stopknop ingedrukt",
+            "de": "Stopptaste gedrückt",
+            "fr": "Bouton d'arrêt enclenché",
+            "es": "Botón de parada pulsado",
+            "it": "Pulsante di arresto premuto",
+            "da": "Stopknap trykket",
+            "sv": "Stoppknapp nedtryckt",
+            "no": "Stoppknapp trykket",
+            "pl": "Naciśnięto przycisk stop",
+            "ru": "Нажата кнопка остановки",
+            "ar": "تم الضغط على زر الإيقاف",
+            "ko": "중지 버튼 눌림"
+          }
+        },
+        {
+          "id": "circuit_breaker",
+          "title": {
+            "en": "Circuit breaker fault",
+            "nl": "Fout installatieautomaat",
+            "de": "Leitungsschutzschalter-Fehler",
+            "fr": "Défaut du disjoncteur",
+            "es": "Fallo del disyuntor",
+            "it": "Guasto dell'interruttore",
+            "da": "Fejl i afbryder",
+            "sv": "Fel i brytare",
+            "no": "Feil i bryter",
+            "pl": "Błąd wyłącznika",
+            "ru": "Ошибка автоматического выключателя",
+            "ar": "خطأ في قاطع الدائرة",
+            "ko": "차단기 오류"
+          }
+        },
+        {
+          "id": "phase_loss",
+          "title": {
+            "en": "Phase loss",
+            "nl": "Fase-uitval",
+            "de": "Phasenausfall",
+            "fr": "Perte de phase",
+            "es": "Pérdida de fase",
+            "it": "Mancanza di fase",
+            "da": "Fasetab",
+            "sv": "Fasbortfall",
+            "no": "Fasetap",
+            "pl": "Zanik fazy",
+            "ru": "Потеря фазы",
+            "ar": "فقدان طور",
+            "ko": "결상"
+          }
+        },
+        {
+          "id": "pe_fault",
+          "title": {
+            "en": "Earth (PE) fault",
+            "nl": "Aardingsfout (PE)",
+            "de": "Schutzleiterfehler (PE)",
+            "fr": "Défaut de terre (PE)",
+            "es": "Fallo de tierra (PE)",
+            "it": "Guasto di terra (PE)",
+            "da": "Jordfejl (PE)",
+            "sv": "Jordfel (PE)",
+            "no": "Jordfeil (PE)",
+            "pl": "Błąd uziemienia (PE)",
+            "ru": "Ошибка заземления (PE)",
+            "ar": "خطأ في التأريض (PE)",
+            "ko": "접지 오류 (PE)"
+          }
+        },
+        {
+          "id": "external_meter",
+          "title": {
+            "en": "External meter fault",
+            "nl": "Fout externe meter",
+            "de": "Fehler externer Zähler",
+            "fr": "Défaut du compteur externe",
+            "es": "Fallo del contador externo",
+            "it": "Guasto del contatore esterno",
+            "da": "Fejl i ekstern måler",
+            "sv": "Fel i extern mätare",
+            "no": "Feil i ekstern måler",
+            "pl": "Błąd licznika zewnętrznego",
+            "ru": "Ошибка внешнего счётчика",
+            "ar": "خطأ في العداد الخارجي",
+            "ko": "외부 계량기 오류"
+          }
+        },
+        {
+          "id": "ambient_overtemperature",
+          "title": {
+            "en": "Ambient overtemperature",
+            "nl": "Omgeving te warm",
+            "de": "Umgebung überhitzt",
+            "fr": "Surchauffe ambiante",
+            "es": "Sobretemperatura ambiente",
+            "it": "Sovratemperatura ambiente",
+            "da": "Omgivelser overophedet",
+            "sv": "Omgivning överhettad",
+            "no": "Omgivelser overopphetet",
+            "pl": "Przegrzanie otoczenia",
+            "ru": "Перегрев окружающей среды",
+            "ar": "ارتفاع حرارة المحيط",
+            "ko": "주변 과열"
+          }
+        },
+        {
+          "id": "metering_chip",
+          "title": {
+            "en": "Metering chip failure",
+            "nl": "Meetchip defect",
+            "de": "Messchip defekt",
+            "fr": "Défaillance de la puce de mesure",
+            "es": "Fallo del chip de medición",
+            "it": "Guasto del chip di misura",
+            "da": "Målechip defekt",
+            "sv": "Mätchip defekt",
+            "no": "Målebrikke defekt",
+            "pl": "Awaria układu pomiarowego",
+            "ru": "Отказ измерительного чипа",
+            "ar": "عطل في شريحة القياس",
+            "ko": "계량 칩 고장"
+          }
+        },
+        {
+          "id": "access_control",
+          "title": {
+            "en": "Access control failure",
+            "nl": "Fout toegangscontrole",
+            "de": "Fehler Zugangskontrolle",
+            "fr": "Défaut du contrôle d'accès",
+            "es": "Fallo del control de acceso",
+            "it": "Guasto del controllo d'accesso",
+            "da": "Fejl i adgangskontrol",
+            "sv": "Fel i åtkomstkontroll",
+            "no": "Feil i tilgangskontroll",
+            "pl": "Błąd kontroli dostępu",
+            "ru": "Ошибка контроля доступа",
+            "ar": "خطأ في التحكم في الوصول",
+            "ko": "접근 제어 오류"
+          }
+        },
+        {
+          "id": "phase_box",
+          "title": {
+            "en": "Phase switch box fault",
+            "nl": "Fout fasewisselkast",
+            "de": "Fehler Phasenumschaltbox",
+            "fr": "Défaut du boîtier de commutation de phase",
+            "es": "Fallo de la caja de conmutación de fases",
+            "it": "Guasto del box di commutazione fasi",
+            "da": "Fejl i faseskifteboks",
+            "sv": "Fel i fasväxlarlåda",
+            "no": "Feil i faseskiftboks",
+            "pl": "Błąd skrzynki przełączania faz",
+            "ru": "Ошибка блока переключения фаз",
+            "ar": "خطأ في صندوق تبديل الأطوار",
+            "ko": "위상 전환 박스 오류"
+          }
+        },
+        {
+          "id": "energy_limit_reached",
+          "title": {
+            "en": "Energy limit reached",
+            "nl": "Energielimiet bereikt",
+            "de": "Energielimit erreicht",
+            "fr": "Limite d'énergie atteinte",
+            "es": "Límite de energía alcanzado",
+            "it": "Limite di energia raggiunto",
+            "da": "Energigrænse nået",
+            "sv": "Energigräns nådd",
+            "no": "Energigrense nådd",
+            "pl": "Osiągnięto limit energii",
+            "ru": "Достигнут лимит энергии",
+            "ar": "تم بلوغ حد الطاقة",
+            "ko": "에너지 제한 도달"
+          }
+        },
+        {
+          "id": "unknown",
+          "title": {
+            "en": "Unknown",
+            "nl": "Onbekend",
+            "de": "Unbekannt",
+            "fr": "Inconnu",
+            "es": "Desconocido",
+            "it": "Sconosciuto",
+            "da": "Ukendt",
+            "sv": "Okänd",
+            "no": "Ukjent",
+            "pl": "Nieznany",
+            "ru": "Неизвестно",
+            "ar": "غير معروف",
+            "ko": "알 수 없음"
+          }
+        }
+      ],
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "insights": false
     },
     "export_limit": {
       "type": "number",
