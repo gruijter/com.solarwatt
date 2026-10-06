@@ -25,7 +25,7 @@ const ModbusPool = require('./lib/ModbusPool');
 module.exports = class SolarwattApp extends Homey.App {
 
   async onInit() {
-    // Shared Modbus clients: inverter, battery and meter devices all talk to the same server.
+    // Inverter, battery and meter devices share one Modbus server.
     this.pool = new ModbusPool();
 
     this.homey.flow.getActionCard('force_poll')
@@ -34,9 +34,8 @@ module.exports = class SolarwattApp extends Homey.App {
         return true;
       });
 
-    // Boolean sub- and custom capabilities get no "is on" condition from Homey. Their
-    // `<capability>_true`/`_false` triggers Homey runs itself per the Flow docs (not tested live
-    // for sub-capabilities).
+    // Homey generates no "is on" condition for boolean sub- and custom capabilities. Their declared
+    // `_true`/`_false` triggers Homey runs itself (Flow docs; not tested live for sub-capabilities).
     for (const capability of ['alarm_generic.control', 'locked.charger', 'inverter_limit_active']) {
       this.homey.flow.getConditionCard(`${capability}_is`)
         .registerRunListener(async ({ device }) => device.getCapabilityValue(capability) === true);
