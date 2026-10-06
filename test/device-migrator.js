@@ -174,6 +174,31 @@ const tests = {
     await DeviceMigrator.syncCapabilityOptions(device, { meter_power: { title: { en: 'Solar energy (AC)' } } });
     assert.strictEqual(writes, 3, 'a title that lost a language is a change too');
   },
+  'without options of its own the manifest is compared, not nothing': async () => {
+    const device = fakeDevice({ caps: ['meter_tariff', 'meter_money'], manifestOptions: { meter_money: { decimals: 2 } } });
+    device.homey.app = { manifest: { capabilities: { meter_tariff: { units: { en: '¤' }, decimals: 4 } } } };
+    let writes = 0;
+    const set = device.setCapabilityOptions;
+    device.setCapabilityOptions = async (...args) => {
+      writes += 1; return set(...args);
+    };
+    // as the capability definition and the driver's options already have it: nothing to write
+    await DeviceMigrator.syncCapabilityOptions(device, { meter_tariff: { units: { en: '¤' }, decimals: 4 }, meter_money: { decimals: 2 } });
+    assert.strictEqual(writes, 0);
+    // another currency than the definition's (a device just paired with its currency set)
+    await DeviceMigrator.syncCapabilityOptions(device, { meter_tariff: { units: { en: '€' }, decimals: 4 } });
+    assert.strictEqual(writes, 1);
+    assert.deepStrictEqual(device.state.options.meter_tariff, { units: { en: '€' }, decimals: 4 });
+  },
+  'does not restore an enum value the capability no longer has': async () => {
+    const device = fakeDevice({ caps: ['a', 'pick', 'other'], values: { a: 1, pick: 'off', other: 'x' } });
+    device.homey.app = { manifest: { capabilities: { pick: { type: 'enum', values: [{ id: '07:00' }] } } } };
+    device.error = () => {}; // Homey would log the rejected value here
+    await DeviceMigrator.migrateCapabilities(device, ['a', 'mode', 'pick', 'other']);
+    assert.deepStrictEqual(device.state.caps, ['a', 'mode', 'pick', 'other']);
+    assert.strictEqual(device.getCapabilityValue('pick'), null, 'a removed choice is not restored');
+    assert.strictEqual(device.getCapabilityValue('other'), 'x', 'without a known definition the value is restored');
+  },
 };
 
 const main = async () => {
