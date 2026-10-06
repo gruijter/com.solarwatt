@@ -26,6 +26,7 @@
     "measure_power.ac_inverter",
     "measure_power.load",
     "measure_power.eps",
+    "measure_power.external",
     "measure_efficiency",
     "meter_power",
     "meter_power.today",
@@ -615,6 +616,24 @@
         "ru": "Мощность фазы 3 (AC)",
         "ar": "قدرة المرحلة 3 (AC)",
         "ko": "전력 위상 3 (AC)"
+      },
+      "decimals": 0
+    },
+    "measure_power.external": {
+      "title": {
+        "en": "External generation (meter 2)",
+        "nl": "Externe opwek (meter 2)",
+        "de": "Externe Erzeugung (Zähler 2)",
+        "fr": "Production externe (compteur 2)",
+        "es": "Generación externa (medidor 2)",
+        "it": "Produzione esterna (contatore 2)",
+        "da": "Ekstern produktion (måler 2)",
+        "sv": "Extern produktion (mätare 2)",
+        "no": "Ekstern produksjon (måler 2)",
+        "pl": "Zewnętrzna produkcja (licznik 2)",
+        "ru": "Внешняя генерация (счётчик 2)",
+        "ar": "التوليد الخارجي (العداد 2)",
+        "ko": "외부 발전 (계량기 2)"
       },
       "decimals": 0
     }
