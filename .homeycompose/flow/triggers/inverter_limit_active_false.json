@@ -1,0 +1,25 @@
+{
+  "title": {
+    "en": "Inverter limit turned off",
+    "nl": "Omvormerlimiet ging uit",
+    "de": "Wechselrichtergrenze wurde inaktiv",
+    "fr": "La limite de l'onduleur s'est désactivée",
+    "es": "El límite del inversor se desactivó",
+    "it": "Il limite dell'inverter si è disattivato",
+    "da": "Invertergrænsen blev inaktiv",
+    "sv": "Växelriktargränsen blev inaktiv",
+    "no": "Invertergrensen ble inaktiv",
+    "pl": "Limit falownika wyłączył się",
+    "ru": "Ограничение инвертора выключилось",
+    "ar": "تم تعطيل حد العاكس",
+    "ko": "인버터 제한이 꺼짐"
+  },
+  "highlight": true,
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=battery&capabilities=inverter_limit_active"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "title": {
+    "en": "Charger is locked",
+    "nl": "Laadpaal is vergrendeld",
+    "de": "Ladestation ist gesperrt",
+    "fr": "La borne est verrouillée",
+    "es": "El cargador está bloqueado",
+    "it": "La stazione di ricarica è bloccata",
+    "da": "Laderen er låst",
+    "sv": "Laddaren är låst",
+    "no": "Laderen er låst",
+    "pl": "Ładowarka jest zablokowana",
+    "ru": "Зарядное устройство заблокировано",
+    "ar": "الشاحن مقفل",
+    "ko": "충전기가 잠긴 상태"
+  },
+  "titleFormatted": {
+    "en": "Charger !{{is|is not}} locked",
+    "nl": "Laadpaal !{{is|is niet}} vergrendeld",
+    "de": "Ladestation !{{ist|ist nicht}} gesperrt",
+    "fr": "La borne !{{est|n'est pas}} verrouillée",
+    "es": "El cargador !{{está|no está}} bloqueado",
+    "it": "La stazione di ricarica !{{è|non è}} bloccata",
+    "da": "Laderen !{{er|er ikke}} låst",
+    "sv": "Laddaren !{{är|är inte}} låst",
+    "no": "Laderen !{{er|er ikke}} låst",
+    "pl": "Ładowarka !{{jest|nie jest}} zablokowana",
+    "ru": "Зарядное устройство !{{заблокировано|не заблокировано}}",
+    "ar": "الشاحن !{{مقفل|غير مقفل}}",
+    "ko": "충전기가 잠긴 상태!{{이다|가 아니다}}"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=charger&capabilities=locked.charger"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": {
+    "en": "Charger was locked",
+    "nl": "Laadpaal werd vergrendeld",
+    "de": "Ladestation wurde gesperrt",
+    "fr": "La borne a été verrouillée",
+    "es": "El cargador fue bloqueado",
+    "it": "La stazione di ricarica è stata bloccata",
+    "da": "Laderen blev låst",
+    "sv": "Laddaren låstes",
+    "no": "Laderen ble låst",
+    "pl": "Ładowarka została zablokowana",
+    "ru": "Зарядное устройство заблокировано",
+    "ar": "تم قفل الشاحن",
+    "ko": "충전기가 잠김"
+  },
+  "highlight": true,
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=charger&capabilities=locked.charger"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "title": {
+    "en": "Inverter limit is active",
+    "nl": "Omvormerlimiet is actief",
+    "de": "Wechselrichtergrenze ist aktiv",
+    "fr": "La limite de l'onduleur est active",
+    "es": "El límite del inversor está activo",
+    "it": "Il limite dell'inverter è attivo",
+    "da": "Invertergrænsen er aktiv",
+    "sv": "Växelriktargränsen är aktiv",
+    "no": "Invertergrensen er aktiv",
+    "pl": "Limit falownika jest aktywny",
+    "ru": "Ограничение инвертора активно",
+    "ar": "حد العاكس نشط",
+    "ko": "인버터 제한 활성 상태"
+  },
+  "titleFormatted": {
+    "en": "Inverter limit !{{is|is not}} active",
+    "nl": "Omvormerlimiet !{{is|is niet}} actief",
+    "de": "Wechselrichtergrenze !{{ist|ist nicht}} aktiv",
+    "fr": "La limite de l'onduleur !{{est|n'est pas}} active",
+    "es": "El límite del inversor !{{está|no está}} activo",
+    "it": "Il limite dell'inverter !{{è|non è}} attivo",
+    "da": "Invertergrænsen !{{er|er ikke}} aktiv",
+    "sv": "Växelriktargränsen !{{är|är inte}} aktiv",
+    "no": "Invertergrensen !{{er|er ikke}} aktiv",
+    "pl": "Limit falownika !{{jest|nie jest}} aktywny",
+    "ru": "Ограничение инвертора !{{активно|не активно}}",
+    "ar": "حد العاكس !{{نشط|غير نشط}}",
+    "ko": "인버터 제한이 활성 상태!{{이다|가 아니다}}"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=battery&capabilities=inverter_limit_active"
+    }
+  ]
+}

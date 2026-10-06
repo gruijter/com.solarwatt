@@ -1,0 +1,25 @@
+{
+  "title": {
+    "en": "Charger was unlocked",
+    "nl": "Laadpaal werd ontgrendeld",
+    "de": "Ladestation wurde entsperrt",
+    "fr": "La borne a été déverrouillée",
+    "es": "El cargador fue desbloqueado",
+    "it": "La stazione di ricarica è stata sbloccata",
+    "da": "Laderen blev låst op",
+    "sv": "Laddaren låstes upp",
+    "no": "Laderen ble låst opp",
+    "pl": "Ładowarka została odblokowana",
+    "ru": "Зарядное устройство разблокировано",
+    "ar": "تم فتح قفل الشاحن",
+    "ko": "충전기 잠금이 해제됨"
+  },
+  "highlight": true,
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=charger&capabilities=locked.charger"
+    }
+  ]
+}

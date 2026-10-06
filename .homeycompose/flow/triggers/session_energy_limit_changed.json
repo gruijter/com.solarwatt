@@ -1,0 +1,46 @@
+{
+  "title": {
+    "en": "Session energy limit changed",
+    "nl": "Laadlimiet sessie gewijzigd",
+    "de": "Energielimit Ladevorgang geändert",
+    "fr": "Limite d'énergie de la session modifiée",
+    "es": "Límite de energía de la sesión cambiado",
+    "it": "Limite energia sessione cambiato",
+    "da": "Energigrænse for session ændret",
+    "sv": "Energigräns för session ändrad",
+    "no": "Energigrense for økt endret",
+    "pl": "Zmieniono limit energii sesji",
+    "ru": "Лимит энергии сессии изменён",
+    "ar": "تغير حد طاقة الجلسة",
+    "ko": "세션 에너지 한도 변경됨"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=charger&capabilities=session_energy_limit"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "session_energy_limit",
+      "type": "number",
+      "title": {
+        "en": "Session energy limit",
+        "nl": "Laadlimiet sessie",
+        "de": "Energielimit Ladevorgang",
+        "fr": "Limite d'énergie de la session",
+        "es": "Límite de energía de la sesión",
+        "it": "Limite energia sessione",
+        "da": "Energigrænse for session",
+        "sv": "Energigräns för session",
+        "no": "Energigrense for økt",
+        "pl": "Limit energii sesji",
+        "ru": "Лимит энергии сессии",
+        "ar": "حد طاقة الجلسة",
+        "ko": "세션 에너지 한도"
+      },
+      "example": 20
+    }
+  ]
+}

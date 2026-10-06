@@ -377,6 +377,162 @@
     "triggers": [
       {
         "title": {
+          "en": "Control override cleared",
+          "nl": "Overschreven sturing opgeheven",
+          "de": "Überschriebene Steuerung aufgehoben",
+          "fr": "Écrasement du pilotage levé",
+          "es": "Anulación del control eliminada",
+          "it": "Sovrascrittura del controllo annullata",
+          "da": "Overskrevet styring ophævet",
+          "sv": "Överskriven styrning upphävd",
+          "no": "Overstyrt styring opphevet",
+          "pl": "Nadpisanie sterowania anulowane",
+          "ru": "Перехват управления снят",
+          "ar": "تم إلغاء تجاوز التحكم",
+          "ko": "제어 덮어쓰기 해제됨"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=battery|inverter|charger&capabilities=alarm_generic.control"
+          }
+        ],
+        "id": "alarm_generic.control_false"
+      },
+      {
+        "title": {
+          "en": "Control was overridden",
+          "nl": "Sturing werd overschreven",
+          "de": "Steuerung wurde überschrieben",
+          "fr": "Le pilotage a été écrasé",
+          "es": "El control fue anulado",
+          "it": "Il controllo è stato sovrascritto",
+          "da": "Styringen blev overskrevet",
+          "sv": "Styrningen skrevs över",
+          "no": "Styringen ble overstyrt",
+          "pl": "Sterowanie zostało nadpisane",
+          "ru": "Управление перехвачено",
+          "ar": "تم تجاوز التحكم",
+          "ko": "제어가 덮어써짐"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=battery|inverter|charger&capabilities=alarm_generic.control"
+          }
+        ],
+        "id": "alarm_generic.control_true"
+      },
+      {
+        "title": {
+          "en": "Inverter limit turned off",
+          "nl": "Omvormerlimiet ging uit",
+          "de": "Wechselrichtergrenze wurde inaktiv",
+          "fr": "La limite de l'onduleur s'est désactivée",
+          "es": "El límite del inversor se desactivó",
+          "it": "Il limite dell'inverter si è disattivato",
+          "da": "Invertergrænsen blev inaktiv",
+          "sv": "Växelriktargränsen blev inaktiv",
+          "no": "Invertergrensen ble inaktiv",
+          "pl": "Limit falownika wyłączył się",
+          "ru": "Ограничение инвертора выключилось",
+          "ar": "تم تعطيل حد العاكس",
+          "ko": "인버터 제한이 꺼짐"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=battery&capabilities=inverter_limit_active"
+          }
+        ],
+        "id": "inverter_limit_active_false"
+      },
+      {
+        "title": {
+          "en": "Inverter limit turned on",
+          "nl": "Omvormerlimiet ging aan",
+          "de": "Wechselrichtergrenze wurde aktiv",
+          "fr": "La limite de l'onduleur s'est activée",
+          "es": "El límite del inversor se activó",
+          "it": "Il limite dell'inverter si è attivato",
+          "da": "Invertergrænsen blev aktiv",
+          "sv": "Växelriktargränsen blev aktiv",
+          "no": "Invertergrensen ble aktiv",
+          "pl": "Limit falownika włączył się",
+          "ru": "Ограничение инвертора включилось",
+          "ar": "تم تفعيل حد العاكس",
+          "ko": "인버터 제한이 켜짐"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=battery&capabilities=inverter_limit_active"
+          }
+        ],
+        "id": "inverter_limit_active_true"
+      },
+      {
+        "title": {
+          "en": "Charger was unlocked",
+          "nl": "Laadpaal werd ontgrendeld",
+          "de": "Ladestation wurde entsperrt",
+          "fr": "La borne a été déverrouillée",
+          "es": "El cargador fue desbloqueado",
+          "it": "La stazione di ricarica è stata sbloccata",
+          "da": "Laderen blev låst op",
+          "sv": "Laddaren låstes upp",
+          "no": "Laderen ble låst opp",
+          "pl": "Ładowarka została odblokowana",
+          "ru": "Зарядное устройство разблокировано",
+          "ar": "تم فتح قفل الشاحن",
+          "ko": "충전기 잠금이 해제됨"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=charger&capabilities=locked.charger"
+          }
+        ],
+        "id": "locked.charger_false"
+      },
+      {
+        "title": {
+          "en": "Charger was locked",
+          "nl": "Laadpaal werd vergrendeld",
+          "de": "Ladestation wurde gesperrt",
+          "fr": "La borne a été verrouillée",
+          "es": "El cargador fue bloqueado",
+          "it": "La stazione di ricarica è stata bloccata",
+          "da": "Laderen blev låst",
+          "sv": "Laddaren låstes",
+          "no": "Laderen ble låst",
+          "pl": "Ładowarka została zablokowana",
+          "ru": "Зарядное устройство заблокировано",
+          "ar": "تم قفل الشاحن",
+          "ko": "충전기가 잠김"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=charger&capabilities=locked.charger"
+          }
+        ],
+        "id": "locked.charger_true"
+      },
+      {
+        "title": {
           "en": "Voltage phase 1 changed",
           "nl": "Voltage fase 1 is veranderd",
           "de": "Spannung Phase 1 geändert",
@@ -662,9 +818,176 @@
           }
         ],
         "id": "meter_power.today_changed"
+      },
+      {
+        "title": {
+          "en": "Session energy limit changed",
+          "nl": "Laadlimiet sessie gewijzigd",
+          "de": "Energielimit Ladevorgang geändert",
+          "fr": "Limite d'énergie de la session modifiée",
+          "es": "Límite de energía de la sesión cambiado",
+          "it": "Limite energia sessione cambiato",
+          "da": "Energigrænse for session ændret",
+          "sv": "Energigräns för session ändrad",
+          "no": "Energigrense for økt endret",
+          "pl": "Zmieniono limit energii sesji",
+          "ru": "Лимит энергии сессии изменён",
+          "ar": "تغير حد طاقة الجلسة",
+          "ko": "세션 에너지 한도 변경됨"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=charger&capabilities=session_energy_limit"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "session_energy_limit",
+            "type": "number",
+            "title": {
+              "en": "Session energy limit",
+              "nl": "Laadlimiet sessie",
+              "de": "Energielimit Ladevorgang",
+              "fr": "Limite d'énergie de la session",
+              "es": "Límite de energía de la sesión",
+              "it": "Limite energia sessione",
+              "da": "Energigrænse for session",
+              "sv": "Energigräns för session",
+              "no": "Energigrense for økt",
+              "pl": "Limit energii sesji",
+              "ru": "Лимит энергии сессии",
+              "ar": "حد طاقة الجلسة",
+              "ko": "세션 에너지 한도"
+            },
+            "example": 20
+          }
+        ],
+        "id": "session_energy_limit_changed"
       }
     ],
     "conditions": [
+      {
+        "title": {
+          "en": "Control is overridden",
+          "nl": "Sturing is overschreven",
+          "de": "Steuerung ist überschrieben",
+          "fr": "Le pilotage est écrasé",
+          "es": "El control está anulado",
+          "it": "Il controllo è sovrascritto",
+          "da": "Styringen er overskrevet",
+          "sv": "Styrningen är överskriven",
+          "no": "Styringen er overstyrt",
+          "pl": "Sterowanie jest nadpisane",
+          "ru": "Управление перехвачено",
+          "ar": "التحكم متجاوز",
+          "ko": "제어가 덮어써진 상태"
+        },
+        "titleFormatted": {
+          "en": "Control !{{is|is not}} overridden",
+          "nl": "Sturing !{{is|is niet}} overschreven",
+          "de": "Steuerung !{{ist|ist nicht}} überschrieben",
+          "fr": "Le pilotage !{{est|n'est pas}} écrasé",
+          "es": "El control !{{está|no está}} anulado",
+          "it": "Il controllo !{{è|non è}} sovrascritto",
+          "da": "Styringen !{{er|er ikke}} overskrevet",
+          "sv": "Styrningen !{{är|är inte}} överskriven",
+          "no": "Styringen !{{er|er ikke}} overstyrt",
+          "pl": "Sterowanie !{{jest|nie jest}} nadpisane",
+          "ru": "Управление !{{перехвачено|не перехвачено}}",
+          "ar": "التحكم !{{متجاوز|غير متجاوز}}",
+          "ko": "제어가 덮어써진 상태!{{이다|가 아니다}}"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=battery|inverter|charger&capabilities=alarm_generic.control"
+          }
+        ],
+        "id": "alarm_generic.control_is"
+      },
+      {
+        "title": {
+          "en": "Inverter limit is active",
+          "nl": "Omvormerlimiet is actief",
+          "de": "Wechselrichtergrenze ist aktiv",
+          "fr": "La limite de l'onduleur est active",
+          "es": "El límite del inversor está activo",
+          "it": "Il limite dell'inverter è attivo",
+          "da": "Invertergrænsen er aktiv",
+          "sv": "Växelriktargränsen är aktiv",
+          "no": "Invertergrensen er aktiv",
+          "pl": "Limit falownika jest aktywny",
+          "ru": "Ограничение инвертора активно",
+          "ar": "حد العاكس نشط",
+          "ko": "인버터 제한 활성 상태"
+        },
+        "titleFormatted": {
+          "en": "Inverter limit !{{is|is not}} active",
+          "nl": "Omvormerlimiet !{{is|is niet}} actief",
+          "de": "Wechselrichtergrenze !{{ist|ist nicht}} aktiv",
+          "fr": "La limite de l'onduleur !{{est|n'est pas}} active",
+          "es": "El límite del inversor !{{está|no está}} activo",
+          "it": "Il limite dell'inverter !{{è|non è}} attivo",
+          "da": "Invertergrænsen !{{er|er ikke}} aktiv",
+          "sv": "Växelriktargränsen !{{är|är inte}} aktiv",
+          "no": "Invertergrensen !{{er|er ikke}} aktiv",
+          "pl": "Limit falownika !{{jest|nie jest}} aktywny",
+          "ru": "Ограничение инвертора !{{активно|не активно}}",
+          "ar": "حد العاكس !{{نشط|غير نشط}}",
+          "ko": "인버터 제한이 활성 상태!{{이다|가 아니다}}"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=battery&capabilities=inverter_limit_active"
+          }
+        ],
+        "id": "inverter_limit_active_is"
+      },
+      {
+        "title": {
+          "en": "Charger is locked",
+          "nl": "Laadpaal is vergrendeld",
+          "de": "Ladestation ist gesperrt",
+          "fr": "La borne est verrouillée",
+          "es": "El cargador está bloqueado",
+          "it": "La stazione di ricarica è bloccata",
+          "da": "Laderen er låst",
+          "sv": "Laddaren är låst",
+          "no": "Laderen er låst",
+          "pl": "Ładowarka jest zablokowana",
+          "ru": "Зарядное устройство заблокировано",
+          "ar": "الشاحن مقفل",
+          "ko": "충전기가 잠긴 상태"
+        },
+        "titleFormatted": {
+          "en": "Charger !{{is|is not}} locked",
+          "nl": "Laadpaal !{{is|is niet}} vergrendeld",
+          "de": "Ladestation !{{ist|ist nicht}} gesperrt",
+          "fr": "La borne !{{est|n'est pas}} verrouillée",
+          "es": "El cargador !{{está|no está}} bloqueado",
+          "it": "La stazione di ricarica !{{è|non è}} bloccata",
+          "da": "Laderen !{{er|er ikke}} låst",
+          "sv": "Laddaren !{{är|är inte}} låst",
+          "no": "Laderen !{{er|er ikke}} låst",
+          "pl": "Ładowarka !{{jest|nie jest}} zablokowana",
+          "ru": "Зарядное устройство !{{заблокировано|не заблокировано}}",
+          "ar": "الشاحن !{{مقفل|غير مقفل}}",
+          "ko": "충전기가 잠긴 상태!{{이다|가 아니다}}"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=charger&capabilities=locked.charger"
+          }
+        ],
+        "id": "locked.charger_is"
+      },
       {
         "title": {
           "en": "Inverter status is ...",

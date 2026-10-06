@@ -34,6 +34,13 @@ module.exports = class SolarwattApp extends Homey.App {
         return true;
       });
 
+    // Boolean sub- and custom capabilities get no "is on" condition from Homey; their
+    // `<capability>_true`/`_false` triggers Homey does fire by itself.
+    for (const capability of ['alarm_generic.control', 'locked.charger', 'inverter_limit_active']) {
+      this.homey.flow.getConditionCard(`${capability}_is`)
+        .registerRunListener(async ({ device }) => device.getCapabilityValue(capability) === true);
+    }
+
     // A SOLARWATT Manager on the network can take control back from Homey (deviation D-08).
     this.managerDiscovery = this.homey.discovery.getStrategy('manager');
     this.managerDiscovery.on('result', () => this.homey.emit('energyManager'));
