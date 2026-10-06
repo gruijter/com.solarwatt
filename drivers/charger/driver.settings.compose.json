@@ -53,6 +53,9 @@
     },
     "children": [
       {
+        "$extends": "workMode"
+      },
+      {
         "$extends": "phaseSwitching"
       }
     ]

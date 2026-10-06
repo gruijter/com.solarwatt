@@ -11,7 +11,7 @@
     },
     "noCarConnected": "Geen auto aangesloten.",
     "noChargingSession": "Geen laadsessie: start eerst met laden.",
-    "unplugFirst": "Haal eerst de kabel eruit: de laadpaal wijzigt dit alleen zonder kabel.",
+    "unplugFirst": "Haal eerst de kabel eruit: de lader wijzigt dit alleen zonder kabel.",
     "socRange": "SoC-grenzen moeten 10–100% zijn, met minimum ≤ minimum op net ≤ maximum.",
     "writeFailed": "Kon de opdracht niet versturen:"
   },

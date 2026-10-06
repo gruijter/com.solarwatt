@@ -529,7 +529,7 @@
       {
         "title": {
           "en": "Charger was unlocked",
-          "nl": "Laadpaal werd ontgrendeld",
+          "nl": "Lader werd ontgrendeld",
           "de": "Ladestation wurde entsperrt",
           "fr": "La borne a été déverrouillée",
           "es": "El cargador fue desbloqueado",
@@ -555,7 +555,7 @@
       {
         "title": {
           "en": "Charger was locked",
-          "nl": "Laadpaal werd vergrendeld",
+          "nl": "Lader werd vergrendeld",
           "de": "Ladestation wurde gesperrt",
           "fr": "La borne a été verrouillée",
           "es": "El cargador fue bloqueado",
@@ -998,7 +998,7 @@
       {
         "title": {
           "en": "Charger is locked",
-          "nl": "Laadpaal is vergrendeld",
+          "nl": "Lader is vergrendeld",
           "de": "Ladestation ist gesperrt",
           "fr": "La borne est verrouillée",
           "es": "El cargador está bloqueado",
@@ -1013,7 +1013,7 @@
         },
         "titleFormatted": {
           "en": "Charger !{{is|is not}} locked",
-          "nl": "Laadpaal !{{is|is niet}} vergrendeld",
+          "nl": "Lader !{{is|is niet}} vergrendeld",
           "de": "Ladestation !{{ist|ist nicht}} gesperrt",
           "fr": "La borne !{{est|n'est pas}} verrouillée",
           "es": "El cargador !{{está|no está}} bloqueado",
@@ -2884,7 +2884,7 @@
         "locked.charger": {
           "title": {
             "en": "Charger lock",
-            "nl": "Laadpaalvergrendeling",
+            "nl": "Ladervergrendeling",
             "de": "Ladestationssperre",
             "fr": "Verrouillage de la borne",
             "es": "Bloqueo del cargador",
@@ -2899,7 +2899,7 @@
           },
           "insightsTitleTrue": {
             "en": "Charger locked",
-            "nl": "Laadpaal vergrendeld",
+            "nl": "Lader vergrendeld",
             "de": "Ladestation gesperrt",
             "fr": "Borne verrouillée",
             "es": "Cargador bloqueado",
@@ -2914,7 +2914,7 @@
           },
           "insightsTitleFalse": {
             "en": "Charger unlocked",
-            "nl": "Laadpaal ontgrendeld",
+            "nl": "Lader ontgrendeld",
             "de": "Ladestation entsperrt",
             "fr": "Borne déverrouillée",
             "es": "Cargador desbloqueado",
@@ -3190,6 +3190,79 @@
             "ko": "충전"
           },
           "children": [
+            {
+              "id": "workMode",
+              "type": "dropdown",
+              "value": "0",
+              "label": {
+                "en": "Start charging",
+                "nl": "Laden starten",
+                "de": "Laden starten",
+                "fr": "Démarrage de la recharge",
+                "es": "Inicio de la carga",
+                "it": "Avvio della ricarica",
+                "da": "Start af opladning",
+                "sv": "Start av laddning",
+                "no": "Start av lading",
+                "pl": "Rozpoczęcie ładowania",
+                "ru": "Начало зарядки",
+                "ar": "بدء الشحن",
+                "ko": "충전 시작"
+              },
+              "hint": {
+                "en": "Command or card: the car waits for Homey, the app or a card. Plug & Charge: it charges at full power as soon as it is plugged in, until Homey limits or stops it. Only changes with no cable in the charger.",
+                "nl": "Commando of kaart: de auto wacht op Homey, de app of een kaart. Plug & Charge: hij laadt op vol vermogen zodra hij is aangesloten, tot Homey dat begrenst of stopt. Alleen te wijzigen zonder kabel in de lader.",
+                "de": "Befehl oder Karte: Das Auto wartet auf Homey, die App oder eine Karte. Plug & Charge: Es lädt mit voller Leistung, sobald es eingesteckt ist, bis Homey begrenzt oder stoppt. Nur ohne Kabel in der Ladestation änderbar.",
+                "fr": "Commande ou carte : la voiture attend Homey, l'appli ou une carte. Plug & Charge : elle charge à pleine puissance dès le branchement, jusqu'à ce que Homey limite ou arrête. Modifiable uniquement sans câble branché sur la borne.",
+                "es": "Comando o tarjeta: el coche espera a Homey, la app o una tarjeta. Plug & Charge: carga a plena potencia en cuanto se conecta, hasta que Homey la limita o la detiene. Solo se puede cambiar sin cable en el cargador.",
+                "it": "Comando o tessera: l'auto attende Homey, l'app o una tessera. Plug & Charge: ricarica a piena potenza appena collegata, finché Homey non la limita o la ferma. Modificabile solo senza cavo nella stazione.",
+                "da": "Kommando eller kort: bilen venter på Homey, appen eller et kort. Plug & Charge: den lader med fuld effekt, så snart den er tilsluttet, indtil Homey begrænser eller stopper. Kan kun ændres uden kabel i laderen.",
+                "sv": "Kommando eller kort: bilen väntar på Homey, appen eller ett kort. Plug & Charge: den laddar med full effekt så snart den är ansluten, tills Homey begränsar eller stoppar. Kan bara ändras utan kabel i laddaren.",
+                "no": "Kommando eller kort: bilen venter på Homey, appen eller et kort. Plug & Charge: den lader med full effekt så snart den er tilkoblet, til Homey begrenser eller stopper. Kan bare endres uten kabel i laderen.",
+                "pl": "Polecenie lub karta: samochód czeka na Homey, aplikację lub kartę. Plug & Charge: ładuje z pełną mocą zaraz po podłączeniu, dopóki Homey nie ograniczy lub nie zatrzyma. Można zmienić tylko bez kabla w ładowarce.",
+                "ru": "Команда или карта: автомобиль ждёт Homey, приложение или карту. Plug & Charge: заряжается на полной мощности сразу после подключения, пока Homey не ограничит или не остановит. Можно изменить только без кабеля в зарядном устройстве.",
+                "ar": "أمر أو بطاقة: تنتظر السيارة Homey أو التطبيق أو بطاقة. Plug & Charge: تشحن بكامل القدرة فور توصيلها، إلى أن يحدّها Homey أو يوقفها. لا يمكن تغييره إلا دون كابل في الشاحن.",
+                "ko": "명령 또는 카드: 차량이 Homey, 앱 또는 카드를 기다립니다. Plug & Charge: 연결 즉시 최대 출력으로 충전하며, Homey가 제한하거나 중지할 때까지 계속됩니다. 충전기에 케이블이 없을 때만 변경할 수 있습니다."
+              },
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Command or card",
+                    "nl": "Commando of kaart",
+                    "de": "Befehl oder Karte",
+                    "fr": "Commande ou carte",
+                    "es": "Comando o tarjeta",
+                    "it": "Comando o tessera",
+                    "da": "Kommando eller kort",
+                    "sv": "Kommando eller kort",
+                    "no": "Kommando eller kort",
+                    "pl": "Polecenie lub karta",
+                    "ru": "Команда или карта",
+                    "ar": "أمر أو بطاقة",
+                    "ko": "명령 또는 카드"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Plug & Charge",
+                    "nl": "Plug & Charge",
+                    "de": "Plug & Charge",
+                    "fr": "Plug & Charge",
+                    "es": "Plug & Charge",
+                    "it": "Plug & Charge",
+                    "da": "Plug & Charge",
+                    "sv": "Plug & Charge",
+                    "no": "Plug & Charge",
+                    "pl": "Plug & Charge",
+                    "ru": "Plug & Charge",
+                    "ar": "Plug & Charge",
+                    "ko": "Plug & Charge"
+                  }
+                }
+              ]
+            },
             {
               "id": "phaseSwitching",
               "type": "checkbox",

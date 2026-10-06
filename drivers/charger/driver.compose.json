@@ -296,7 +296,7 @@
     "locked.charger": {
       "title": {
         "en": "Charger lock",
-        "nl": "Laadpaalvergrendeling",
+        "nl": "Ladervergrendeling",
         "de": "Ladestationssperre",
         "fr": "Verrouillage de la borne",
         "es": "Bloqueo del cargador",
@@ -311,7 +311,7 @@
       },
       "insightsTitleTrue": {
         "en": "Charger locked",
-        "nl": "Laadpaal vergrendeld",
+        "nl": "Lader vergrendeld",
         "de": "Ladestation gesperrt",
         "fr": "Borne verrouillée",
         "es": "Cargador bloqueado",
@@ -326,7 +326,7 @@
       },
       "insightsTitleFalse": {
         "en": "Charger unlocked",
-        "nl": "Laadpaal ontgrendeld",
+        "nl": "Lader ontgrendeld",
         "de": "Ladestation entsperrt",
         "fr": "Borne déverrouillée",
         "es": "Cargador desbloqueado",
