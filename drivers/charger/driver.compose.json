@@ -242,19 +242,19 @@
     },
     "measure_power.target": {
       "title": {
-        "en": "Target power",
-        "nl": "Doelvermogen",
-        "de": "Zielleistung",
-        "fr": "Puissance cible",
-        "es": "Potencia objetivo",
-        "it": "Potenza obiettivo",
-        "da": "Måleffekt",
-        "sv": "Måleffekt",
-        "no": "Måleffekt",
-        "pl": "Moc docelowa",
-        "ru": "Целевая мощность",
-        "ar": "القدرة المستهدفة",
-        "ko": "목표 전력"
+        "en": "Active charge limit",
+        "nl": "Actieve laadlimiet",
+        "de": "Aktives Ladelimit",
+        "fr": "Limite de charge active",
+        "es": "Límite de carga activo",
+        "it": "Limite di carica attivo",
+        "da": "Aktiv ladegrænse",
+        "sv": "Aktiv laddgräns",
+        "no": "Aktiv ladegrense",
+        "pl": "Aktywny limit ładowania",
+        "ru": "Активный лимит зарядки",
+        "ar": "حد الشحن النشط",
+        "ko": "현재 충전 한도"
       },
       "decimals": 0
     },
