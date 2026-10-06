@@ -2242,6 +2242,7 @@
         "evcharger_charging",
         "evcharger_charging_state",
         "meter_power.session",
+        "active_energy_limit",
         "target_power",
         "target_power_mode",
         "measure_current.1",
@@ -4619,6 +4620,45 @@
     }
   ],
   "capabilities": {
+    "active_energy_limit": {
+      "type": "number",
+      "title": {
+        "en": "Active energy limit",
+        "nl": "Actieve energielimiet",
+        "de": "Aktives Energielimit",
+        "fr": "Limite d'énergie active",
+        "es": "Límite de energía activo",
+        "it": "Limite di energia attivo",
+        "da": "Aktiv energigrænse",
+        "sv": "Aktiv energigräns",
+        "no": "Aktiv energigrense",
+        "pl": "Aktywny limit energii",
+        "ru": "Активный лимит энергии",
+        "ar": "حد الطاقة النشط",
+        "ko": "현재 에너지 한도"
+      },
+      "units": {
+        "en": "kWh",
+        "nl": "kWh",
+        "de": "kWh",
+        "fr": "kWh",
+        "es": "kWh",
+        "it": "kWh",
+        "da": "kWh",
+        "sv": "kWh",
+        "no": "kWh",
+        "pl": "kWh",
+        "ru": "kWh",
+        "ar": "kWh",
+        "ko": "kWh"
+      },
+      "decimals": 0,
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "uiComponent": "sensor",
+      "icon": "./assets/session_energy_limit.svg"
+    },
     "battery_max_soc": {
       "type": "number",
       "title": {

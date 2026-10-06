@@ -24,6 +24,7 @@
     "evcharger_charging",
     "evcharger_charging_state",
     "meter_power.session",
+    "active_energy_limit",
     "target_power",
     "target_power_mode",
     "measure_current.1",
