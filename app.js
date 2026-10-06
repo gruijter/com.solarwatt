@@ -34,8 +34,9 @@ module.exports = class SolarwattApp extends Homey.App {
         return true;
       });
 
-    // Boolean sub- and custom capabilities get no "is on" condition from Homey; their
-    // `<capability>_true`/`_false` triggers Homey does fire by itself.
+    // Boolean sub- and custom capabilities get no "is on" condition from Homey. Their
+    // `<capability>_true`/`_false` triggers Homey runs itself per the Flow docs (not tested live
+    // for sub-capabilities).
     for (const capability of ['alarm_generic.control', 'locked.charger', 'inverter_limit_active']) {
       this.homey.flow.getConditionCard(`${capability}_is`)
         .registerRunListener(async ({ device }) => device.getCapabilityValue(capability) === true);

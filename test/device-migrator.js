@@ -193,7 +193,7 @@ const tests = {
   'does not restore an enum value the capability no longer has': async () => {
     const device = fakeDevice({ caps: ['a', 'pick', 'other'], values: { a: 1, pick: 'off', other: 'x' } });
     device.homey.app = { manifest: { capabilities: { pick: { type: 'enum', values: [{ id: '07:00' }] } } } };
-    device.error = () => {}; // Homey would log the rejected value here
+    device.error = () => {}; // keep the test output quiet
     await DeviceMigrator.migrateCapabilities(device, ['a', 'mode', 'pick', 'other']);
     assert.deepStrictEqual(device.state.caps, ['a', 'mode', 'pick', 'other']);
     assert.strictEqual(device.getCapabilityValue('pick'), null, 'a removed choice is not restored');
