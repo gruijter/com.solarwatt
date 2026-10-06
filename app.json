@@ -5201,7 +5201,8 @@
       "getable": true,
       "setable": false,
       "uiComponent": "sensor",
-      "insights": false
+      "insights": false,
+      "icon": "./assets/active_faults.svg"
     },
     "battery_max_soc": {
       "type": "number",
@@ -5855,7 +5856,8 @@
       "getable": true,
       "setable": false,
       "uiComponent": "sensor",
-      "insights": false
+      "insights": false,
+      "icon": "./assets/charger_stop_reason.svg"
     },
     "export_limit": {
       "type": "number",
