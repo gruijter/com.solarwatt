@@ -2364,6 +2364,36 @@
             "ru": "Блокировка кабеля",
             "ar": "قفل الكابل",
             "ko": "케이블 잠금"
+          },
+          "insightsTitleTrue": {
+            "en": "Cable locked",
+            "nl": "Kabel vergrendeld",
+            "de": "Kabel verriegelt",
+            "fr": "Câble verrouillé",
+            "es": "Cable bloqueado",
+            "it": "Cavo bloccato",
+            "da": "Kabel låst",
+            "sv": "Kabel låst",
+            "no": "Kabel låst",
+            "pl": "Kabel zablokowany",
+            "ru": "Кабель заблокирован",
+            "ar": "تم قفل الكابل",
+            "ko": "케이블 잠김"
+          },
+          "insightsTitleFalse": {
+            "en": "Cable unlocked",
+            "nl": "Kabel ontgrendeld",
+            "de": "Kabel entriegelt",
+            "fr": "Câble déverrouillé",
+            "es": "Cable desbloqueado",
+            "it": "Cavo sbloccato",
+            "da": "Kabel låst op",
+            "sv": "Kabel upplåst",
+            "no": "Kabel låst opp",
+            "pl": "Kabel odblokowany",
+            "ru": "Кабель разблокирован",
+            "ar": "تم فتح قفل الكابل",
+            "ko": "케이블 잠금 해제됨"
           }
         },
         "measure_power.target": {
@@ -2399,6 +2429,36 @@
             "ru": "Блокировка зарядного устройства",
             "ar": "قفل الشاحن",
             "ko": "충전기 잠금"
+          },
+          "insightsTitleTrue": {
+            "en": "Charger locked",
+            "nl": "Laadpaal vergrendeld",
+            "de": "Ladestation gesperrt",
+            "fr": "Borne verrouillée",
+            "es": "Cargador bloqueado",
+            "it": "Stazione di ricarica bloccata",
+            "da": "Lader låst",
+            "sv": "Laddare låst",
+            "no": "Lader låst",
+            "pl": "Ładowarka zablokowana",
+            "ru": "Зарядное устройство заблокировано",
+            "ar": "تم قفل الشاحن",
+            "ko": "충전기 잠김"
+          },
+          "insightsTitleFalse": {
+            "en": "Charger unlocked",
+            "nl": "Laadpaal ontgrendeld",
+            "de": "Ladestation entsperrt",
+            "fr": "Borne déverrouillée",
+            "es": "Cargador desbloqueado",
+            "it": "Stazione di ricarica sbloccata",
+            "da": "Lader låst op",
+            "sv": "Laddare upplåst",
+            "no": "Lader låst opp",
+            "pl": "Ładowarka odblokowana",
+            "ru": "Зарядное устройство разблокировано",
+            "ar": "تم فتح قفل الشاحن",
+            "ko": "충전기 잠금 해제됨"
           }
         }
       },
