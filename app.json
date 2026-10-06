@@ -429,6 +429,53 @@
       },
       {
         "title": {
+          "en": "Charging started with a card",
+          "nl": "Laden gestart met een kaart",
+          "de": "Laden mit einer Karte gestartet",
+          "fr": "Recharge démarrée avec une carte",
+          "es": "Carga iniciada con una tarjeta",
+          "it": "Ricarica avviata con una tessera",
+          "da": "Opladning startet med et kort",
+          "sv": "Laddning startad med ett kort",
+          "no": "Lading startet med et kort",
+          "pl": "Ładowanie rozpoczęte kartą",
+          "ru": "Зарядка начата картой",
+          "ar": "بدأ الشحن ببطاقة",
+          "ko": "카드로 충전 시작됨"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=charger"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "card",
+            "type": "string",
+            "title": {
+              "en": "Card ID",
+              "nl": "Kaart-ID",
+              "de": "Karten-ID",
+              "fr": "ID de la carte",
+              "es": "ID de la tarjeta",
+              "it": "ID della tessera",
+              "da": "Kort-ID",
+              "sv": "Kort-ID",
+              "no": "Kort-ID",
+              "pl": "ID karty",
+              "ru": "ID карты",
+              "ar": "معرّف البطاقة",
+              "ko": "카드 ID"
+            },
+            "example": "4F8D637E"
+          }
+        ],
+        "id": "charging_started_card"
+      },
+      {
+        "title": {
           "en": "Inverter limit turned off",
           "nl": "Omvormerlimiet ging uit",
           "de": "Wechselrichtergrenze wurde inaktiv",
