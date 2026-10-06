@@ -5145,19 +5145,19 @@
     "active_energy_limit": {
       "type": "number",
       "title": {
-        "en": "Active energy limit",
-        "nl": "Actieve energielimiet",
-        "de": "Aktives Energielimit",
-        "fr": "Limite d'énergie active",
-        "es": "Límite de energía activo",
-        "it": "Limite di energia attivo",
-        "da": "Aktiv energigrænse",
-        "sv": "Aktiv energigräns",
-        "no": "Aktiv energigrense",
-        "pl": "Aktywny limit energii",
-        "ru": "Активный лимит энергии",
-        "ar": "حد الطاقة النشط",
-        "ko": "현재 에너지 한도"
+        "en": "Energy session limit",
+        "nl": "Energielimiet sessie",
+        "de": "Energielimit Ladevorgang",
+        "fr": "Limite d'énergie de la session",
+        "es": "Límite de energía de la sesión",
+        "it": "Limite energia sessione",
+        "da": "Energigrænse for session",
+        "sv": "Energigräns för session",
+        "no": "Energigrense for økt",
+        "pl": "Limit energii sesji",
+        "ru": "Лимит энергии сессии",
+        "ar": "حد طاقة الجلسة",
+        "ko": "세션 에너지 한도"
       },
       "units": {
         "en": "kWh",
@@ -5179,7 +5179,7 @@
       "setable": false,
       "insights": true,
       "uiComponent": "sensor",
-      "icon": "./assets/session_energy_limit.svg"
+      "icon": "./assets/active_energy_limit.svg"
     },
     "active_faults": {
       "type": "string",
