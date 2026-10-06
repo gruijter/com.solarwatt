@@ -371,5 +371,6 @@
   "copyright": "R.M. de Gruijter (rmdegruijter@gmail.com)",
   "license": "GPL-3.0-or-later",
   "homeyCommunityTopicId": 157511,
-  "support": "https://github.com/gruijter/com.solarwatt/issues"
+  "support": "https://community.homey.app/t/157511",
+  "source": "https://github.com/gruijter/com.solarwatt"
 }
