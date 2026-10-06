@@ -1,0 +1,47 @@
+{
+  "title": {
+    "en": "Active faults changed",
+    "nl": "Actieve storingen zijn veranderd",
+    "de": "Aktive Störungen geändert",
+    "fr": "Défauts actifs modifiés",
+    "es": "Fallos activos cambiados",
+    "it": "Guasti attivi modificati",
+    "pl": "Aktywne usterki uległy zmianie",
+    "sv": "Aktiva fel ändrade",
+    "no": "Aktive feil endret",
+    "da": "Aktive fejl ændret",
+    "ru": "Активные неисправности изменились",
+    "ko": "활성 고장이 변경됨",
+    "ar": "تغيرت الأعطال النشطة"
+  },
+  "highlight": true,
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=inverter|charger&capabilities=active_faults"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "active_faults",
+      "type": "string",
+      "title": {
+        "en": "Active faults",
+        "nl": "Actieve storingen",
+        "de": "Aktive Störungen",
+        "fr": "Défauts actifs",
+        "es": "Fallos activos",
+        "it": "Guasti attivi",
+        "pl": "Aktywne usterki",
+        "sv": "Aktiva fel",
+        "no": "Aktive feil",
+        "da": "Aktive fejl",
+        "ru": "Активные неисправности",
+        "ko": "활성 고장",
+        "ar": "الأعطال النشطة"
+      },
+      "example": "Overvoltage"
+    }
+  ]
+}

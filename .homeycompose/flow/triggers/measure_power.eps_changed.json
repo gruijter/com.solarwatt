@@ -1,0 +1,46 @@
+{
+  "title": {
+    "en": "Backup power (EPS) changed",
+    "nl": "Noodstroom (EPS) is veranderd",
+    "de": "Notstrom (EPS) geändert",
+    "fr": "Alimentation de secours (EPS) modifiée",
+    "es": "Energía de respaldo (EPS) cambiada",
+    "it": "Alimentazione di backup (EPS) modificata",
+    "pl": "Zasilanie awaryjne (EPS) uległo zmianie",
+    "sv": "Reservkraft (EPS) ändrad",
+    "no": "Nødstrøm (EPS) endret",
+    "da": "Nødstrøm (EPS) ændret",
+    "ru": "Резервное питание (EPS) изменилось",
+    "ko": "비상 전력(EPS)이 변경됨",
+    "ar": "تغيرت الطاقة الاحتياطية (EPS)"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=inverter&capabilities=measure_power.eps"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "measure_power.eps",
+      "type": "number",
+      "title": {
+        "en": "Backup power (EPS)",
+        "nl": "Noodstroom (EPS)",
+        "de": "Notstrom (EPS)",
+        "fr": "Alimentation de secours (EPS)",
+        "es": "Energía de respaldo (EPS)",
+        "it": "Alimentazione di backup (EPS)",
+        "pl": "Zasilanie awaryjne (EPS)",
+        "sv": "Reservkraft (EPS)",
+        "no": "Nødstrøm (EPS)",
+        "da": "Nødstrøm (EPS)",
+        "ru": "Резервное питание (EPS)",
+        "ko": "비상 전력 (EPS)",
+        "ar": "الطاقة الاحتياطية (EPS)"
+      },
+      "example": 300
+    }
+  ]
+}

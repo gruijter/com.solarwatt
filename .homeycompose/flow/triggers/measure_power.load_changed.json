@@ -1,0 +1,46 @@
+{
+  "title": {
+    "en": "Home consumption changed",
+    "nl": "Thuisverbruik is veranderd",
+    "de": "Hausverbrauch geändert",
+    "fr": "Consommation domestique modifiée",
+    "es": "Consumo doméstico cambiado",
+    "it": "Consumo domestico modificato",
+    "pl": "Zużycie domowe uległo zmianie",
+    "sv": "Husförbrukning ändrad",
+    "no": "Husforbruk endret",
+    "da": "Husforbrug ændret",
+    "ru": "Домашнее потребление изменилось",
+    "ko": "가정 소비 전력이 변경됨",
+    "ar": "تغير استهلاك المنزل"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=inverter&capabilities=measure_power.load"
+    }
+  ],
+  "tokens": [
+    {
+      "name": "measure_power.load",
+      "type": "number",
+      "title": {
+        "en": "Home consumption",
+        "nl": "Thuisverbruik",
+        "de": "Hausverbrauch",
+        "fr": "Consommation domestique",
+        "es": "Consumo doméstico",
+        "it": "Consumo domestico",
+        "pl": "Zużycie domowe",
+        "sv": "Husförbrukning",
+        "no": "Husforbruk",
+        "da": "Husforbrug",
+        "ru": "Домашнее потребление",
+        "ko": "가정 소비 전력",
+        "ar": "استهلاك المنزل"
+      },
+      "example": 850
+    }
+  ]
+}

@@ -377,6 +377,54 @@
     "triggers": [
       {
         "title": {
+          "en": "Active faults changed",
+          "nl": "Actieve storingen zijn veranderd",
+          "de": "Aktive Störungen geändert",
+          "fr": "Défauts actifs modifiés",
+          "es": "Fallos activos cambiados",
+          "it": "Guasti attivi modificati",
+          "pl": "Aktywne usterki uległy zmianie",
+          "sv": "Aktiva fel ändrade",
+          "no": "Aktive feil endret",
+          "da": "Aktive fejl ændret",
+          "ru": "Активные неисправности изменились",
+          "ko": "활성 고장이 변경됨",
+          "ar": "تغيرت الأعطال النشطة"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=inverter|charger&capabilities=active_faults"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "active_faults",
+            "type": "string",
+            "title": {
+              "en": "Active faults",
+              "nl": "Actieve storingen",
+              "de": "Aktive Störungen",
+              "fr": "Défauts actifs",
+              "es": "Fallos activos",
+              "it": "Guasti attivi",
+              "pl": "Aktywne usterki",
+              "sv": "Aktiva fel",
+              "no": "Aktive feil",
+              "da": "Aktive fejl",
+              "ru": "Активные неисправности",
+              "ko": "활성 고장",
+              "ar": "الأعطال النشطة"
+            },
+            "example": "Overvoltage"
+          }
+        ],
+        "id": "active_faults_changed"
+      },
+      {
+        "title": {
           "en": "Control override cleared",
           "nl": "Overschreven sturing opgeheven",
           "de": "Überschriebene Steuerung aufgehoben",
@@ -577,6 +625,147 @@
           }
         ],
         "id": "locked.charger_true"
+      },
+      {
+        "title": {
+          "en": "Inverter power (AC) changed",
+          "nl": "Omvormervermogen (AC) is veranderd",
+          "de": "Wechselrichterleistung (AC) geändert",
+          "fr": "Puissance onduleur (CA) modifiée",
+          "es": "Potencia inversor (CA) cambiada",
+          "it": "Potenza inverter (CA) modificata",
+          "pl": "Moc falownika (AC) uległa zmianie",
+          "sv": "Växelriktareffekt (AC) ändrad",
+          "no": "Inverter effekt (AC) endret",
+          "da": "Inverter effekt (AC) ændret",
+          "ru": "Мощность инвертора (AC) изменилась",
+          "ko": "인버터 전력(AC)이 변경됨",
+          "ar": "تغيرت قدرة العاكس (AC)"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=inverter&capabilities=measure_power.ac_inverter"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "measure_power.ac_inverter",
+            "type": "number",
+            "title": {
+              "en": "Inverter power (AC)",
+              "nl": "Omvormervermogen (AC)",
+              "de": "Wechselrichterleistung (AC)",
+              "fr": "Puissance onduleur (CA)",
+              "es": "Potencia inversor (CA)",
+              "it": "Potenza inverter (CA)",
+              "pl": "Moc falownika (AC)",
+              "sv": "Växelriktareffekt (AC)",
+              "no": "Inverter effekt (AC)",
+              "da": "Inverter effekt (AC)",
+              "ru": "Мощность инвертора (AC)",
+              "ko": "인버터 전력(AC)",
+              "ar": "قدرة العاكس (AC)"
+            },
+            "example": 2500
+          }
+        ],
+        "id": "measure_power.ac_inverter_changed"
+      },
+      {
+        "title": {
+          "en": "Backup power (EPS) changed",
+          "nl": "Noodstroom (EPS) is veranderd",
+          "de": "Notstrom (EPS) geändert",
+          "fr": "Alimentation de secours (EPS) modifiée",
+          "es": "Energía de respaldo (EPS) cambiada",
+          "it": "Alimentazione di backup (EPS) modificata",
+          "pl": "Zasilanie awaryjne (EPS) uległo zmianie",
+          "sv": "Reservkraft (EPS) ändrad",
+          "no": "Nødstrøm (EPS) endret",
+          "da": "Nødstrøm (EPS) ændret",
+          "ru": "Резервное питание (EPS) изменилось",
+          "ko": "비상 전력(EPS)이 변경됨",
+          "ar": "تغيرت الطاقة الاحتياطية (EPS)"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=inverter&capabilities=measure_power.eps"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "measure_power.eps",
+            "type": "number",
+            "title": {
+              "en": "Backup power (EPS)",
+              "nl": "Noodstroom (EPS)",
+              "de": "Notstrom (EPS)",
+              "fr": "Alimentation de secours (EPS)",
+              "es": "Energía de respaldo (EPS)",
+              "it": "Alimentazione di backup (EPS)",
+              "pl": "Zasilanie awaryjne (EPS)",
+              "sv": "Reservkraft (EPS)",
+              "no": "Nødstrøm (EPS)",
+              "da": "Nødstrøm (EPS)",
+              "ru": "Резервное питание (EPS)",
+              "ko": "비상 전력 (EPS)",
+              "ar": "الطاقة الاحتياطية (EPS)"
+            },
+            "example": 300
+          }
+        ],
+        "id": "measure_power.eps_changed"
+      },
+      {
+        "title": {
+          "en": "Home consumption changed",
+          "nl": "Thuisverbruik is veranderd",
+          "de": "Hausverbrauch geändert",
+          "fr": "Consommation domestique modifiée",
+          "es": "Consumo doméstico cambiado",
+          "it": "Consumo domestico modificato",
+          "pl": "Zużycie domowe uległo zmianie",
+          "sv": "Husförbrukning ändrad",
+          "no": "Husforbruk endret",
+          "da": "Husforbrug ændret",
+          "ru": "Домашнее потребление изменилось",
+          "ko": "가정 소비 전력이 변경됨",
+          "ar": "تغير استهلاك المنزل"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=inverter&capabilities=measure_power.load"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "measure_power.load",
+            "type": "number",
+            "title": {
+              "en": "Home consumption",
+              "nl": "Thuisverbruik",
+              "de": "Hausverbrauch",
+              "fr": "Consommation domestique",
+              "es": "Consumo doméstico",
+              "it": "Consumo domestico",
+              "pl": "Zużycie domowe",
+              "sv": "Husförbrukning",
+              "no": "Husforbruk",
+              "da": "Husforbrug",
+              "ru": "Домашнее потребление",
+              "ko": "가정 소비 전력",
+              "ar": "استهلاك المنزل"
+            },
+            "example": 850
+          }
+        ],
+        "id": "measure_power.load_changed"
       },
       {
         "title": {
@@ -817,6 +1006,53 @@
           }
         ],
         "id": "meter_power.imported_changed"
+      },
+      {
+        "title": {
+          "en": "Home consumption today changed",
+          "nl": "Thuisverbruik vandaag is veranderd",
+          "de": "Hausverbrauch heute geändert",
+          "fr": "Consommation domestique du jour modifiée",
+          "es": "Consumo doméstico hoy cambiado",
+          "it": "Consumo domestico oggi modificato",
+          "pl": "Zużycie domowe dziś uległo zmianie",
+          "sv": "Husförbrukning idag ändrad",
+          "no": "Husforbruk i dag endret",
+          "da": "Husforbrug i dag ændret",
+          "ru": "Домашнее потребление за сегодня изменилось",
+          "ko": "오늘 가정 소비가 변경됨",
+          "ar": "تغير استهلاك المنزل اليوم"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=inverter&capabilities=meter_power.load_today"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "meter_power.load_today",
+            "type": "number",
+            "title": {
+              "en": "Home consumption today",
+              "nl": "Thuisverbruik vandaag",
+              "de": "Hausverbrauch heute",
+              "fr": "Consommation domestique du jour",
+              "es": "Consumo doméstico hoy",
+              "it": "Consumo domestico oggi",
+              "pl": "Zużycie domowe dziś",
+              "sv": "Husförbrukning idag",
+              "no": "Husforbruk i dag",
+              "da": "Husforbrug i dag",
+              "ru": "Домашнее потребление за сегодня",
+              "ko": "오늘 가정 소비",
+              "ar": "استهلاك المنزل اليوم"
+            },
+            "example": 7.5
+          }
+        ],
+        "id": "meter_power.load_today_changed"
       },
       {
         "title": {
