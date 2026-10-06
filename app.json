@@ -2163,7 +2163,8 @@
         "locked.charger",
         "meter_power",
         "alarm_problem",
-        "alarm_heat"
+        "alarm_heat",
+        "alarm_generic.control"
       ],
       "capabilitiesOptions": {
         "target_power": {
@@ -2459,6 +2460,23 @@
             "ru": "Зарядное устройство разблокировано",
             "ar": "تم فتح قفل الشاحن",
             "ko": "충전기 잠금 해제됨"
+          }
+        },
+        "alarm_generic.control": {
+          "title": {
+            "en": "Control overridden",
+            "nl": "Sturing overschreven",
+            "de": "Steuerung überschrieben",
+            "fr": "Pilotage écrasé",
+            "es": "Control anulado",
+            "it": "Controllo sovrascritto",
+            "da": "Styring overskrevet",
+            "sv": "Styrning överskriven",
+            "no": "Styring overstyrt",
+            "pl": "Sterowanie nadpisane",
+            "ru": "Управление перехвачено",
+            "ar": "تم تجاوز التحكم",
+            "ko": "제어 덮어씀"
           }
         }
       },
@@ -2761,6 +2779,41 @@
             "ko": "장치 정보"
           },
           "children": [
+            {
+              "id": "energyManager",
+              "type": "label",
+              "value": "",
+              "label": {
+                "en": "Energy manager",
+                "nl": "Energiebeheerder",
+                "de": "Energiemanager",
+                "fr": "Gestionnaire d'énergie",
+                "es": "Gestor de energía",
+                "it": "Gestore energetico",
+                "da": "Energistyring",
+                "sv": "Energihanterare",
+                "no": "Energistyring",
+                "pl": "Menedżer energii",
+                "ru": "Менеджер энергии",
+                "ar": "مدير الطاقة",
+                "ko": "에너지 관리자"
+              },
+              "hint": {
+                "en": "A SOLARWATT Manager on the network can override control from Homey. The 'Control overridden' alarm shows when it does.",
+                "nl": "Een SOLARWATT Manager op het netwerk kan de sturing vanuit Homey overschrijven. Het alarm 'Sturing overschreven' laat zien wanneer dat gebeurt.",
+                "de": "Ein SOLARWATT Manager im Netzwerk kann die Steuerung durch Homey überschreiben. Der Alarm „Steuerung überschrieben“ zeigt an, wann das geschieht.",
+                "fr": "Un SOLARWATT Manager sur le réseau peut écraser le pilotage par Homey. L'alarme « Pilotage écrasé » indique quand cela se produit.",
+                "es": "Un SOLARWATT Manager en la red puede anular el control de Homey. La alarma «Control anulado» indica cuándo ocurre.",
+                "it": "Un SOLARWATT Manager sulla rete può sovrascrivere il controllo di Homey. L'allarme «Controllo sovrascritto» indica quando succede.",
+                "da": "En SOLARWATT Manager på netværket kan overskrive styringen fra Homey. Alarmen 'Styring overskrevet' viser, hvornår det sker.",
+                "sv": "En SOLARWATT Manager i nätverket kan skriva över styrningen från Homey. Larmet 'Styrning överskriven' visar när det händer.",
+                "no": "En SOLARWATT Manager på nettverket kan overstyre styringen fra Homey. Alarmen 'Styring overstyrt' viser når det skjer.",
+                "pl": "SOLARWATT Manager w sieci może nadpisać sterowanie z Homey. Alarm „Sterowanie nadpisane” pokazuje, kiedy to się dzieje.",
+                "ru": "SOLARWATT Manager в сети может перехватить управление у Homey. Тревога «Управление перехвачено» показывает, когда это происходит.",
+                "ar": "يمكن لـ SOLARWATT Manager على الشبكة تجاوز التحكم من Homey. يُظهر إنذار 'تم تجاوز التحكم' متى يحدث ذلك.",
+                "ko": "네트워크의 SOLARWATT Manager가 Homey의 제어를 덮어쓸 수 있습니다. '제어 덮어씀' 알람이 그 시점을 보여 줍니다."
+              }
+            },
             {
               "id": "deviceModel",
               "type": "label",

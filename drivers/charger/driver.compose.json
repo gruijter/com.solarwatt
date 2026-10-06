@@ -37,7 +37,8 @@
     "locked.charger",
     "meter_power",
     "alarm_problem",
-    "alarm_heat"
+    "alarm_heat",
+    "alarm_generic.control"
   ],
   "capabilitiesOptions": {
     "target_power": {
@@ -333,6 +334,23 @@
         "ru": "Зарядное устройство разблокировано",
         "ar": "تم فتح قفل الشاحن",
         "ko": "충전기 잠금 해제됨"
+      }
+    },
+    "alarm_generic.control": {
+      "title": {
+        "en": "Control overridden",
+        "nl": "Sturing overschreven",
+        "de": "Steuerung überschrieben",
+        "fr": "Pilotage écrasé",
+        "es": "Control anulado",
+        "it": "Controllo sovrascritto",
+        "da": "Styring overskrevet",
+        "sv": "Styrning överskriven",
+        "no": "Styring overstyrt",
+        "pl": "Sterowanie nadpisane",
+        "ru": "Управление перехвачено",
+        "ar": "تم تجاوز التحكم",
+        "ko": "제어 덮어씀"
       }
     }
   },
