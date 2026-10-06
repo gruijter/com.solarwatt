@@ -73,5 +73,26 @@
     "metering_chip": "Chip de medición",
     "ambient_temperature": "Temperatura ambiente",
     "access_control": "Control de acceso"
+  },
+  "inverterFaults": {
+    "pv_overvoltage": "Tensión de string demasiado alta",
+    "dc_arc": "Fallo de arco CC",
+    "string_reversed": "String invertido",
+    "grid_lost": "Corte de red",
+    "grid_voltage": "Fallo de tensión de red",
+    "grid_frequency": "Fallo de frecuencia de red",
+    "output_overcurrent": "Sobrecorriente de salida",
+    "output_dc": "Componente CC en la corriente de salida",
+    "residual_current": "Fallo de corriente residual",
+    "grounding": "Fallo de puesta a tierra",
+    "insulation": "Baja resistencia de aislamiento",
+    "overtemperature": "Temperatura demasiado alta",
+    "storage_abnormal": "Fallo del almacenamiento",
+    "island": "Funcionamiento en isla",
+    "offgrid_overload": "Sobrecarga de la salida aislada",
+    "fan": "Fallo del ventilador externo",
+    "storage_reversed": "Almacenamiento invertido",
+    "meter_lost": "Contador perdido",
+    "bms_lost": "BMS perdido"
   }
 }

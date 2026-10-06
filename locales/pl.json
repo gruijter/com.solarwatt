@@ -73,5 +73,26 @@
     "metering_chip": "Układ pomiarowy",
     "ambient_temperature": "Temperatura otoczenia",
     "access_control": "Kontrola dostępu"
+  },
+  "inverterFaults": {
+    "pv_overvoltage": "Za wysokie napięcie stringu",
+    "dc_arc": "Łuk elektryczny DC",
+    "string_reversed": "Odwrócony string",
+    "grid_lost": "Zanik sieci",
+    "grid_voltage": "Błąd napięcia sieci",
+    "grid_frequency": "Błąd częstotliwości sieci",
+    "output_overcurrent": "Przetężenie wyjścia",
+    "output_dc": "Składowa DC prądu wyjściowego",
+    "residual_current": "Błąd prądu upływu",
+    "grounding": "Błąd uziemienia",
+    "insulation": "Niska rezystancja izolacji",
+    "overtemperature": "Za wysoka temperatura",
+    "storage_abnormal": "Błąd magazynu energii",
+    "island": "Praca wyspowa",
+    "offgrid_overload": "Przeciążenie wyjścia off-grid",
+    "fan": "Błąd wentylatora zewnętrznego",
+    "storage_reversed": "Odwrócony magazyn energii",
+    "meter_lost": "Utracono licznik",
+    "bms_lost": "Utracono BMS"
   }
 }

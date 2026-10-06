@@ -42,7 +42,7 @@
     "alarm_generic.control",
     "session_energy_limit",
     "charger_stop_reason",
-    "charger_faults"
+    "active_faults"
   ],
   "capabilitiesOptions": {
     "target_power": {

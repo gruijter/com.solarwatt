@@ -73,5 +73,26 @@
     "metering_chip": "Metering chip",
     "ambient_temperature": "Ambient temperature",
     "access_control": "Access control"
+  },
+  "inverterFaults": {
+    "pv_overvoltage": "String voltage too high",
+    "dc_arc": "DC arc fault",
+    "string_reversed": "String reversed",
+    "grid_lost": "Grid outage",
+    "grid_voltage": "Grid voltage fault",
+    "grid_frequency": "Grid frequency fault",
+    "output_overcurrent": "Output overcurrent",
+    "output_dc": "DC in output current",
+    "residual_current": "Residual current fault",
+    "grounding": "Grounding fault",
+    "insulation": "Low insulation resistance",
+    "overtemperature": "Temperature too high",
+    "storage_abnormal": "Energy storage fault",
+    "island": "Islanding",
+    "offgrid_overload": "Off-grid output overload",
+    "fan": "External fan fault",
+    "storage_reversed": "Energy storage reversed",
+    "meter_lost": "Meter lost",
+    "bms_lost": "BMS lost"
   }
 }

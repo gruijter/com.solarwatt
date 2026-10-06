@@ -73,5 +73,26 @@
     "metering_chip": "Målebrikke",
     "ambient_temperature": "Omgivelsestemperatur",
     "access_control": "Tilgangskontroll"
+  },
+  "inverterFaults": {
+    "pv_overvoltage": "Strengspenning for høy",
+    "dc_arc": "DC-lysbuefeil",
+    "string_reversed": "Streng snudd",
+    "grid_lost": "Nettbrudd",
+    "grid_voltage": "Nettspenningsfeil",
+    "grid_frequency": "Nettfrekvensfeil",
+    "output_overcurrent": "Overstrøm på utgang",
+    "output_dc": "DC i utgangsstrøm",
+    "residual_current": "Jordfeilstrøm",
+    "grounding": "Jordingsfeil",
+    "insulation": "Lav isolasjonsmotstand",
+    "overtemperature": "Temperatur for høy",
+    "storage_abnormal": "Feil i energilager",
+    "island": "Øydrift",
+    "offgrid_overload": "Overbelastning av off-grid-utgang",
+    "fan": "Feil i ekstern vifte",
+    "storage_reversed": "Energilager snudd",
+    "meter_lost": "Måler mistet",
+    "bms_lost": "BMS mistet"
   }
 }

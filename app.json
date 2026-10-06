@@ -2630,7 +2630,7 @@
         "alarm_generic.control",
         "session_energy_limit",
         "charger_stop_reason",
-        "charger_faults"
+        "active_faults"
       ],
       "capabilitiesOptions": {
         "target_power": {
@@ -3559,6 +3559,9 @@
         "measure_current.1",
         "measure_current.2",
         "measure_current.3",
+        "measure_power.1",
+        "measure_power.2",
+        "measure_power.3",
         "measure_frequency",
         "measure_power.pv1",
         "measure_power.pv2",
@@ -3572,7 +3575,8 @@
         "running_state",
         "alarm_problem",
         "alarm_heat",
-        "alarm_generic.control"
+        "alarm_generic.control",
+        "active_faults"
       ],
       "capabilitiesOptions": {
         "measure_power": {
@@ -4078,6 +4082,60 @@
             "ko": "전류 위상 3 (AC)"
           },
           "decimals": 2
+        },
+        "measure_power.1": {
+          "title": {
+            "en": "Power phase 1 (AC)",
+            "nl": "Vermogen fase 1 (AC)",
+            "de": "Leistung Phase 1 (AC)",
+            "fr": "Puissance phase 1 (CA)",
+            "es": "Potencia fase 1 (CA)",
+            "it": "Potenza fase 1 (CA)",
+            "da": "Effekt fase 1 (AC)",
+            "sv": "Effekt fas 1 (AC)",
+            "no": "Effekt fase 1 (AC)",
+            "pl": "Moc fazy 1 (AC)",
+            "ru": "Мощность фазы 1 (AC)",
+            "ar": "قدرة المرحلة 1 (AC)",
+            "ko": "전력 위상 1 (AC)"
+          },
+          "decimals": 0
+        },
+        "measure_power.2": {
+          "title": {
+            "en": "Power phase 2 (AC)",
+            "nl": "Vermogen fase 2 (AC)",
+            "de": "Leistung Phase 2 (AC)",
+            "fr": "Puissance phase 2 (CA)",
+            "es": "Potencia fase 2 (CA)",
+            "it": "Potenza fase 2 (CA)",
+            "da": "Effekt fase 2 (AC)",
+            "sv": "Effekt fas 2 (AC)",
+            "no": "Effekt fase 2 (AC)",
+            "pl": "Moc fazy 2 (AC)",
+            "ru": "Мощность фазы 2 (AC)",
+            "ar": "قدرة المرحلة 2 (AC)",
+            "ko": "전력 위상 2 (AC)"
+          },
+          "decimals": 0
+        },
+        "measure_power.3": {
+          "title": {
+            "en": "Power phase 3 (AC)",
+            "nl": "Vermogen fase 3 (AC)",
+            "de": "Leistung Phase 3 (AC)",
+            "fr": "Puissance phase 3 (CA)",
+            "es": "Potencia fase 3 (CA)",
+            "it": "Potenza fase 3 (CA)",
+            "da": "Effekt fase 3 (AC)",
+            "sv": "Effekt fas 3 (AC)",
+            "no": "Effekt fase 3 (AC)",
+            "pl": "Moc fazy 3 (AC)",
+            "ru": "Мощность фазы 3 (AC)",
+            "ar": "قدرة المرحلة 3 (AC)",
+            "ko": "전력 위상 3 (AC)"
+          },
+          "decimals": 0
         }
       },
       "discovery": "vision",
@@ -5104,6 +5162,28 @@
       "uiComponent": "sensor",
       "icon": "./assets/session_energy_limit.svg"
     },
+    "active_faults": {
+      "type": "string",
+      "title": {
+        "en": "Active faults",
+        "nl": "Actieve storingen",
+        "de": "Aktive Störungen",
+        "fr": "Défauts actifs",
+        "es": "Fallos activos",
+        "it": "Guasti attivi",
+        "da": "Aktive fejl",
+        "sv": "Aktiva fel",
+        "no": "Aktive feil",
+        "pl": "Aktywne usterki",
+        "ru": "Активные неисправности",
+        "ar": "الأعطال النشطة",
+        "ko": "활성 고장"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "insights": false
+    },
     "battery_max_soc": {
       "type": "number",
       "title": {
@@ -5229,28 +5309,6 @@
       "insights": false,
       "uiComponent": "slider",
       "icon": "./assets/battery_soc.svg"
-    },
-    "charger_faults": {
-      "type": "string",
-      "title": {
-        "en": "Active faults",
-        "nl": "Actieve storingen",
-        "de": "Aktive Störungen",
-        "fr": "Défauts actifs",
-        "es": "Fallos activos",
-        "it": "Guasti attivi",
-        "da": "Aktive fejl",
-        "sv": "Aktiva fel",
-        "no": "Aktive feil",
-        "pl": "Aktywne usterki",
-        "ru": "Активные неисправности",
-        "ar": "الأعطال النشطة",
-        "ko": "활성 고장"
-      },
-      "getable": true,
-      "setable": false,
-      "uiComponent": "sensor",
-      "insights": false
     },
     "charger_stop_reason": {
       "type": "enum",

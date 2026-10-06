@@ -73,5 +73,26 @@
     "metering_chip": "شريحة القياس",
     "ambient_temperature": "حرارة المحيط",
     "access_control": "التحكم في الوصول"
+  },
+  "inverterFaults": {
+    "pv_overvoltage": "جهد السلسلة مرتفع جدًا",
+    "dc_arc": "خطأ قوس التيار المستمر",
+    "string_reversed": "سلسلة معكوسة التوصيل",
+    "grid_lost": "انقطاع الشبكة",
+    "grid_voltage": "خطأ في جهد الشبكة",
+    "grid_frequency": "خطأ في تردد الشبكة",
+    "output_overcurrent": "تيار زائد في الخرج",
+    "output_dc": "مركبة تيار مستمر في تيار الخرج",
+    "residual_current": "خطأ في التيار المتبقي",
+    "grounding": "خطأ في التأريض",
+    "insulation": "مقاومة عزل منخفضة",
+    "overtemperature": "درجة الحرارة مرتفعة جدًا",
+    "storage_abnormal": "خطأ في تخزين الطاقة",
+    "island": "تشغيل منعزل",
+    "offgrid_overload": "حمل زائد على خرج خارج الشبكة",
+    "fan": "خطأ في المروحة الخارجية",
+    "storage_reversed": "تخزين الطاقة معكوس التوصيل",
+    "meter_lost": "فقدان العداد",
+    "bms_lost": "فقدان نظام إدارة البطارية"
   }
 }

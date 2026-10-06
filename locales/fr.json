@@ -73,5 +73,26 @@
     "metering_chip": "Puce de mesure",
     "ambient_temperature": "Température ambiante",
     "access_control": "Contrôle d'accès"
+  },
+  "inverterFaults": {
+    "pv_overvoltage": "Tension de chaîne trop élevée",
+    "dc_arc": "Défaut d'arc CC",
+    "string_reversed": "Chaîne inversée",
+    "grid_lost": "Panne du réseau",
+    "grid_voltage": "Défaut de tension réseau",
+    "grid_frequency": "Défaut de fréquence réseau",
+    "output_overcurrent": "Surintensité en sortie",
+    "output_dc": "Composante CC du courant de sortie",
+    "residual_current": "Défaut de courant résiduel",
+    "grounding": "Défaut de mise à la terre",
+    "insulation": "Faible résistance d'isolement",
+    "overtemperature": "Température trop élevée",
+    "storage_abnormal": "Défaut du stockage",
+    "island": "Îlotage",
+    "offgrid_overload": "Surcharge de la sortie hors réseau",
+    "fan": "Défaut du ventilateur externe",
+    "storage_reversed": "Stockage inversé",
+    "meter_lost": "Compteur perdu",
+    "bms_lost": "BMS perdu"
   }
 }

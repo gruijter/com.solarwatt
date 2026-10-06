@@ -73,5 +73,26 @@
     "metering_chip": "Messchip",
     "ambient_temperature": "Umgebungstemperatur",
     "access_control": "Zugangskontrolle"
+  },
+  "inverterFaults": {
+    "pv_overvoltage": "Strangspannung zu hoch",
+    "dc_arc": "DC-Lichtbogenfehler",
+    "string_reversed": "String verpolt",
+    "grid_lost": "Netzausfall",
+    "grid_voltage": "Netzspannungsfehler",
+    "grid_frequency": "Netzfrequenzfehler",
+    "output_overcurrent": "Ausgangsüberstrom",
+    "output_dc": "DC-Anteil im Ausgangsstrom",
+    "residual_current": "Fehlerstromfehler",
+    "grounding": "Erdungsfehler",
+    "insulation": "Niedriger Isolationswiderstand",
+    "overtemperature": "Temperatur zu hoch",
+    "storage_abnormal": "Fehler Energiespeicher",
+    "island": "Inselbildung",
+    "offgrid_overload": "Überlast Inselausgang",
+    "fan": "Fehler externer Lüfter",
+    "storage_reversed": "Energiespeicher verpolt",
+    "meter_lost": "Zähler nicht erreichbar",
+    "bms_lost": "BMS nicht erreichbar"
   }
 }

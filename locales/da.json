@@ -73,5 +73,26 @@
     "metering_chip": "Målechip",
     "ambient_temperature": "Omgivelsestemperatur",
     "access_control": "Adgangskontrol"
+  },
+  "inverterFaults": {
+    "pv_overvoltage": "Strengspænding for høj",
+    "dc_arc": "DC-lysbuefejl",
+    "string_reversed": "Streng vendt forkert",
+    "grid_lost": "Netudfald",
+    "grid_voltage": "Netspændingsfejl",
+    "grid_frequency": "Netfrekvensfejl",
+    "output_overcurrent": "Overstrøm på udgang",
+    "output_dc": "DC i udgangsstrøm",
+    "residual_current": "Fejlstrømsfejl",
+    "grounding": "Jordingsfejl",
+    "insulation": "Lav isolationsmodstand",
+    "overtemperature": "Temperatur for høj",
+    "storage_abnormal": "Fejl i energilager",
+    "island": "Ødrift",
+    "offgrid_overload": "Overbelastning af off-grid-udgang",
+    "fan": "Fejl i ekstern ventilator",
+    "storage_reversed": "Energilager vendt forkert",
+    "meter_lost": "Måler mistet",
+    "bms_lost": "BMS mistet"
   }
 }

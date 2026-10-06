@@ -73,5 +73,26 @@
     "metering_chip": "Mätchip",
     "ambient_temperature": "Omgivningstemperatur",
     "access_control": "Åtkomstkontroll"
+  },
+  "inverterFaults": {
+    "pv_overvoltage": "Strängspänning för hög",
+    "dc_arc": "DC-ljusbågsfel",
+    "string_reversed": "Sträng omvänd",
+    "grid_lost": "Nätavbrott",
+    "grid_voltage": "Nätspänningsfel",
+    "grid_frequency": "Nätfrekvensfel",
+    "output_overcurrent": "Överström på utgång",
+    "output_dc": "DC i utgångsström",
+    "residual_current": "Jordfelsström",
+    "grounding": "Jordningsfel",
+    "insulation": "Låg isolationsresistans",
+    "overtemperature": "Temperatur för hög",
+    "storage_abnormal": "Fel i energilager",
+    "island": "Ödrift",
+    "offgrid_overload": "Överbelastning av off-grid-utgång",
+    "fan": "Fel i extern fläkt",
+    "storage_reversed": "Energilager omvänt",
+    "meter_lost": "Mätare förlorad",
+    "bms_lost": "BMS förlorat"
   }
 }

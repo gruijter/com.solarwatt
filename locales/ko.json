@@ -73,5 +73,26 @@
     "metering_chip": "계량 칩",
     "ambient_temperature": "주변 온도",
     "access_control": "접근 제어"
+  },
+  "inverterFaults": {
+    "pv_overvoltage": "스트링 전압 과다",
+    "dc_arc": "DC 아크 고장",
+    "string_reversed": "스트링 역결선",
+    "grid_lost": "계통 정전",
+    "grid_voltage": "계통 전압 오류",
+    "grid_frequency": "계통 주파수 오류",
+    "output_overcurrent": "출력 과전류",
+    "output_dc": "출력 전류 DC 성분",
+    "residual_current": "누설 전류 오류",
+    "grounding": "접지 오류",
+    "insulation": "절연 저항 낮음",
+    "overtemperature": "온도 과다",
+    "storage_abnormal": "에너지 저장 장치 오류",
+    "island": "단독 운전",
+    "offgrid_overload": "독립 출력 과부하",
+    "fan": "외부 팬 오류",
+    "storage_reversed": "에너지 저장 장치 역결선",
+    "meter_lost": "계량기 통신 끊김",
+    "bms_lost": "BMS 통신 끊김"
   }
 }

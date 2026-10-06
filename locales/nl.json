@@ -73,5 +73,26 @@
     "metering_chip": "Meetchip",
     "ambient_temperature": "Omgevingstemperatuur",
     "access_control": "Toegangscontrole"
+  },
+  "inverterFaults": {
+    "pv_overvoltage": "Stringspanning te hoog",
+    "dc_arc": "DC-boogfout",
+    "string_reversed": "String omgekeerd aangesloten",
+    "grid_lost": "Netuitval",
+    "grid_voltage": "Netspanningsfout",
+    "grid_frequency": "Netfrequentiefout",
+    "output_overcurrent": "Overstroom uitgang",
+    "output_dc": "DC in uitgangsstroom",
+    "residual_current": "Lekstroomfout",
+    "grounding": "Aardingsfout",
+    "insulation": "Lage isolatieweerstand",
+    "overtemperature": "Temperatuur te hoog",
+    "storage_abnormal": "Fout energieopslag",
+    "island": "Eilandbedrijf",
+    "offgrid_overload": "Overbelasting off-grid-uitgang",
+    "fan": "Fout externe ventilator",
+    "storage_reversed": "Energieopslag omgekeerd aangesloten",
+    "meter_lost": "Meter niet bereikbaar",
+    "bms_lost": "BMS niet bereikbaar"
   }
 }

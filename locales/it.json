@@ -73,5 +73,26 @@
     "metering_chip": "Chip di misura",
     "ambient_temperature": "Temperatura ambiente",
     "access_control": "Controllo d'accesso"
+  },
+  "inverterFaults": {
+    "pv_overvoltage": "Tensione di stringa troppo alta",
+    "dc_arc": "Guasto da arco CC",
+    "string_reversed": "Stringa invertita",
+    "grid_lost": "Mancanza rete",
+    "grid_voltage": "Guasto tensione di rete",
+    "grid_frequency": "Guasto frequenza di rete",
+    "output_overcurrent": "Sovracorrente in uscita",
+    "output_dc": "Componente CC nella corrente di uscita",
+    "residual_current": "Guasto corrente residua",
+    "grounding": "Guasto di messa a terra",
+    "insulation": "Bassa resistenza di isolamento",
+    "overtemperature": "Temperatura troppo alta",
+    "storage_abnormal": "Guasto dell'accumulo",
+    "island": "Funzionamento in isola",
+    "offgrid_overload": "Sovraccarico dell'uscita off-grid",
+    "fan": "Guasto della ventola esterna",
+    "storage_reversed": "Accumulo invertito",
+    "meter_lost": "Contatore perso",
+    "bms_lost": "BMS perso"
   }
 }
