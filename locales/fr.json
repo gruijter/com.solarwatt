@@ -10,6 +10,7 @@
       "meter": "L'onduleur a répondu, mais aucun compteur n'y est raccordé."
     },
     "noCarConnected": "Aucune voiture branchée.",
+    "noChargingSession": "Aucune session de charge : démarrez d'abord la charge.",
     "unplugFirst": "Débranchez d'abord le câble : la borne ne modifie ce réglage que sans câble branché.",
     "socRange": "Les limites de SoC doivent être de 10 à 100 %, avec minimum ≤ minimum sur réseau ≤ maximum.",
     "writeFailed": "Impossible d'envoyer la commande :"

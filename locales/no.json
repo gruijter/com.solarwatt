@@ -10,6 +10,7 @@
       "meter": "Vekselretteren svarte, men ingen måler er tilkoblet."
     },
     "noCarConnected": "Ingen bil tilkoblet.",
+    "noChargingSession": "Ingen ladeøkt: start ladingen først.",
     "unplugFirst": "Trekk ut kabelen først: laderen endrer dette bare uten kabel i.",
     "socRange": "SoC-grenser må være 10–100 %, med minimum ≤ minimum på nettet ≤ maksimum.",
     "writeFailed": "Kunne ikke sende kommandoen:"

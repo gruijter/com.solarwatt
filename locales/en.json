@@ -10,6 +10,7 @@
       "meter": "The inverter answered, but no meter is connected to it."
     },
     "noCarConnected": "No car connected.",
+    "noChargingSession": "No charging session: start charging first.",
     "unplugFirst": "Unplug the cable first: the charger only changes this without a cable in it.",
     "socRange": "SoC limits must be 10–100%, with minimum ≤ minimum on grid ≤ maximum.",
     "writeFailed": "Could not send the command:"

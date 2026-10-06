@@ -25,6 +25,9 @@ module.exports = class SolarwattChargerDriver extends CommonDriver {
 
   async onInit() {
     await super.onInit();
+
+    this.homey.flow.getActionCard('set_session_energy_limit')
+      .registerRunListener(({ device, kwh }) => device.setControl({ session_energy_limit: kwh }));
   }
 
 };

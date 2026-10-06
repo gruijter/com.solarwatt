@@ -10,6 +10,7 @@
       "meter": "Inverteren svarede, men der er ingen måler tilsluttet."
     },
     "noCarConnected": "Ingen bil tilsluttet.",
+    "noChargingSession": "Ingen ladesession: start opladningen først.",
     "unplugFirst": "Tag først kablet ud: laderen ændrer kun dette uden kabel i.",
     "socRange": "SoC-grænser skal være 10–100 %, med minimum ≤ minimum på nettet ≤ maksimum.",
     "writeFailed": "Kunne ikke sende kommandoen:"

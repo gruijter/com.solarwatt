@@ -10,6 +10,7 @@
       "meter": "El inversor respondió, pero no tiene ningún medidor conectado."
     },
     "noCarConnected": "No hay ningún coche conectado.",
+    "noChargingSession": "No hay sesión de carga: inicie primero la carga.",
     "unplugFirst": "Desconecte primero el cable: el cargador solo cambia esto sin cable conectado.",
     "socRange": "Los límites de SoC deben ser 10–100 %, con mínimo ≤ mínimo en red ≤ máximo.",
     "writeFailed": "No se pudo enviar el comando:"

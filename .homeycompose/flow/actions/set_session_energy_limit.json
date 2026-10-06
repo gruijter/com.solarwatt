@@ -1,0 +1,91 @@
+{
+  "title": {
+    "en": "Set session energy limit",
+    "nl": "Stel laadlimiet voor deze sessie in",
+    "de": "Energielimit für diesen Ladevorgang einstellen",
+    "fr": "Définir la limite d'énergie de la session",
+    "es": "Establecer límite de energía de la sesión",
+    "it": "Imposta limite energia della sessione",
+    "da": "Indstil energigrænse for sessionen",
+    "sv": "Ställ in energigräns för sessionen",
+    "no": "Still inn energigrense for økten",
+    "pl": "Ustaw limit energii sesji",
+    "ru": "Установить лимит энергии сессии",
+    "ar": "تعيين حد طاقة الجلسة",
+    "ko": "세션 에너지 한도 설정"
+  },
+  "titleFormatted": {
+    "en": "Stop this charging session after [[kwh]] kWh",
+    "nl": "Stop deze laadsessie na [[kwh]] kWh",
+    "de": "Diesen Ladevorgang nach [[kwh]] kWh beenden",
+    "fr": "Arrêter cette session de charge après [[kwh]] kWh",
+    "es": "Detener esta sesión de carga tras [[kwh]] kWh",
+    "it": "Ferma questa sessione di ricarica dopo [[kwh]] kWh",
+    "da": "Stop denne ladesession efter [[kwh]] kWh",
+    "sv": "Stoppa denna laddsession efter [[kwh]] kWh",
+    "no": "Stopp denne ladeøkten etter [[kwh]] kWh",
+    "pl": "Zatrzymaj tę sesję ładowania po [[kwh]] kWh",
+    "ru": "Остановить эту сессию зарядки после [[kwh]] кВт·ч",
+    "ar": "أوقف جلسة الشحن هذه بعد [[kwh]] كيلوواط ساعة",
+    "ko": "이 충전 세션을 [[kwh]] kWh 후 중지"
+  },
+  "hint": {
+    "en": "Only while a car is charging or paused; applies to this session only. 0 removes the limit.",
+    "nl": "Alleen als er een auto laadt of gepauzeerd is; geldt alleen voor deze sessie. 0 haalt de limiet weg.",
+    "de": "Nur während ein Auto lädt oder pausiert; gilt nur für diesen Ladevorgang. 0 entfernt das Limit.",
+    "fr": "Uniquement pendant qu'une voiture charge ou est en pause ; vaut pour cette session uniquement. 0 supprime la limite.",
+    "es": "Solo mientras un coche carga o está en pausa; solo para esta sesión. 0 elimina el límite.",
+    "it": "Solo mentre un'auto è in carica o in pausa; vale solo per questa sessione. 0 rimuove il limite.",
+    "da": "Kun mens en bil lader eller er sat på pause; gælder kun denne session. 0 fjerner grænsen.",
+    "sv": "Endast medan en bil laddar eller är pausad; gäller bara denna session. 0 tar bort gränsen.",
+    "no": "Bare mens en bil lader eller er satt på pause; gjelder bare denne økten. 0 fjerner grensen.",
+    "pl": "Tylko gdy samochód się ładuje lub ma pauzę; dotyczy tylko tej sesji. 0 usuwa limit.",
+    "ru": "Только во время зарядки или паузы; действует только для этой сессии. 0 снимает лимит.",
+    "ar": "فقط أثناء شحن السيارة أو إيقافها مؤقتًا؛ ينطبق على هذه الجلسة فقط. 0 يزيل الحد.",
+    "ko": "차량이 충전 중이거나 일시 정지된 동안에만; 이 세션에만 적용됩니다. 0은 한도를 해제합니다."
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=charger"
+    },
+    {
+      "type": "number",
+      "name": "kwh",
+      "min": 0,
+      "max": 1000,
+      "step": 1,
+      "placeholder": {
+        "en": "20",
+        "nl": "20",
+        "de": "20",
+        "fr": "20",
+        "es": "20",
+        "it": "20",
+        "da": "20",
+        "sv": "20",
+        "no": "20",
+        "pl": "20",
+        "ru": "20",
+        "ar": "20",
+        "ko": "20"
+      },
+      "title": {
+        "en": "Energy",
+        "nl": "Energie",
+        "de": "Energie",
+        "fr": "Énergie",
+        "es": "Energía",
+        "it": "Energia",
+        "da": "Energi",
+        "sv": "Energi",
+        "no": "Energi",
+        "pl": "Energia",
+        "ru": "Энергия",
+        "ar": "الطاقة",
+        "ko": "에너지"
+      }
+    }
+  ]
+}

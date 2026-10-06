@@ -10,6 +10,7 @@
       "meter": "L'inverter ha risposto, ma non è collegato alcun contatore."
     },
     "noCarConnected": "Nessuna auto collegata.",
+    "noChargingSession": "Nessuna sessione di ricarica: avvia prima la ricarica.",
     "unplugFirst": "Scollega prima il cavo: la stazione modifica questa impostazione solo senza cavo inserito.",
     "socRange": "I limiti di SoC devono essere 10–100%, con minimo ≤ minimo in rete ≤ massimo.",
     "writeFailed": "Impossibile inviare il comando:"

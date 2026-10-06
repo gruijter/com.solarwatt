@@ -38,7 +38,8 @@
     "meter_power",
     "alarm_problem",
     "alarm_heat",
-    "alarm_generic.control"
+    "alarm_generic.control",
+    "session_energy_limit"
   ],
   "capabilitiesOptions": {
     "target_power": {

@@ -10,6 +10,7 @@
       "meter": "Falownik odpowiedział, ale nie jest do niego podłączony licznik."
     },
     "noCarConnected": "Brak podłączonego samochodu.",
+    "noChargingSession": "Brak sesji ładowania: najpierw rozpocznij ładowanie.",
     "unplugFirst": "Najpierw odłącz kabel: ładowarka zmienia to tylko bez podłączonego kabla.",
     "socRange": "Limity SoC muszą wynosić 10–100%, przy czym minimum ≤ minimum przy sieci ≤ maksimum.",
     "writeFailed": "Nie udało się wysłać polecenia:"

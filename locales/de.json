@@ -10,6 +10,7 @@
       "meter": "Der Wechselrichter hat geantwortet, aber es ist kein Zähler angeschlossen."
     },
     "noCarConnected": "Kein Auto angeschlossen.",
+    "noChargingSession": "Kein Ladevorgang: zuerst das Laden starten.",
     "unplugFirst": "Zuerst das Kabel abziehen: Die Ladestation ändert dies nur ohne eingestecktes Kabel.",
     "socRange": "SoC-Grenzen müssen 10–100 % sein, mit Minimum ≤ Minimum am Netz ≤ Maximum.",
     "writeFailed": "Befehl konnte nicht gesendet werden:"
