@@ -7,7 +7,7 @@
   },
   "scripts": {
     "lint": "eslint --ext .js,.ts --ignore-path .gitignore .",
-    "test": "node test/check-manifests.js && node test/modbus-client.js && node test/device-migrator.js && node test/solar-sides.js"
+    "test": "node test/check-manifests.js && node test/modbus-client.js && node test/device-migrator.js && node test/solar-sides.js && node test/register-capture.js"
   },
   "devDependencies": {
     "@types/homey": "npm:homey-apps-sdk-v3-types@beta",

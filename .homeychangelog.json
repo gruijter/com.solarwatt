@@ -4,5 +4,8 @@
   },
   "1.1.0": {
     "en": "Improved solar and AC vs DC capability mapping. Migration improvements. Flows no longer run twice. Slider ranges are restored reliably after an update."
+  },
+  "1.2.0": {
+    "en": "Fixed force charge and force discharge. Added EV charger session and active energy limit, stop reason, faults, start charging setting and override detection. Added inverter power per phase and second meter readings. Added many flow cards. Improved icons and titles. Fixed battery power limit of 0 W. Migration improvements. Improved diagnostic logging."
   }
 }
